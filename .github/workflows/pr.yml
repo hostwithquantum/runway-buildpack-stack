@@ -17,6 +17,15 @@ jobs:
       with:
         pack-version: 0.35.1
 
+    - name: Build run-image
+      uses: docker/build-push-action@v6
+      with:
+        context: runimage
+        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
+        push: false
+        tags: runimage-test
+
     - name: Create Builder Image
       run: |
-        pack builder create builder --config builder.toml
+        pack builder create builder --config builder.toml --pull-policy if-not-present
+

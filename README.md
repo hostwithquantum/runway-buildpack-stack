@@ -9,3 +9,4 @@ On **git tags**, this pushes:
 
 * `r.planetary-quantum.com/runway-public/runway-buildpack:jammy-full`
 * `r.planetary-quantum.com/runway-public/runway-buildpack:jammy-full-vX.X.X`
+* and the run-image `r.planetary-quantum.com/runway-public/runway-runimage` with the same tags

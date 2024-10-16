@@ -24,18 +24,36 @@ jobs:
       with:
         pack-version: 0.35.1
 
-    - name: Create Builder Image
-      run: |
-        pack builder create builder --config builder.toml
-
     - name: Docker login
       uses: docker/login-action@v3
       with:
         registry: r.planetary-quantum.com
         username: ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
         password: ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
+    - uses: docker/setup-buildx-action@v3
 
-    - name: Push
+    - id: meta-run
+      uses: docker/metadata-action@v5
+      with:
+        images: |
+          r.planetary-quantum.com/runway-public/runway-runimage
+        tags: |
+          type=semver,prefix=jammy-full-,pattern={{version}}
+          type=raw,value=jammy-full
+
+    - name: Build and push run-image
+      uses: docker/build-push-action@v6
+      with:
+        context: runimage
+        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
+        push: true
+        tags: ${{ steps.meta-run.outputs.tags }}
+
+    - name: Create Builder Image
+      run: |
+        pack builder create builder --config builder.toml
+
+    - name: Push builder
       env:
         IMG: r.planetary-quantum.com/runway-public/runway-buildpack
       run: |
