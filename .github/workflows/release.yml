@@ -19,22 +19,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Get pack version
-      id: pack-version
-      run: |
-        version=$(jq -r .pack "scripts/.util/tools.json")
-        echo "version=${version#v}" >> "$GITHUB_OUTPUT"
-
     - name: Install Global Pack
       uses: buildpacks/github-actions/setup-pack@main
       with:
-        pack-version: ${{ steps.pack-version.outputs.version }}
-
-    - name: Enable Experimental Pack Features
-      run: |
-        if [ -f "scripts/options.json" ] && jq -e -r .pack_config_enable_experimental "scripts/options.json" > /dev/null; then
-          pack config experimental true
-        fi
+        pack-version: 0.35.1
 
     - name: Create Builder Image
       run: |
@@ -44,10 +32,10 @@ jobs:
       uses: docker/login-action@v3
       with:
         registry: r.planetary-quantum.com
-        username: ${{ secrets.BUILDPACK_REGISTRY_USERNAME }}
-        password: ${{ secrets.BUILDPACK_REGISTRY_PASSWORD }}
+        username: ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
+        password: ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
 
-    - name: Push To Dockerhub
+    - name: Push
       env:
         IMG: r.planetary-quantum.com/runway-public/runway-buildpack
       run: |
