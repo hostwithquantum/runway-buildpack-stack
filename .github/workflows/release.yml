@@ -55,7 +55,7 @@ jobs:
 
     - name: Push builder
       env:
-        IMG: r.planetary-quantum.com/runway-public/runway-buildpack
+        IMG: r.planetary-quantum.com/runway-public/runway-buildpack-stack
       run: |
         docker tag builder "${IMG}:jammy-full"
         docker tag builder "${IMG}:jammy-full-${{ steps.event.outputs.tag }}"

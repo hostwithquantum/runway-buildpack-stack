@@ -7,6 +7,6 @@ builder.toml docs: https://buildpacks.io/docs/reference/config/builder-config/
 
 On **git tags**, this pushes:
 
-* `r.planetary-quantum.com/runway-public/runway-buildpack:jammy-full`
-* `r.planetary-quantum.com/runway-public/runway-buildpack:jammy-full-vX.X.X`
+* `r.planetary-quantum.com/runway-public/runway-buildpack-stack:jammy-full`
+* `r.planetary-quantum.com/runway-public/runway-buildpack-stack:jammy-full-vX.X.X`
 * and the run-image `r.planetary-quantum.com/runway-public/runway-runimage` with the same tags
