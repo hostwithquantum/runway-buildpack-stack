@@ -61,3 +61,5 @@ jobs:
         docker tag builder "${IMG}:jammy-full-${{ steps.event.outputs.tag }}"
         docker push "${IMG}:jammy-full"
         docker push "${IMG}:jammy-full-${{ steps.event.outputs.tag }}"
+
+    - uses: softprops/action-gh-release@v2
