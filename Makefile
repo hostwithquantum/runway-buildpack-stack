@@ -2,9 +2,14 @@
 
 EXAMPLES_DIR=../runway-examples/content
 
-build:
+META_BUILDPACKS=$(patsubst %, %buildpack.cnb, $(wildcard meta/*/))
+
+build: $(META_BUILDPACKS)
 	docker build -t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full ./runimage
 	pack builder create builder --config builder.toml --pull-policy if-not-present
+
+meta/%/buildpack.cnb: meta/%/*
+	pack buildpack package $@ --config meta/$*/package.toml --format file --pull-policy if-not-present
 
 test: $(patsubst $(EXAMPLES_DIR)/%/, test-%, $(wildcard $(EXAMPLES_DIR)/*/))
 show-tests:
