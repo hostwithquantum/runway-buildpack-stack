@@ -42,6 +42,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-community/go-generate"
+    optional = true
     version = "0.2.36"
 
   [[order.group]]
@@ -86,6 +87,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-community/go-generate"
+    optional = true
     version = "0.2.36"
 
   [[order.group]]
