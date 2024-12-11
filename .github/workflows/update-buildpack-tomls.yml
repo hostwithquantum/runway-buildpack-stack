@@ -1,0 +1,59 @@
+name: Update buildpack.toml
+
+on:
+  schedule:
+  - cron: '1 6 * * *' # daily at 06:01 UTC
+  workflow_dispatch: {}
+
+concurrency: buildpack_update
+
+jobs:
+  update-buildpack-toml:
+    runs-on: ubuntu-22.04
+    name: Update buildpack.toml
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Checkout Branch
+      uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
+      with:
+        branch: automation/buildpack.toml/update
+
+    - name: Update buildpack.toml for meta/go
+      id: update
+      uses: paketo-buildpacks/github-config/actions/buildpack/update@main
+      with:
+        buildpack_toml_path: meta/go/buildpack.toml
+        package_toml_path: meta/go/package.toml
+
+    - name: Commit
+      id: commit
+      uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
+      with:
+        message: "Updating buildpacks in buildpack.toml"
+        pathspec: "."
+
+    - name: Push Branch
+      if: ${{ steps.commit.outputs.commit_sha != '' }}
+      uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
+      with:
+        branch: automation/buildpack.toml/update
+
+    - name: Open Pull Request (no semver label)
+      if: ${{ steps.commit.outputs.commit_sha != ''  && steps.update.outputs.semver_bump == '' }}
+      uses: paketo-buildpacks/github-config/actions/pull-request/open@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: "Updates buildpacks in buildpack.toml"
+        branch: automation/buildpack.toml/update
+
+    - name: Open Pull Request
+      if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '' }}
+      uses: paketo-buildpacks/github-config/actions/pull-request/open@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: "Updates buildpacks in buildpack.toml"
+        branch: automation/buildpack.toml/update
+        label: "semver:${{ steps.update.outputs.semver_bump }}"
