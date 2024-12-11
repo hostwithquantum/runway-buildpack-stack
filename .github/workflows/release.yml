@@ -51,7 +51,7 @@ jobs:
 
     - name: Create Builder Image
       run: |
-        pack builder create builder --config builder.toml
+        make build-builder
 
     - name: Push builder
       env:
