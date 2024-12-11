@@ -1,0 +1,32 @@
+[buildpack]
+  uri = "./"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/ca-certificates@3.8.6"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/environment-variables@4.7.3"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/git@1.0.27"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/go-build@2.2.17"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/go-dist@2.6.8"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/go-mod-vendor@1.0.44"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/image-labels@4.7.3"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/procfile@5.10.1"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/watchexec@3.3.0"
+
+[[dependencies]]
+  uri = "https://github.com/paketo-community/go-generate/releases/download/v0.2.36/go-generate-0.2.36.cnb"
