@@ -1,4 +1,4 @@
-name: Update buildpack.toml
+name: Update buildpack.toml and Send Pull Request
 
 on:
   schedule:
