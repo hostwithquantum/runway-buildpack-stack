@@ -40,6 +40,10 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.28.0"
   version = "0.28.0"
 
+[[buildpacks]]
+  uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.2.2"
+  version = "0.2.2"
+
 [lifecycle]
   version = "0.20.5"
 
@@ -102,6 +106,11 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     version = "5.10.1"
+
+[[order]]
+  [[order.group]]
+    id = "deno-buildpack"
+    version = "0.2.2"
 
 [stack]
   build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.61"
