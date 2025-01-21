@@ -1,0 +1,31 @@
+name: go-generate
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1"
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: warjiang/setup-skopeo@v0.1.3
+      - run: |
+          skopeo login \
+          --username ${{ secrets.QUANTUM_REGISTRY_USERNAME }} \
+          --password ${{ secrets.QUANTUM_REGISTRY_PASSWORD }} \
+          r.planetary-quantum.com
+      - id: info
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./.github/tools/release.sh
+      - uses: paketo-buildpacks/github-config/actions/release/download-asset@main
+        with:
+          url: ${{ steps.info.outputs.download_url }}
+          output: "/github/workspace/buildpackage.cnb"
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: >
+          sudo skopeo copy
+          "oci-archive:${GITHUB_WORKSPACE}/buildpackage.cnb"
+          docker://r.planetary-quantum.com/buildpacks/go-generate:${{ steps.info.outputs.version }}
