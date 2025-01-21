@@ -1,0 +1,26 @@
+name: go-generate
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 0 * * 1"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: r.planetary-quantum.com
+          username: ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
+          password: ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
+      - uses: warjiang/setup-skopeo@v0.1.3
+      - uses: updatecli/updatecli-action@v2
+      - env:
+          UPDATECLI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          updatecli \
+            diff \
+            -c .github/update-cli/go-generate.yml \
+            -v .github/update-cli/values.yml

@@ -1,0 +1,29 @@
+sources:
+  getRelease:
+    kind: githubrelease
+    transformers:
+      - trimPrefix: 'v'
+    spec:
+      token: "{{ requiredEnv .github.token }}"
+      owner: paketo-community
+      repository: go-generate
+      assert: "*.cnb"
+      versionFilter:
+        kind: latest
+  getAsset:
+    kind: file
+    dependson:
+      - getRelease
+    spec:
+      file: https://github.com/paketo-community/go-generate/releases/download/v{{ source "getRelease" }}/go-generate-{{ source "getRelease" }}.cnb
+
+targets:
+  publish:
+    sourceid: getRelease
+    kind: shell
+    spec:
+      command: |
+        export version={{ source `getRelease` }}
+        skopeo copy \
+        "docker-archive:./go-generate-${version}.cnb" \
+        "docker://r.planetary-quantum.com/buildpacks/go-generate:${version}"
