@@ -2,7 +2,7 @@ api = "0.7"
 
 [buildpack]
   description = "A buildpack for building Go applications"
-  homepage = "https://github.com/paketo-buildpacks/go"
+  homepage = "https://www.runway.horse/docs/recipes/deploy-go/"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"

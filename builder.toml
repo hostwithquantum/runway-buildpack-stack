@@ -5,7 +5,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "1.0.0"
 
 [[buildpacks]]
-  uri = "meta/go/buildpack.cnb"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.6-runway1"
   version = "4.12.6-runway1"
 
 [[buildpacks]]
