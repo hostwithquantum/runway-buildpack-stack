@@ -23,7 +23,6 @@ targets:
     kind: shell
     spec:
       command: |
-        export version={{ source `getRelease` }}
         skopeo copy \
-        "docker-archive:./go-generate-${version}.cnb" \
-        "docker://r.planetary-quantum.com/buildpacks/go-generate:${version}"
+        oci-archive:./go-generate-{{ source "getRelease" }}.cnb \
+        docker://r.planetary-quantum.com/buildpacks/go-generate:{{ source "getRelease" }}
