@@ -1,0 +1,67 @@
+name: publish-meta
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'meta/**'
+
+jobs:
+  meta:
+    strategy:
+      matrix:
+        buildpack:
+          - go
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: buildpacks/github-actions/setup-pack@main
+        with:
+          pack-version: 0.35.1
+      - uses: warjiang/setup-skopeo@v0.1.3
+      - uses: SebRollen/toml-action@v1.2.0
+        id: version
+        with:
+          file: 'meta/${{ matrix.buildpack }}/buildpack.toml'
+          field: 'buildpack.version'
+      - name: check if the image exists
+        id: exists
+        run: |
+          set +e
+          skopeo inspect docker://r.planetary-quantum.com/buildpacks/${{ matrix.buildpack }}:${{ steps.version.outputs.value }}
+          if [ $? -ne 0 ]; then
+            echo "status=publish" >> $GITHUB_OUTPUT
+          else
+            echo "status=stop" >> $GITHUB_OUTPUT
+          fi
+          exit 0
+      - if: ${{ steps.exists.outputs.status == 'stop' }}
+        run: |
+          echo "### no updates" >> $GITHUB_STEP_SUMMARY
+          echo "An image (version: ${{ steps.version.outputs.value }}) already exists." >> $GITHUB_STEP_SUMMARY
+          echo "Please update version, when necessary!" >> $GITHUB_STEP_SUMMARY
+      - if: ${{ steps.exists.outputs.status == 'publish' }}
+        run: |
+          echo "### updates :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "found new release: ${{ steps.version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+      - if: ${{ steps.exists.outputs.status == 'publish' }}
+        name: build
+        run: >
+          pack -v buildpack package ${{ matrix.buildpack }}
+          --config meta/${{ matrix.buildpack }}/package.toml
+          --format file
+          --pull-policy if-not-present
+      - if: ${{ steps.exists.outputs.status == 'publish' }}
+        run: >
+          skopeo login
+          --username ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
+          --password ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
+          r.planetary-quantum.com
+      - if: ${{ steps.exists.outputs.status == 'publish' }}
+        name: "publish meta/${{ matrix.buildpack }}"
+        run: >
+          sudo skopeo copy
+          oci-archive:go.cnb
+          docker://r.planetary-quantum.com/buildpacks/${{ matrix.buildpack }}:${{ steps.version.outputs.value }}
