@@ -29,4 +29,4 @@
   uri = "urn:cnb:registry:paketo-buildpacks/watchexec@3.3.0"
 
 [[dependencies]]
-  uri = "https://github.com/paketo-community/go-generate/releases/download/v0.2.36/go-generate-0.2.36.cnb"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.2.43"
