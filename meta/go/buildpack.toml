@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.12.6-runway1"
+  version = "4.12.6-runway-2"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
