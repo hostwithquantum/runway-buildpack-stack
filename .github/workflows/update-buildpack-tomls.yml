@@ -30,6 +30,7 @@ jobs:
       with:
         buildpack_toml_path: meta/go/buildpack.toml
         package_toml_path: meta/go/package.toml
+        no_cnb_registry: true
 
     - name: Commit
       id: commit
