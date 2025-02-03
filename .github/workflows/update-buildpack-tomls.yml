@@ -40,21 +40,13 @@ jobs:
         pathspec: "."
 
     - name: Push Branch
-      if: ${{ steps.commit.outputs.commit_sha != '' }}
+      if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>'}}
       uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
       with:
         branch: automation/buildpack.toml/update
 
-    - name: Open Pull Request (no semver label)
-      if: ${{ steps.commit.outputs.commit_sha != ''  && steps.update.outputs.semver_bump == '' }}
-      uses: paketo-buildpacks/github-config/actions/pull-request/open@main
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        title: "Updates buildpacks in buildpack.toml"
-        branch: automation/buildpack.toml/update
-
     - name: Open Pull Request
-      if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '' }}
+      if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
