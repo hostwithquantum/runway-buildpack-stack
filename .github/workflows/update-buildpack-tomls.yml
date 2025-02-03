@@ -16,6 +16,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Increase version in buildpack.toml for meta/go
+      run: ./scripts/increase-version.sh ./meta/go/buildpack.toml
+
     - name: Checkout Branch
       uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
       with:
@@ -27,9 +30,6 @@ jobs:
       with:
         buildpack_toml_path: meta/go/buildpack.toml
         package_toml_path: meta/go/package.toml
-
-    - name: Increase version in buildpack.toml for meta/go
-      run: ./scripts/increase-version.sh ./meta/go/buildpack.toml
 
     - name: Commit
       id: commit
