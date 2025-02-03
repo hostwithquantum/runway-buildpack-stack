@@ -1,32 +1,33 @@
+
 [buildpack]
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/ca-certificates:3.8.6"
+  uri = "docker://docker.io/paketobuildpacks/ca-certificates:3.9.0"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/environment-variables:4.7.3"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.8.0"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/git:1.0.27"
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.35"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/go-build:2.2.17"
+  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.23"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/go-dist:2.6.8"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.6.16"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/go-mod-vendor:1.0.44"
+  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.0.51"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/image-labels:4.7.3"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.8.0"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/procfile:5.10.1"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.10.2"
 
 [[dependencies]]
-  uri = "docker://paketobuildpacks/watchexec:3.3.0"
+  uri = "docker://docker.io/paketobuildpacks/watchexec:3.3.1"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.2.43"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.2.44"
