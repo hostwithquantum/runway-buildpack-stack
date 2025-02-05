@@ -9,7 +9,7 @@
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.8.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.0.35"
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.36"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/go-build:2.2.23"
