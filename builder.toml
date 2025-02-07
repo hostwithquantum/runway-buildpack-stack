@@ -17,8 +17,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "18.0.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/nodejs:7.2.0"
-  version = "7.2.0"
+  uri = "docker://gcr.io/paketo-buildpacks/nodejs:7.2.1"
+  version = "7.2.1"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/php:2.19.9"
@@ -29,16 +29,16 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "5.10.2"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/python:2.23.6"
-  version = "2.23.6"
+  uri = "docker://gcr.io/paketo-buildpacks/python:2.23.7"
+  version = "2.23.7"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/ruby:0.47.6"
   version = "0.47.6"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/web-servers:1.1.5"
-  version = "1.1.5"
+  uri = "docker://gcr.io/paketo-buildpacks/web-servers:1.1.6"
+  version = "1.1.6"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.3.1"
@@ -69,7 +69,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/python"
-    version = "2.23.6"
+    version = "2.23.7"
 
 [[order]]
 
@@ -81,7 +81,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "1.1.5"
+    version = "1.1.6"
 
 [[order]]
 
@@ -99,7 +99,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "7.2.0"
+    version = "7.2.1"
 
 [[order]]
 
@@ -114,7 +114,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "0.3.1"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.72"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.73"
   id = "io.buildpacks.stacks.jammy"
   run-image = "r.planetary-quantum.com/runway-public/runway-runimage:jammy-full"
   run-image-mirrors = []
