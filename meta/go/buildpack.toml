@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.12.21"
+  version = "4.12.22"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -20,12 +20,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.9.1"
+    version = "3.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/watchexec"
     optional = true
-    version = "3.4.1"
+    version = "3.5.0"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
@@ -52,29 +52,29 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.10.3"
+    version = "5.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.8.1"
+    version = "4.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.8.1"
+    version = "4.9.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.9.1"
+    version = "3.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/watchexec"
     optional = true
-    version = "3.4.1"
+    version = "3.5.0"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
@@ -97,14 +97,14 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.10.3"
+    version = "5.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.8.1"
+    version = "4.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.8.1"
+    version = "4.9.0"
