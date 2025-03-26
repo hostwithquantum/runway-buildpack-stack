@@ -9,16 +9,16 @@
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.0.42"
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.43"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.28"
+  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.6.22"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.6.23"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.0.56"
+  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.0.57"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.9.0"
