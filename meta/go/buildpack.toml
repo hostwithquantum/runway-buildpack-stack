@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.12.26"
+  version = "4.12.27"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -43,7 +43,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-community/go-generate"
     optional = true
-    version = "0.2.51"
+    version = "0.2.52"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
@@ -88,7 +88,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-community/go-generate"
     optional = true
-    version = "0.2.51"
+    version = "0.2.52"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
