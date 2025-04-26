@@ -9,16 +9,16 @@
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.0.45"
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.47"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.30"
+  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.32"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.1"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.0.58"
+  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.0.60"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.9.0"
@@ -30,4 +30,4 @@
   uri = "docker://docker.io/paketobuildpacks/watchexec:3.5.0"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.0"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.2"
