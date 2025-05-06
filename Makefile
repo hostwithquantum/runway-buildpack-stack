@@ -23,5 +23,5 @@ test-%: FORCE
         --verbose --pull-policy if-not-present
 FORCE:
 
-test-docker test-hugo test-jekyll test-ruby test-README.md.m4:
+test-docker test-jekyll test-ruby test-README.md.m4:
 	@echo "ignored (does not use buildpacks)"
