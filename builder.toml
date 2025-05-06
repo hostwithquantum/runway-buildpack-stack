@@ -92,6 +92,28 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 [[order]]
 
   [[order.group]]
+    id = "paketo-buildpacks/nginx"
+    version = "0.17.24"
+    optional = true
+
+  [[order.group]]
+    id = "static-buildpack"
+    version = "0.1.1"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/httpd"
+    version = "0.7.48"
+    optional = true
+
+  [[order.group]]
+    id = "static-buildpack"
+    version = "0.1.1"
+
+[[order]]
+
+  [[order.group]]
     id = "paketo-buildpacks/web-servers"
     version = "1.4.2"
 
@@ -118,28 +140,6 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     version = "5.11.0"
-
-[[order]]
-
-  [[order.group]]
-    id = "paketo-buildpacks/nginx"
-    version = "0.17.24"
-    optional = true
-
-  [[order.group]]
-    id = "static-buildpack"
-    version = "0.1.1"
-
-[[order]]
-
-  [[order.group]]
-    id = "paketo-buildpacks/httpd"
-    version = "0.7.48"
-    optional = true
-
-  [[order.group]]
-    id = "static-buildpack"
-    version = "0.1.1"
 
 [[order]]
 

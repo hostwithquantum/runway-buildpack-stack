@@ -23,5 +23,11 @@ test-%: FORCE
         --verbose --pull-policy if-not-present
 FORCE:
 
+test-hugo: FORCE # (needs env vars, set by builder in real life)
+	pack build runway-buildpack-test --path "$(EXAMPLES_DIR)/hugo" \
+		--env BP_WEB_SERVER_ROOT=./ --env BP_WEB_SERVER=nginx \
+		--builder builder \
+        --verbose --pull-policy if-not-present
+
 test-docker test-jekyll test-ruby test-README.md.m4:
 	@echo "ignored (does not use buildpacks)"
