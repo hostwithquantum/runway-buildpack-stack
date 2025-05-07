@@ -93,8 +93,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/nginx"
-    version = "0.17.24"
     optional = true
+    version = "0.17.24"
 
   [[order.group]]
     id = "static-buildpack"
@@ -104,8 +104,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/httpd"
-    version = "0.7.48"
     optional = true
+    version = "0.7.48"
 
   [[order.group]]
     id = "static-buildpack"
