@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.12.36"
+  version = "4.12.37"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -25,7 +25,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/watchexec"
     optional = true
-    version = "3.5.0"
+    version = "3.5.1"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
@@ -74,7 +74,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/watchexec"
     optional = true
-    version = "3.5.0"
+    version = "3.5.1"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
