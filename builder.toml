@@ -53,8 +53,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.4.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/static-buildpack:0.1.1"
-  version = "0.1.1"
+  uri = "docker://r.planetary-quantum.com/buildpacks/static-buildpack:0.2.0"
+  version = "0.2.0"
 
 [lifecycle]
   version = "0.20.9"
@@ -98,7 +98,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "static-buildpack"
-    version = "0.1.1"
+    version = "0.2.0"
 
 [[order]]
 
@@ -109,7 +109,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "static-buildpack"
-    version = "0.1.1"
+    version = "0.2.0"
 
 [[order]]
 
