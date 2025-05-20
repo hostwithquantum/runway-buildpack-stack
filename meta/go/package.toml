@@ -27,7 +27,7 @@
   uri = "docker://docker.io/paketobuildpacks/procfile:5.11.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/watchexec:3.5.1"
+  uri = "docker://docker.io/paketobuildpacks/watchexec:3.5.2"
 
 [[dependencies]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.5"
