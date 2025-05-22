@@ -8,7 +8,9 @@ build: build-builder
 	docker build -t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full ./runimage
 
 build-builder: $(META_BUILDPACKS)
-	pack -v builder create builder --config builder.toml --pull-policy if-not-present
+	export ALL_BUILDPACKS=$$(pack builder inspect -o json | jq '.remote_info.buildpacks | reduce .[] as $$item (""; . + $$item.id + "@" + $$item.version + ",") | rtrimstr(",")'); \
+		pack -v builder create builder --target linux/amd64 --flatten "$$ALL_BUILDPACKS" --config builder.toml
+	docker image inspect builder | jq '.[].RootFS.Layers | length'
 
 meta/%/buildpack.cnb: meta/%/*.toml
 	pack -v buildpack package $@ --config meta/$*/package.toml --format file --pull-policy if-not-present
