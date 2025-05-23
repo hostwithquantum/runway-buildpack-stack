@@ -28,3 +28,11 @@ jobs:
     - name: Create Builder Image
       run: |
         make build-builder
+
+    - shell: bash
+      run: |
+        LAYER_COUNT=$(docker image inspect builder | jq '.[].RootFS.Layers | length')
+        if [ "$LAYER_COUNT" -gt "100" ]; then
+          echo "Too many layers: $LAYER_COUNT (limit: 100)"
+          exit 1
+        fi
