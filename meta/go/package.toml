@@ -30,4 +30,4 @@
   uri = "docker://docker.io/paketobuildpacks/watchexec:3.5.2"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.9"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.10"
