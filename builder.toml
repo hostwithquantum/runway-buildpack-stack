@@ -41,8 +41,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "1.4.3"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.30"
-  version = "0.17.30"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.32"
+  version = "0.17.32"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/httpd:0.7.54"
@@ -94,7 +94,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "0.17.30"
+    version = "0.17.32"
 
   [[order.group]]
     id = "static-buildpack"
