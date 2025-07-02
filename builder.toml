@@ -41,12 +41,12 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "1.4.9"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.32"
-  version = "0.17.32"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.33"
+  version = "0.17.33"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.56"
-  version = "0.7.56"
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.57"
+  version = "0.7.57"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.4.0"
@@ -94,7 +94,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "0.17.32"
+    version = "0.17.33"
 
   [[order.group]]
     id = "static-buildpack"
@@ -105,7 +105,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "0.7.56"
+    version = "0.7.57"
 
   [[order.group]]
     id = "static-buildpack"
@@ -148,7 +148,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "0.4.0"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.87"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.88"
   id = "io.buildpacks.stacks.jammy"
   run-image = "r.planetary-quantum.com/runway-public/runway-runimage:jammy-full"
   run-image-mirrors = []
