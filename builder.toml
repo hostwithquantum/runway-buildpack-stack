@@ -1,24 +1,24 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core:2.1.0"
-  version = "2.1.0"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core:3.1.1"
+  version = "3.1.1"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.53"
   version = "4.12.53"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java-native-image:11.13.0"
-  version = "11.13.0"
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:11.14.0"
+  version = "11.14.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java:18.10.0"
-  version = "18.10.0"
+  uri = "docker://docker.io/paketobuildpacks/java:18.11.0"
+  version = "18.11.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:8.1.0"
-  version = "8.1.0"
+  uri = "docker://docker.io/paketobuildpacks/nodejs:9.2.0"
+  version = "9.2.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/php:2.19.9"
@@ -29,24 +29,24 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "5.11.2"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/python:2.27.1"
-  version = "2.27.1"
+  uri = "docker://docker.io/paketobuildpacks/python:2.29.2"
+  version = "2.29.2"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/ruby:0.47.6"
   version = "0.47.6"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:1.4.9"
-  version = "1.4.9"
+  uri = "docker://docker.io/paketobuildpacks/web-servers:2.3.0"
+  version = "2.3.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.32"
-  version = "0.17.32"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.36"
+  version = "0.17.36"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.56"
-  version = "0.7.56"
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.60"
+  version = "0.7.60"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.4.0"
@@ -57,7 +57,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.2.0"
 
 [lifecycle]
-  version = "0.20.11"
+  version = "0.20.12"
 
 [[order]]
 
@@ -69,7 +69,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core"
-    version = "2.1.0"
+    version = "3.1.1"
 
 [[order]]
 
@@ -81,7 +81,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/python"
-    version = "2.27.1"
+    version = "2.29.2"
 
 [[order]]
 
@@ -94,7 +94,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "0.17.32"
+    version = "0.17.36"
 
   [[order.group]]
     id = "static-buildpack"
@@ -105,7 +105,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "0.7.56"
+    version = "0.7.60"
 
   [[order.group]]
     id = "static-buildpack"
@@ -115,25 +115,25 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "1.4.9"
+    version = "2.3.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "11.13.0"
+    version = "11.14.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "18.10.0"
+    version = "18.11.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "8.1.0"
+    version = "9.2.0"
 
 [[order]]
 
@@ -148,7 +148,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "0.4.0"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.87"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.90"
   id = "io.buildpacks.stacks.jammy"
   run-image = "r.planetary-quantum.com/runway-public/runway-runimage:jammy-full"
   run-image-mirrors = []
