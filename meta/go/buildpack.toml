@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.12.54"
+  version = "4.12.55"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -29,25 +29,25 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
-    version = "2.7.7"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.0.56"
+    version = "1.0.60"
 
   [[order.group]]
     id = "paketo-buildpacks/go-mod-vendor"
-    version = "1.0.64"
+    version = "1.0.68"
 
   [[order.group]]
     id = "paketo-community/go-generate"
     optional = true
-    version = "0.3.11"
+    version = "0.3.15"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
-    version = "2.2.36"
+    version = "2.2.39"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -78,21 +78,21 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
-    version = "2.7.7"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.0.56"
+    version = "1.0.60"
 
   [[order.group]]
     id = "paketo-community/go-generate"
     optional = true
-    version = "0.3.11"
+    version = "0.3.15"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
-    version = "2.2.36"
+    version = "2.2.39"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
