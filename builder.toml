@@ -5,8 +5,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "3.1.2"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.56"
-  version = "4.12.56"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.57"
+  version = "4.12.57"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:11.14.0"
@@ -41,12 +41,12 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "2.4.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.37"
-  version = "0.17.37"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.38"
+  version = "0.17.38"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.61"
-  version = "0.7.61"
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.62"
+  version = "0.7.62"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.4.0"
@@ -75,7 +75,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.12.56"
+    version = "4.12.57"
 
 [[order]]
 
@@ -119,7 +119,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "0.17.37"
+    version = "0.17.38"
 
   [[order.group]]
     id = "static-buildpack"
@@ -155,7 +155,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "0.7.61"
+    version = "0.7.62"
 
   [[order.group]]
     id = "static-buildpack"
