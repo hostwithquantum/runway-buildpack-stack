@@ -16,7 +16,7 @@ jobs:
           - go
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: buildpacks/github-actions/setup-pack@main
         with:
           pack-version: 0.35.1
