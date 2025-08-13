@@ -5,8 +5,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "3.1.3"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.58"
-  version = "4.12.58"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.59"
+  version = "4.12.59"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:11.15.0"
@@ -41,12 +41,12 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "2.4.1"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.38"
-  version = "0.17.38"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.18.0"
+  version = "0.18.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.62"
-  version = "0.7.62"
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.63"
+  version = "0.7.63"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.4.0"
@@ -75,7 +75,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.12.58"
+    version = "4.12.59"
 
 [[order]]
 
@@ -119,7 +119,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "0.17.38"
+    version = "0.18.0"
 
   [[order.group]]
     id = "static-buildpack"
@@ -155,7 +155,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "0.7.62"
+    version = "0.7.63"
 
   [[order.group]]
     id = "static-buildpack"
@@ -198,6 +198,6 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "0.4.0"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.95"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.96"
   id = "io.buildpacks.stacks.jammy"
   run-image = "r.planetary-quantum.com/runway-public/runway-runimage:jammy-full"
