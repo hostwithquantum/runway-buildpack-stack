@@ -49,16 +49,18 @@ jobs:
         push: true
         tags: ${{ steps.meta-run.outputs.tags }}
 
+    - name: Create Builder Unflattened
+      run: make build-builder-unflattened
+
     - name: Create Builder Image
-      run: |
-        make build-builder
+      run: make build-builder
 
     - name: Push builder
       env:
         IMG: r.planetary-quantum.com/runway-public/runway-buildpack-stack
       run: |
-        docker tag builder "${IMG}:jammy-full"
-        docker tag builder "${IMG}:jammy-full-${{ steps.event.outputs.tag }}"
+        docker tag runway-builder "${IMG}:jammy-full"
+        docker tag runway-builder "${IMG}:jammy-full-${{ steps.event.outputs.tag }}"
         docker push "${IMG}:jammy-full"
         docker push "${IMG}:jammy-full-${{ steps.event.outputs.tag }}"
 
