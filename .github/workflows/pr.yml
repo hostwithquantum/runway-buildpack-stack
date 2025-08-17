@@ -9,16 +9,13 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
 
-    - name: Checkout
-      uses: actions/checkout@v5
+    - uses: actions/checkout@v5
 
-    - name: Install Global Pack
-      uses: buildpacks/github-actions/setup-pack@main
+    - uses: buildpacks/github-actions/setup-pack@main
       with:
-        pack-version: 0.35.1
+        pack-version: 0.38.2
 
-    - name: Build run-image
-      uses: docker/build-push-action@v6
+    - uses: docker/build-push-action@v6
       with:
         context: runimage
         cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
