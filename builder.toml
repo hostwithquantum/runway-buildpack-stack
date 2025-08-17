@@ -53,6 +53,10 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.4.0"
 
 [[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.62"
+  version = "1.0.62"
+
+[[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/static-buildpack:0.3.0"
   version = "0.3.0"
 
@@ -94,17 +98,17 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.7.13"
+    version = "2.7.15"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.0.60"
+    version = "1.0.62"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.2.1"
+    version = "7.3.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -114,7 +118,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.1.12"
+    version = "2.1.15"
 
   [[order.group]]
     id = "paketo-buildpacks/nginx"
@@ -130,17 +134,17 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.7.13"
+    version = "2.7.15"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.0.60"
+    version = "1.0.62"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.2.1"
+    version = "7.3.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -150,7 +154,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.1.12"
+    version = "2.1.15"
 
   [[order.group]]
     id = "paketo-buildpacks/httpd"
