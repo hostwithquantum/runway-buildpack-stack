@@ -9,29 +9,36 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
 
-    - name: Checkout
-      uses: actions/checkout@v5
+    - uses: actions/checkout@v5
 
-    - name: Install Global Pack
-      uses: buildpacks/github-actions/setup-pack@main
+    - uses: buildpacks/github-actions/setup-pack@main
       with:
-        pack-version: 0.35.1
+        pack-version: 0.38.2
 
-    - name: Build run-image
-      uses: docker/build-push-action@v6
+    - uses: docker/build-push-action@v6
       with:
         context: runimage
         cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
         push: false
         tags: runimage-test
 
-    - name: Create Builder Image
+    - name: Create Builder Unflattened
+      run: make build-builder-unflattened
+
+    - name: Show buildpacks to be flattened
       run: |
-        make build-builder
+        echo "## Buildpacks to be flattened" >> $GITHUB_STEP_SUMMARY
+        pack builder inspect \
+          -o json \
+          builder-unflattened \
+        | jq -r '.local_info.buildpacks[] | "- " + .id + "@" + .version' >> $GITHUB_STEP_SUMMARY
+
+    - name: Create Builder Image (flattened)
+      run: make build-builder
 
     - shell: bash
       run: |
-        LAYER_COUNT=$(docker image inspect builder | jq '.[].RootFS.Layers | length')
+        LAYER_COUNT=$(docker image inspect runway-builder | jq '.[].RootFS.Layers | length')
         if [ "$LAYER_COUNT" -gt "100" ]; then
           echo "Too many layers: $LAYER_COUNT (limit: 100)"
           exit 1

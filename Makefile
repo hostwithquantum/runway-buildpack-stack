@@ -7,10 +7,20 @@ META_BUILDPACKS=$(patsubst %, %buildpack.cnb, $(wildcard meta/*/))
 build: build-builder
 	docker build -t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full ./runimage
 
+# build the builder in its full glory so we can inspect
+build-builder-unflattened: $(META_BUILDPACKS)
+	$(info Build unflattened)
+	pack -v builder create builder-unflattened \
+		--target linux/amd64 \
+		--config builder.toml
+
 build-builder: $(META_BUILDPACKS)
-	export ALL_BUILDPACKS=$$(pack builder inspect -o json r.planetary-quantum.com/runway-public/runway-buildpack-stack:jammy-full | jq '.remote_info.buildpacks | reduce .[] as $$item (""; . + $$item.id + "@" + $$item.version + ",") | rtrimstr(",")'); \
-		pack -v builder create builder --target linux/amd64 --flatten "$$ALL_BUILDPACKS" --config builder.toml
-	docker image inspect builder | jq '.[].RootFS.Layers | length'
+	$(info Build flattened)
+	export ALL_BUILDPACKS=$$(pack builder inspect -o json builder-unflattened | jq '.local_info.buildpacks | reduce .[] as $$item (""; . + $$item.id + "@" + $$item.version + ",") | rtrimstr(",")'); \
+		pack -v builder create runway-builder \
+			--target linux/amd64 \
+			--flatten "$$ALL_BUILDPACKS" \
+			--config builder.toml
 
 meta/%/buildpack.cnb: meta/%/*.toml
 	pack -v buildpack package $@ --config meta/$*/package.toml --format file --pull-policy if-not-present
