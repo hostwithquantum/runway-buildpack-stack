@@ -10,17 +10,18 @@ build: build-builder
 # build the builder in its full glory so we can inspect
 build-builder-unflattened: $(META_BUILDPACKS)
 	$(info Build unflattened)
-	pack -v builder create builder-unflattened \
+	pack builder create builder-unflattened \
 		--target linux/amd64 \
 		--config builder.toml
 
 build-builder: $(META_BUILDPACKS)
 	$(info Build flattened)
 	export ALL_BUILDPACKS=$$(pack builder inspect -o json builder-unflattened | jq '.local_info.buildpacks | reduce .[] as $$item (""; . + $$item.id + "@" + $$item.version + ",") | rtrimstr(",")'); \
-		pack -v builder create runway-builder \
-			--target linux/amd64 \
-			--flatten "$$ALL_BUILDPACKS" \
-			--config builder.toml
+	pack builder create --publish "$(PUBLISH_TAG)" \
+		--target linux/amd64 \
+		--flatten "$$ALL_BUILDPACKS" \
+		--config builder.toml \
+		--verbose
 
 meta/%/buildpack.cnb: meta/%/*.toml
 	pack -v buildpack package $@ --config meta/$*/package.toml --format file --pull-policy if-not-present

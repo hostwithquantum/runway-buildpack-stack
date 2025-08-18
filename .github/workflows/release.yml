@@ -1,14 +1,65 @@
 name: Release
 
 on:
+  pull_request:
   push:
     tags:
       - 'v*'
 
 jobs:
-  push:
-    name: Push
-    runs-on: ubuntu-22.04
+  names:
+    runs-on: ubuntu-latest
+    outputs:
+      runimage-tags: ${{ steps.meta-runimage.outputs.tags }}
+      runimage-labels: ${{ steps.meta-runimage.outputs.labels }}
+      builder-tags: ${{ steps.meta-builder.outputs.tags }}
+      builder-labels: ${{ steps.meta-builder.outputs.labels }}
+    steps:
+    - uses: actions/checkout@v5
+    
+    
+    - id: meta-runimage
+      uses: docker/metadata-action@v5
+      with:
+        images: |
+          r.planetary-quantum.com/runway-public/runway-runimage
+        tags: |
+          type=semver,prefix=jammy-full-,pattern={{version}}
+          type=raw,value=jammy-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
+          type=ref,event=pr,prefix=jammy-full-pr-
+
+    - id: meta-builder
+      uses: docker/metadata-action@v5
+      with:
+        images: |
+          r.planetary-quantum.com/runway-public/runway-buildpack-stack
+        tags: |
+          type=semver,prefix=jammy-full-,pattern={{version}}
+          type=raw,value=jammy-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
+          type=ref,event=pr,prefix=jammy-full-pr-
+
+  runimage:
+    needs: [names]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+    - uses: docker/login-action@v3
+      with:
+        registry: r.planetary-quantum.com
+        username: ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
+        password: ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
+    - uses: docker/setup-buildx-action@v3
+    - uses: docker/build-push-action@v6
+      with:
+        context: runimage
+        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
+        push: true
+        tags: ${{ needs.names.outputs.runimage-tags }}
+        labels: ${{ needs.names.outputs.runimage-labels }}
+
+  builder:
+    needs: [names, runimage]
+    runs-on: ubuntu-latest
     steps:
 
     - uses: actions/checkout@v5
@@ -22,32 +73,6 @@ jobs:
         username: ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
         password: ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
     - uses: docker/setup-buildx-action@v3
-
-    - id: meta-run
-      uses: docker/metadata-action@v5
-      with:
-        images: |
-          r.planetary-quantum.com/runway-public/runway-runimage
-        tags: |
-          type=semver,prefix=jammy-full-,pattern={{version}}
-          type=raw,value=jammy-full
-
-    - id: meta-builder
-      uses: docker/metadata-action@v5
-      with:
-        images: |
-          r.planetary-quantum.com/runway-public/runway-buildpack-stack
-        tags: |
-          type=semver,prefix=jammy-full-,pattern={{version}}
-          type=raw,value=jammy-full
-
-    - uses: docker/build-push-action@v6
-      with:
-        context: runimage
-        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
-        push: true
-        tags: ${{ steps.meta-run.outputs.tags }}
-        labels: ${{ steps.meta-run.outputs.labels }}
 
     - name: Create Builder Unflattened
       run: make build-builder-unflattened
@@ -64,13 +89,35 @@ jobs:
         echo '```' >> $GITHUB_STEP_SUMMARY
 
     - name: Create Builder Image
-      run: make build-builder
-
-    - name: Push builder
       run: |
-        echo "${{ steps.meta-builder.outputs.tags }}" | while read -r tag; do
-          docker tag runway-builder "$tag"
+        PRIMARY_TAG=$(echo "${{ needs.names.outputs.builder-tags }}" | head -n1)
+        make build-builder PUBLISH_TAG="$PRIMARY_TAG"
+
+    - name: Check layer count
+      run: |
+        PRIMARY_TAG=$(echo "${{ needs.names.outputs.builder-tags }}" | head -n1)
+        LAYER_COUNT=$(docker image inspect "$PRIMARY_TAG" | jq '.[].RootFS.Layers | length')
+        if [ "$LAYER_COUNT" -gt "100" ]; then
+          echo "Too many layers: $LAYER_COUNT (limit: 100)"
+          exit 1
+        fi
+        echo "## Layer Count (flattened)" >> $GITHUB_STEP_SUMMARY
+        echo "${LAYER_COUNT} layers" >> $GITHUB_STEP_SUMMARY
+
+    - name: Tag additional tags
+      if: startsWith(github.ref, 'refs/tags/')
+      run: |
+        TAGS="${{ needs.names.outputs.builder-tags }}"
+        PRIMARY_TAG=$(echo "$TAGS" | head -n1)
+        echo "$TAGS" | tail -n+2 | while read -r tag; do
+          docker tag "$PRIMARY_TAG" "$tag"
           docker push "$tag"
         done
 
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [runimage, builder]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
     - uses: softprops/action-gh-release@v2
