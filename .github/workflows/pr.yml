@@ -25,6 +25,22 @@ jobs:
     - name: Create Builder Unflattened
       run: make build-builder-unflattened
 
+    - run: |
+        echo "## Duplicate Analysis" >> $GITHUB_STEP_SUMMARY
+        echo '```' >> $GITHUB_STEP_SUMMARY
+        ./scripts/builder-analyzer --builder-name builder-unflattened duplicates >> $GITHUB_STEP_SUMMARY || echo "No duplicates found" >> $GITHUB_STEP_SUMMARY
+        echo '```' >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## Buildpacks to Flatten" >> $GITHUB_STEP_SUMMARY  
+        echo '```' >> $GITHUB_STEP_SUMMARY
+        ./scripts/builder-analyzer --builder-name builder-unflattened flatten --pretty >> $GITHUB_STEP_SUMMARY
+        echo '```' >> $GITHUB_STEP_SUMMARY
+
+    - run: |
+        LAYER_COUNT=$(docker image inspect builder-unflattened | jq '.[].RootFS.Layers | length')
+        echo "## Layer Count (unflattened)" >> $GITHUB_STEP_SUMMARY
+        echo "${LAYER_COUNT} layers" >> $GITHUB_STEP_SUMMARY
+
     - name: Show buildpacks to be flattened
       run: |
         echo "## Buildpacks to be flattened" >> $GITHUB_STEP_SUMMARY
@@ -43,3 +59,5 @@ jobs:
           echo "Too many layers: $LAYER_COUNT (limit: 100)"
           exit 1
         fi
+        echo "## Layer Count (flattened)" >> $GITHUB_STEP_SUMMARY
+        echo "${LAYER_COUNT} layers" >> $GITHUB_STEP_SUMMARY
