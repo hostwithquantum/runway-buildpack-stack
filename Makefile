@@ -8,13 +8,13 @@ build: build-builder
 	docker build -t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full ./runimage
 
 # build the builder in its full glory so we can inspect
-build-builder-unflattened: $(META_BUILDPACKS)
+build-builder-unflattened:
 	$(info Build unflattened)
 	pack builder create builder-unflattened \
 		--target linux/amd64 \
 		--config builder.toml
 
-build-builder: $(META_BUILDPACKS)
+build-builder:
 	$(info Build flattened)
 	pack builder create --publish "$(PUBLISH_TAG)" \
 		--target linux/amd64 \
