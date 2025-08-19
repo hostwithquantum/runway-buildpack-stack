@@ -1,0 +1,13 @@
+name: workflows
+
+on:
+  pull_request:
+
+jobs:
+  validate-workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: asdf-vm/actions/install@v4
+      - run: |
+          action-validator ./.github/workflows/*
