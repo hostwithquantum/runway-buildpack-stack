@@ -9,47 +9,53 @@ concurrency: buildpack_update
 
 jobs:
   update-buildpack-toml:
+    name: Update ${{ matrix.buildpack }}/buildpack.toml
+    strategy:
+      matrix:
+        buildpack: [go, runway]
     runs-on: ubuntu-22.04
-    name: Update buildpack.toml
     steps:
 
     - name: Checkout
       uses: actions/checkout@v5
 
-    - name: Increase version in buildpack.toml for meta/go
-      run: ./scripts/increase-version.sh ./meta/go/buildpack.toml
+    - id: names
+      run: |
+        LOCAL_PATH=meta/${{ matrix.buildpack }}
+        echo "branch=automation/${{ matrix.buildpack }}/buildpack.toml/update" >> $GITHUB_OUTPUT
+        echo "path=${LOCAL_PATH}" >> $GITHUB_OUTPUT
+        echo "toml=${LOCAL_PATH}/buildpack.toml" >> $GITHUB_OUTPUT
 
-    - name: Checkout Branch
-      uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
+    - name: increase version in buildpack.toml for ${{ steps.names.outputs.path }}
+      run: ./scripts/increase-version.sh ./${{ steps.names.outputs.toml }}
+
+    - uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
       with:
-        branch: automation/buildpack.toml/update
+        branch: ${{ steps.names.outputs.branch }}
 
-    - name: Update buildpack.toml for meta/go
+    - name: Update buildpack.toml for ${{ steps.names.outputs.path }}
       id: update
       uses: paketo-buildpacks/github-config/actions/buildpack/update@main
       with:
-        buildpack_toml_path: meta/go/buildpack.toml
-        package_toml_path: meta/go/package.toml
+        buildpack_toml_path: ${{ steps.names.outputs.toml }}
+        package_toml_path: ${{ steps.names.outputs.path }}/package.toml
         no_cnb_registry: true
 
-    - name: Commit
-      id: commit
+    - id: commit
       uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
       with:
-        message: "Updating buildpacks in buildpack.toml"
+        message: "chore(deps): update buildpacks in ${{ steps.names.outputs.toml }}"
         pathspec: "."
 
-    - name: Push Branch
-      if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>'}}
+    - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>'}}
       uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
       with:
-        branch: automation/buildpack.toml/update
+        branch: ${{ steps.names.outputs.branch }}
 
-    - name: Open Pull Request
-      if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>' }}
+    - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        title: "Updates buildpacks in buildpack.toml"
-        branch: automation/buildpack.toml/update
+        title: "chore(deps): buildpacks in ${{ steps.names.outputs.toml }}"
+        branch: ${{ steps.names.outputs.branch }}
         label: "semver:${{ steps.update.outputs.semver_bump }}"
