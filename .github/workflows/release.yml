@@ -129,8 +129,10 @@ jobs:
           PUBLISH_TAG="${{ steps.tag.outputs.primary }}" \
           ALL_BUILDPACKS="$BUILDPACKS"
 
-    - name: Check layer count
-      run: |
+    - run: |
+        docker pull ${{ steps.tag.outputs.primary }}
+
+    - run: |
         LAYER_COUNT=$(docker image inspect "${{ steps.tag.outputs.primary }}" | jq '.[].RootFS.Layers | length')
         if [ "$LAYER_COUNT" -gt "100" ]; then
           echo "Too many layers: $LAYER_COUNT (limit: 100)"
