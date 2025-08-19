@@ -14,6 +14,7 @@ jobs:
       matrix:
         buildpack:
           - go
+          - runway
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -63,5 +64,5 @@ jobs:
         name: "publish meta/${{ matrix.buildpack }}"
         run: >
           sudo skopeo copy
-          oci-archive:go.cnb
+          oci-archive:${{ matrix.buildpack }}.cnb
           docker://r.planetary-quantum.com/buildpacks/${{ matrix.buildpack }}:${{ steps.version.outputs.value }}

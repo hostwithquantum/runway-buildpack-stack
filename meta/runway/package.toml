@@ -1,0 +1,26 @@
+[buildpack]
+  uri = "./"
+
+[[dependencies]]
+  uri = "docker://r.planetary-quantum.com/runway-buildpacks/static-websites@0.4.0"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/node-engine@7.3.0"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/npm-install@2.1.0"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/node-run-script@2.1.15"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.62"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.15"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/httpd@0.7.63"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:paketo-buildpacks/nginx@0.18.0"
