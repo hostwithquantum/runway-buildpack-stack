@@ -16,10 +16,9 @@ build-builder-unflattened: $(META_BUILDPACKS)
 
 build-builder: $(META_BUILDPACKS)
 	$(info Build flattened)
-	export ALL_BUILDPACKS=$$(pack builder inspect -o json builder-unflattened | jq '.local_info.buildpacks | reduce .[] as $$item (""; . + $$item.id + "@" + $$item.version + ",") | rtrimstr(",")'); \
 	pack builder create --publish "$(PUBLISH_TAG)" \
 		--target linux/amd64 \
-		--flatten "$$ALL_BUILDPACKS" \
+		--flatten "$(ALL_BUILDPACKS)" \
 		--config builder.toml \
 		--verbose
 
