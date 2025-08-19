@@ -1,0 +1,17 @@
+name: meta
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        buildpack: [go, runway]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: buildpacks/github-actions/setup-pack@main
+        with:
+          pack-version: 0.38.2
+      - run: make meta/${{ matrix.buildpack }}/buildpack.cnb
