@@ -2,7 +2,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/runway-buildpacks/static-websites@0.4.0"
+  uri = "docker://r.planetary-quantum.com/buildpacks/static-websites:0.4.0"
 
 [[dependencies]]
   uri = "urn:cnb:registry:paketo-buildpacks/node-engine@7.3.0"
