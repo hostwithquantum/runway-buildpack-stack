@@ -1,0 +1,132 @@
+api = "0.7"
+
+[buildpack]
+  description = "A Cloud Native Buildpack with an order definition suitable for Java applications"
+  homepage = "https://www.runway.horse/docs/recipes/java/"
+  id = "runway-buildpacks/java"
+  keywords = ["java", "composite"]
+  name = "Paketo Buildpack for Java"
+  version = "18.12.0"
+
+  [[buildpack.licenses]]
+    type = "Apache-2.0"
+    uri = "https://github.com/paketo-buildpacks/java/blob/main/LICENSE"
+
+[metadata]
+  include-files = ["README.md", "buildpack.toml"]
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/ca-certificates"
+    optional = true
+    version = "3.10.3"
+
+  [[order.group]]
+    id = "paketo-buildpacks/bellsoft-liberica"
+    version = "11.2.6"
+
+  [[order.group]]
+    id = "paketo-buildpacks/yarn"
+    optional = true
+    version = "2.0.9"
+
+  [[order.group]]
+    id = "paketo-buildpacks/node-engine"
+    optional = true
+    version = "7.2.3"
+
+  [[order.group]]
+    id = "paketo-buildpacks/syft"
+    optional = true
+    version = "2.18.1"
+
+  [[order.group]]
+    id = "paketo-buildpacks/leiningen"
+    optional = true
+    version = "4.12.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/clojure-tools"
+    optional = true
+    version = "2.15.1"
+
+  [[order.group]]
+    id = "paketo-buildpacks/gradle"
+    optional = true
+    version = "7.19.4"
+
+  [[order.group]]
+    id = "paketo-buildpacks/maven"
+    optional = true
+    version = "6.20.4"
+
+  [[order.group]]
+    id = "paketo-buildpacks/sbt"
+    optional = true
+    version = "6.19.5"
+
+  [[order.group]]
+    id = "paketo-buildpacks/executable-jar"
+    optional = true
+    version = "6.13.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/apache-tomcat"
+    optional = true
+    version = "8.6.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/apache-tomee"
+    optional = true
+    version = "1.12.1"
+
+  [[order.group]]
+    id = "paketo-buildpacks/liberty"
+    optional = true
+    version = "5.1.5"
+
+  [[order.group]]
+    id = "paketo-buildpacks/dist-zip"
+    optional = true
+    version = "5.10.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/spring-boot"
+    optional = true
+    version = "5.33.3"
+
+  [[order.group]]
+    id = "paketo-buildpacks/procfile"
+    optional = true
+    version = "5.11.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/jattach"
+    optional = true
+    version = "1.10.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/datadog"
+    optional = true
+    version = "5.37.0"
+
+  [[order.group]]
+    id = "paketo-buildpacks/java-memory-assistant"
+    optional = true
+    version = "1.8.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/encrypt-at-rest"
+    optional = true
+    version = "4.9.5"
+
+  [[order.group]]
+    id = "paketo-buildpacks/environment-variables"
+    optional = true
+    version = "4.9.2"
+
+  [[order.group]]
+    id = "paketo-buildpacks/image-labels"
+    optional = true
+    version = "4.10.1"

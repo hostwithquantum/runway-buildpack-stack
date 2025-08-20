@@ -12,7 +12,7 @@ jobs:
     name: Update ${{ matrix.buildpack }}/buildpack.toml
     strategy:
       matrix:
-        buildpack: [go, nodejs, runway]
+        buildpack: [go, java, java-native-image, nodejs, runway]
     runs-on: ubuntu-latest
     steps:
 
