@@ -1,3 +1,4 @@
+
 [buildpack]
   uri = "./"
 
@@ -5,22 +6,22 @@
   uri = "docker://r.planetary-quantum.com/buildpacks/static-websites:0.4.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.3.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.4.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/npm-install:2.1.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.1.15"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.2.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/git:1.0.62"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.15"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.16"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.63"
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.64"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.18.0"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.18.1"
