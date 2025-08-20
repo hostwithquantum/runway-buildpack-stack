@@ -23,11 +23,6 @@ api = "0.7"
     version = "3.10.3"
 
   [[order.group]]
-    id = "paketo-buildpacks/watchexec"
-    optional = true
-    version = "3.5.3"
-
-  [[order.group]]
     id = "paketo-buildpacks/go-dist"
     version = "2.7.16"
 
@@ -70,11 +65,6 @@ api = "0.7"
     id = "paketo-buildpacks/ca-certificates"
     optional = true
     version = "3.10.3"
-
-  [[order.group]]
-    id = "paketo-buildpacks/watchexec"
-    optional = true
-    version = "3.5.3"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
