@@ -7,14 +7,12 @@ META_BUILDPACKS=$(patsubst %, %buildpack.cnb, $(wildcard meta/*/))
 build: build-builder
 	docker build -t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full ./runimage
 
-# build the builder in its full glory so we can inspect
 build-builder-unflattened:
-	$(info Build builder unflattened)
+	$(info Build builder)
 	pack builder create builder-unflattened \
 		--target linux/amd64 \
 		--config builder.toml
 
-# --flatten "$(ALL_BUILDPACKS)"
 build-builder:
 	$(info Build and publish builder)
 	pack builder create --publish "$(PUBLISH_TAG)" \
