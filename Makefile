@@ -9,16 +9,16 @@ build: build-builder
 
 # build the builder in its full glory so we can inspect
 build-builder-unflattened:
-	$(info Build unflattened)
+	$(info Build builder unflattened)
 	pack builder create builder-unflattened \
 		--target linux/amd64 \
 		--config builder.toml
 
+# --flatten "$(ALL_BUILDPACKS)"
 build-builder:
-	$(info Build flattened)
+	$(info Build and publish builder)
 	pack builder create --publish "$(PUBLISH_TAG)" \
 		--target linux/amd64 \
-		--flatten "$(ALL_BUILDPACKS)" \
 		--config builder.toml \
 		--verbose
 
