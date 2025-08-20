@@ -23,7 +23,7 @@ build-builder:
 		--verbose
 
 meta/%/buildpack.cnb: meta/%/*.toml
-	pack -v buildpack package $@ --config meta/$*/package.toml --format file --pull-policy if-not-present
+	pack -v buildpack package $@ --config meta/$*/package.toml --flatten --format file --pull-policy if-not-present
 
 test: $(patsubst $(EXAMPLES_DIR)/%/, test-%, $(wildcard $(EXAMPLES_DIR)/*/))
 show-tests:
