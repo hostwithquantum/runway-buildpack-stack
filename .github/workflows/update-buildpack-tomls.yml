@@ -12,12 +12,11 @@ jobs:
     name: Update ${{ matrix.buildpack }}/buildpack.toml
     strategy:
       matrix:
-        buildpack: [go, runway]
-    runs-on: ubuntu-22.04
+        buildpack: [go, nodejs, runway]
+    runs-on: ubuntu-latest
     steps:
 
-    - name: Checkout
-      uses: actions/checkout@v5
+    - uses: actions/checkout@v5
 
     - id: names
       run: |
