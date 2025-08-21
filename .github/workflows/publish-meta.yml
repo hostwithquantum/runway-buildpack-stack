@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         buildpack:
+          - dotnet-core
           - go
           - java
           - java-native-image
