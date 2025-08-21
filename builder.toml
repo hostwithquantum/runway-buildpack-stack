@@ -17,7 +17,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "18.12.1"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:9.3.0"
+  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.0"
   version = "9.3.0"
 
 [[buildpacks]]
@@ -108,7 +108,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/nodejs"
+    id = "runway-buildpacks/nodejs"
     version = "9.3.0"
 
 [[order]]
