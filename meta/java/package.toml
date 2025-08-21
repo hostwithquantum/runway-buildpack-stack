@@ -1,3 +1,4 @@
+
 [buildpack]
   uri = "./"
 
@@ -8,19 +9,19 @@
   uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.2.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.0.9"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.1.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.2.3"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.4.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.18.1"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.19.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.12.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.15.1"
+  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.15.2"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/gradle:7.19.4"
@@ -41,7 +42,7 @@
   uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/liberty:5.1.5"
+  uri = "docker://docker.io/paketobuildpacks/liberty:5.1.6"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/dist-zip:5.10.2"
@@ -56,7 +57,7 @@
   uri = "docker://docker.io/paketobuildpacks/jattach:1.10.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:5.37.0"
+  uri = "docker://docker.io/paketobuildpacks/datadog:5.37.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.8.2"
