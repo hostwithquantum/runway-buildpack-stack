@@ -41,8 +41,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "2.6.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/deno-buildpack:0.4.0"
-  version = "0.4.0"
+  uri = "docker://r.planetary-quantum.com/buildpacks/deno:0.5.0"
+  version = "0.5.0"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.2"
@@ -120,8 +120,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 [[order]]
 
   [[order.group]]
-    id = "deno-buildpack"
-    version = "0.4.0"
+    id = "runway-buildpacks/deno"
+    version = "0.5.0"
 
 [stack]
   build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.96"
