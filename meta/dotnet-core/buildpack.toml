@@ -6,7 +6,7 @@ api = "0.8"
   id = "runway-buildpacks/dotnet-core"
   keywords = ["dotnet"]
   name = "Paketo Buildpack for .NET Core"
-  version = "3.1.4"
+  version = "3.1.5"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -20,7 +20,7 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.10.3"
+    version = "3.10.4"
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core-sdk"
@@ -54,14 +54,14 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.2"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.2"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.1"
+    version = "4.10.2"
