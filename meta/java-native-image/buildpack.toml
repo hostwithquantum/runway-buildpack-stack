@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java-native-image"
   keywords = ["java", "composite", "native-image"]
   name = "Paketo Buildpack for Java Native Image"
-  version = "11.15.1"
+  version = "11.15.2"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -20,16 +20,16 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.10.3"
+    version = "3.10.4"
 
   [[order.group]]
     id = "paketo-buildpacks/upx"
     optional = true
-    version = "3.8.2"
+    version = "3.8.3"
 
   [[order.group]]
     id = "paketo-buildpacks/bellsoft-liberica"
-    version = "11.2.6"
+    version = "11.2.7"
 
   [[order.group]]
     id = "paketo-buildpacks/syft"
@@ -39,32 +39,32 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/leiningen"
     optional = true
-    version = "4.12.2"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/gradle"
     optional = true
-    version = "7.19.4"
+    version = "7.19.5"
 
   [[order.group]]
     id = "paketo-buildpacks/maven"
     optional = true
-    version = "6.20.4"
+    version = "6.20.5"
 
   [[order.group]]
     id = "paketo-buildpacks/sbt"
     optional = true
-    version = "6.19.5"
+    version = "6.19.6"
 
   [[order.group]]
     id = "paketo-buildpacks/executable-jar"
     optional = true
-    version = "6.13.2"
+    version = "6.13.3"
 
   [[order.group]]
     id = "paketo-buildpacks/spring-boot"
     optional = true
-    version = "5.33.3"
+    version = "5.33.4"
 
   [[order.group]]
     id = "paketo-buildpacks/datadog"
@@ -73,19 +73,19 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/native-image"
-    version = "5.16.2"
+    version = "5.16.3"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.2"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.2"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.1"
+    version = "4.10.2"
