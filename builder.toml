@@ -1,32 +1,32 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.4"
-  version = "3.1.4"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.5"
+  version = "3.1.5"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.62"
-  version = "4.12.62"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.63"
+  version = "4.12.63"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.1"
-  version = "11.15.1"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.2"
+  version = "11.15.2"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.1"
-  version = "18.12.1"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.2"
+  version = "18.12.2"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.0"
-  version = "9.3.0"
+  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.1"
+  version = "9.3.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/php:2.19.9"
   version = "2.19.9"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.2"
-  version = "5.11.2"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.3"
+  version = "5.11.3"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/python:2.29.6"
@@ -61,13 +61,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.4"
+    version = "3.1.5"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.12.62"
+    version = "4.12.63"
 
 [[order]]
 
@@ -97,25 +97,25 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.1"
+    version = "11.15.2"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.1"
+    version = "18.12.2"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/nodejs"
-    version = "9.3.0"
+    version = "9.3.1"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.11.2"
+    version = "5.11.3"
 
 [[order]]
 
