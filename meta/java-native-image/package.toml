@@ -3,49 +3,49 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/ca-certificates:3.10.3"
+  uri = "docker://docker.io/paketobuildpacks/ca-certificates:3.10.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/upx:3.8.2"
+  uri = "docker://docker.io/paketobuildpacks/upx:3.8.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.2.6"
+  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.2.7"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/syft:2.19.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/leiningen:4.12.2"
+  uri = "docker://docker.io/paketobuildpacks/leiningen:4.12.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:7.19.4"
+  uri = "docker://docker.io/paketobuildpacks/gradle:7.19.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.20.4"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.20.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.19.5"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.19.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.2"
+  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.33.3"
+  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.33.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/datadog:5.37.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/native-image:5.16.2"
+  uri = "docker://docker.io/paketobuildpacks/native-image:5.16.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.2"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.2"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.1"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.2"
 
 [[targets]]
   arch = "amd64"
