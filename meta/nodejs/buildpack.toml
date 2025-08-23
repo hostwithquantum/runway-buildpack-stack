@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/javascript/"
   id = "runway-buildpacks/nodejs"
   name = "Paketo Buildpack for Node.js"
-  version = "9.3.0"
+  version = "9.3.1"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -18,7 +18,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.10.3"
+    version = "3.10.4"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -50,24 +50,24 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.2"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.2"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.1"
+    version = "4.10.2"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.10.3"
+    version = "3.10.4"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -95,24 +95,24 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.2"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.2"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.1"
+    version = "4.10.2"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/ca-certificates"
     optional = true
-    version = "3.10.3"
+    version = "3.10.4"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -125,14 +125,14 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.2"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.2"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.1"
+    version = "4.10.2"
