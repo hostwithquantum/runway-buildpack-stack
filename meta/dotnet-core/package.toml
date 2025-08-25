@@ -28,6 +28,3 @@
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.2"
-
-[[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/ca-certificates:3.10.4"

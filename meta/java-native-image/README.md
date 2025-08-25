@@ -7,3 +7,7 @@ r.planetary-quantum.com/buildpacks/java-native-image
 Contains:
 
 - paketo-buildpacks/java-native-image
+
+Does not contain:
+
+- paketo-buildpacks/ca-certificates

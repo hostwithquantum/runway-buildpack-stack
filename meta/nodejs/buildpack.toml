@@ -16,11 +16,6 @@ api = "0.7"
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
-    optional = true
-    version = "3.10.4"
-
-  [[order.group]]
     id = "paketo-buildpacks/node-engine"
     version = "7.4.0"
 
@@ -65,11 +60,6 @@ api = "0.7"
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
-    optional = true
-    version = "3.10.4"
-
-  [[order.group]]
     id = "paketo-buildpacks/node-engine"
     version = "7.4.0"
 
@@ -108,11 +98,6 @@ api = "0.7"
     version = "4.10.2"
 
 [[order]]
-
-  [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
-    optional = true
-    version = "3.10.4"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"

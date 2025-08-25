@@ -11,5 +11,6 @@ Contains:
 Does not contain:
 
 - paketobuildpacks/azure-application-insights
+- paketo-buildpacks/ca-certificates
 - paketo-buildpacks/google-stackdriver
 - paketo-buildpacks/watchexec
