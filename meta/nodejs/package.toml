@@ -33,7 +33,4 @@
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/ca-certificates:3.10.4"
-
-[[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/node-run-script:2.2.0"

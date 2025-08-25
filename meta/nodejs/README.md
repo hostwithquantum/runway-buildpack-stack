@@ -10,4 +10,5 @@ Contains:
 
  Does not contain:
 
+- paketo-buildpacks/ca-certificates
  - paketo-community/watchexec

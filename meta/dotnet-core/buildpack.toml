@@ -18,11 +18,6 @@ api = "0.8"
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
-    optional = true
-    version = "3.10.4"
-
-  [[order.group]]
     id = "paketo-buildpacks/dotnet-core-sdk"
     optional = true
     version = "1.0.21"
