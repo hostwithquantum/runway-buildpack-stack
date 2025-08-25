@@ -1,0 +1,71 @@
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/ruby"
+    version = "0.47.9"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/dotnet-core"
+    version = "3.1.6"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/go"
+    version = "4.12.64"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/python"
+    version = "2.29.6"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/php"
+    version = "2.19.9"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/runway"
+    version = "0.1.2"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/web-servers"
+    version = "2.6.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/java-native-image"
+    version = "11.15.3"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/java"
+    version = "18.12.3"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/nodejs"
+    version = "9.3.2"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/procfile"
+    version = "5.11.3"
+
+[[order]]
+
+  [[order.group]]
+    id = "runway-buildpacks/deno"
+    version = "0.5.0"

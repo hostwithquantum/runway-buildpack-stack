@@ -1,0 +1,2 @@
+[run-image]
+  image = "r.planetary-quantum.com/runway-public/runway-runimage:jammy-full"
