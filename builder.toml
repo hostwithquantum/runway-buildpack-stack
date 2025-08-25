@@ -1,24 +1,24 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.5"
-  version = "3.1.5"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.6"
+  version = "3.1.6"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.63"
-  version = "4.12.63"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.12.64"
+  version = "4.12.64"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.2"
-  version = "11.15.2"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.3"
+  version = "11.15.3"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.2"
-  version = "18.12.2"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.3"
+  version = "18.12.3"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.1"
-  version = "9.3.1"
+  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.2"
+  version = "9.3.2"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/php:2.19.9"
@@ -61,13 +61,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.5"
+    version = "3.1.6"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.12.63"
+    version = "4.12.64"
 
 [[order]]
 
@@ -97,19 +97,19 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.2"
+    version = "11.15.3"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.2"
+    version = "18.12.3"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/nodejs"
-    version = "9.3.1"
+    version = "9.3.2"
 
 [[order]]
 
