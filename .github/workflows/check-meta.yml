@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        buildpack: [dotnet-core, go, java, java-native-image, nodejs, runway]
+        buildpack: [dotnet-core, go, java, java-native-image, nodejs, ruby, runway]
     steps:
       - uses: actions/checkout@v5
       - uses: buildpacks/github-actions/setup-pack@main

@@ -18,6 +18,7 @@ jobs:
           - java
           - java-native-image
           - nodejs
+          - ruby
           - runway
     runs-on: ubuntu-latest
     steps:
