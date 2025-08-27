@@ -12,13 +12,13 @@
   uri = "docker://docker.io/paketobuildpacks/node-engine:7.4.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.19.0"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.20.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.12.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.15.3"
+  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.15.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/gradle:7.19.5"
@@ -33,10 +33,10 @@
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.6.3"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.6.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.13.0"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.13.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/liberty:5.1.6"
