@@ -1,0 +1,45 @@
+
+[buildpack]
+  uri = "./"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.37"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.17.15"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/composer:0.7.15"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/composer-install:0.3.28"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-dist:2.3.25"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-httpd:0.3.41"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-nginx:0.3.27"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-fpm:0.2.43"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-start:0.4.43"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-redis-session-handler:0.2.41"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/php-memcached-session-handler:0.2.32"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.10.1"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.7.3"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.7.3"
