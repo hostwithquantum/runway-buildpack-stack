@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/php"
   id = "runway-buildpacks/php"
   name = "Paketo Buildpack for PHP"
-  version = "2.19.9"
+  version = "2.19.10"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -17,12 +17,12 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/php-dist"
-    version = "2.3.25"
+    version = "2.3.39"
 
   [[order.group]]
     id = "paketo-buildpacks/composer"
     optional = true
-    version = "0.7.15"
+    version = "0.7.16"
 
   [[order.group]]
     id = "paketo-buildpacks/composer-install"
@@ -31,15 +31,15 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/httpd"
-    version = "0.7.37"
+    version = "0.7.65"
 
   [[order.group]]
     id = "paketo-buildpacks/php-fpm"
-    version = "0.2.43"
+    version = "0.2.46"
 
   [[order.group]]
     id = "paketo-buildpacks/php-httpd"
-    version = "0.3.41"
+    version = "0.3.44"
 
   [[order.group]]
     id = "paketo-buildpacks/php-memcached-session-handler"
@@ -53,33 +53,33 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/php-start"
-    version = "0.4.43"
+    version = "0.4.46"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.10.1"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.7.3"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.7.3"
+    version = "4.10.2"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/php-dist"
-    version = "2.3.25"
+    version = "2.3.39"
 
   [[order.group]]
     id = "paketo-buildpacks/composer"
     optional = true
-    version = "0.7.15"
+    version = "0.7.16"
 
   [[order.group]]
     id = "paketo-buildpacks/composer-install"
@@ -88,15 +88,15 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/nginx"
-    version = "0.17.15"
+    version = "0.18.2"
 
   [[order.group]]
     id = "paketo-buildpacks/php-fpm"
-    version = "0.2.43"
+    version = "0.2.46"
 
   [[order.group]]
     id = "paketo-buildpacks/php-nginx"
-    version = "0.3.27"
+    version = "0.3.29"
 
   [[order.group]]
     id = "paketo-buildpacks/php-memcached-session-handler"
@@ -110,19 +110,19 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/php-start"
-    version = "0.4.43"
+    version = "0.4.46"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.10.1"
+    version = "5.11.3"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.7.3"
+    version = "4.9.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.7.3"
+    version = "4.10.2"
