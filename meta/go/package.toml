@@ -6,13 +6,13 @@
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.0.62"
+  uri = "docker://docker.io/paketobuildpacks/git:1.0.63"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.42"
+  uri = "docker://docker.io/paketobuildpacks/go-build:2.2.43"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.16"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.17"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.0.71"
