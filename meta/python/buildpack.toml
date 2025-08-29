@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Paketo Buildpack for Python"
-  version = "2.30.0"
+  version = "2.30.1"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -24,15 +24,15 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/pipenv"
-    version = "1.21.7"
+    version = "1.22.0"
 
   [[order.group]]
     id = "paketo-buildpacks/pipenv-install"
-    version = "0.6.25"
+    version = "0.7.0"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.14.20"
+    version = "0.15.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -65,7 +65,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.14.20"
+    version = "0.15.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -86,7 +86,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/miniconda"
-    version = "0.10.5"
+    version = "0.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/conda-env-update"
@@ -94,7 +94,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.14.20"
+    version = "0.15.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -123,15 +123,15 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry"
-    version = "0.10.1"
+    version = "0.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-install"
-    version = "0.5.3"
+    version = "0.6.0"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-run"
-    version = "0.4.37"
+    version = "0.5.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -160,15 +160,15 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry"
-    version = "0.10.1"
+    version = "0.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-install"
-    version = "0.5.3"
+    version = "0.6.0"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.14.20"
+    version = "0.15.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -193,7 +193,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.14.20"
+    version = "0.15.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
