@@ -1,0 +1,45 @@
+
+[buildpack]
+  uri = "./"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/cpython:1.17.0"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/pip:0.23.0"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/pipenv:1.21.7"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/pipenv-install:0.6.25"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/pip-install:0.6.6"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/python-start:0.14.20"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/miniconda:0.10.5"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/conda-env-update:0.7.14"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/poetry:0.10.1"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/poetry-install:0.5.3"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/poetry-run:0.4.37"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.3"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.3"
+
+[[dependencies]]
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.2"
