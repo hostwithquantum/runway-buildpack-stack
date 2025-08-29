@@ -16,5 +16,12 @@ jobs:
       issues: write
       contents: read
     steps:
+      - id: generate-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.RUNWAY_CI_BOT_APP_ID }}
+          private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
       - name: Notify release
         uses: nearform-actions/github-action-notify-release@v1
+        with:
+          github-token: ${{ steps.generate-token.outputs.token }}

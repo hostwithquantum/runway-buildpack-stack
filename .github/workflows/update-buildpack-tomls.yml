@@ -15,8 +15,14 @@ jobs:
         buildpack: [dotnet-core, go, java, java-native-image, nodejs, php, ruby, runway]
     runs-on: ubuntu-latest
     steps:
-
+    - id: generate-token
+      uses: actions/create-github-app-token@v2
+      with:
+        app-id: ${{ secrets.RUNWAY_CI_BOT_APP_ID }}
+        private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
     - uses: actions/checkout@v5
+      with:
+        token: ${{ steps.generate-token.outputs.token }}
 
     - id: names
       run: |
@@ -43,7 +49,7 @@ jobs:
     - id: commit
       uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
       with:
-        message: "chore(deps): update buildpacks in ${{ steps.names.outputs.toml }}"
+        message: "update(${{ matrix.buildpack }}): update dependencies in ${{ steps.names.outputs.toml }}"
         pathspec: "."
 
     - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>'}}
@@ -54,7 +60,7 @@ jobs:
     - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ steps.generate-token.outputs.token }}
         title: "chore(deps): buildpacks in ${{ steps.names.outputs.toml }}"
         branch: ${{ steps.names.outputs.branch }}
         label: "semver:${{ steps.update.outputs.semver_bump }}"
