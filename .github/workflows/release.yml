@@ -159,5 +159,14 @@ jobs:
     needs: [runimage, builder]
     runs-on: ubuntu-latest
     steps:
+    - id: generate-token
+      uses: actions/create-github-app-token@v2
+      with:
+        app-id: ${{ secrets.RUNWAY_CI_BOT_APP_ID }}
+        private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
     - uses: actions/checkout@v5
+      with:
+        token: ${{ steps.generate-token.outputs.token }}
     - uses: softprops/action-gh-release@v2
+      with:
+        token: ${{ steps.generate-token.outputs.token }}

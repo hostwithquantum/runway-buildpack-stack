@@ -12,8 +12,15 @@ jobs:
     name: Update builder.toml
     runs-on: ubuntu-22.04
     steps:
+    - id: generate-token
+      uses: actions/create-github-app-token@v2
+      with:
+        app-id: ${{ secrets.RUNWAY_CI_BOT_APP_ID }}
+        private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
     - name: Check out
       uses: actions/checkout@v5
+      with:
+        token: ${{ steps.generate-token.outputs.token }}
 
     - name: Checkout branch
       uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
@@ -47,6 +54,6 @@ jobs:
       if: ${{ steps.commit.outputs.commit_sha != '' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ steps.generate-token.outputs.token }}
         title: "Updating builder.toml"
         branch: "automation/builder-toml"
