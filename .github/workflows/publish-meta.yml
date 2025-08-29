@@ -19,6 +19,7 @@ jobs:
           - java-native-image
           - nodejs
           - php
+          - python
           - ruby
           - runway
     runs-on: ubuntu-latest
