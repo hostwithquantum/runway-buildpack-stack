@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Paketo Buildpack for Python"
-  version = "2.30.1"
+  version = "2.30.2"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -16,7 +16,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.17.0"
+    version = "1.17.1"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
@@ -53,7 +53,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.17.0"
+    version = "1.17.1"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
@@ -115,7 +115,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.17.0"
+    version = "1.17.1"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
@@ -152,7 +152,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.17.0"
+    version = "1.17.1"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
@@ -189,7 +189,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.17.0"
+    version = "1.17.1"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"

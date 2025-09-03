@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/cpython:1.17.0"
+  uri = "docker://docker.io/paketobuildpacks/cpython:1.17.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/pip:0.23.0"
