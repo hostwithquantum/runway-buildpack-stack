@@ -13,8 +13,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "11.15.5"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.7"
-  version = "18.12.7"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.8"
+  version = "18.12.8"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.4"
@@ -103,7 +103,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.7"
+    version = "18.12.8"
 
 [[order]]
 
