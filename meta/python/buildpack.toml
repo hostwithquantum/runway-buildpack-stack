@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Paketo Buildpack for Python"
-  version = "2.30.3"
+  version = "2.30.4"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -61,7 +61,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/pip-install"
-    version = "0.6.6"
+    version = "0.7.0"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"

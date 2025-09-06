@@ -15,7 +15,7 @@
   uri = "docker://docker.io/paketobuildpacks/pipenv-install:0.7.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/pip-install:0.6.6"
+  uri = "docker://docker.io/paketobuildpacks/pip-install:0.7.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/python-start:0.15.0"
