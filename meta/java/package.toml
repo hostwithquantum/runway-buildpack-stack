@@ -27,16 +27,16 @@
   uri = "docker://docker.io/paketobuildpacks/maven:6.20.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.19.7"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.19.8"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.6.4"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.7.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.13.1"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.14.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/liberty:5.1.6"
