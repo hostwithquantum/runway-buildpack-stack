@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/javascript/"
   id = "runway-buildpacks/nodejs"
   name = "Paketo Buildpack for Node.js"
-  version = "9.3.4"
+  version = "9.3.5"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -17,30 +17,30 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.5.0"
+    version = "7.5.1"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
-    version = "2.1.2"
+    version = "2.1.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
-    version = "2.5.0"
+    version = "2.5.1"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.2.2"
+    version = "2.2.3"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
     optional = true
-    version = "2.4.2"
+    version = "2.4.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-start"
     optional = true
-    version = "2.3.2"
+    version = "2.3.3"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -61,7 +61,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.5.0"
+    version = "7.5.1"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -70,17 +70,17 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.2.2"
+    version = "2.2.3"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
     optional = true
-    version = "2.4.2"
+    version = "2.4.3"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-start"
     optional = true
-    version = "2.2.2"
+    version = "2.2.3"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -101,11 +101,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.5.0"
+    version = "7.5.1"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
-    version = "2.4.2"
+    version = "2.4.3"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
