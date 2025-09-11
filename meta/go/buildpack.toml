@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.13.4"
+  version = "4.13.5"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -29,7 +29,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.5.1"
+    version = "7.6.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -39,7 +39,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.2.3"
+    version = "2.3.0"
 
   [[order.group]]
     id = "paketo-buildpacks/go-mod-vendor"
@@ -83,7 +83,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.5.1"
+    version = "7.6.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -93,7 +93,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.2.3"
+    version = "2.3.0"
 
   [[order.group]]
     id = "paketo-community/go-generate"
