@@ -6,13 +6,13 @@
   uri = "docker://r.planetary-quantum.com/buildpacks/static-websites:0.4.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.5.1"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.6.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/npm-install:2.1.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.2.3"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/git:1.0.65"
