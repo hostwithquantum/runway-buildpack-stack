@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Paketo Buildpack for Ruby"
-  version = "0.47.13"
+  version = "0.47.14"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -37,7 +37,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.1.3"
+    version = "2.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -90,7 +90,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.1.3"
+    version = "2.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -143,7 +143,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.1.3"
+    version = "2.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -196,7 +196,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.1.3"
+    version = "2.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -249,7 +249,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.1.3"
+    version = "2.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
