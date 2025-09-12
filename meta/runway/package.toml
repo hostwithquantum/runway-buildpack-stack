@@ -15,7 +15,7 @@
   uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.0.65"
+  uri = "docker://docker.io/paketobuildpacks/git:1.1.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/go-dist:2.7.19"
