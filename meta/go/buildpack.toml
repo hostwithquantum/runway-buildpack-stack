@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Runway version of the Paketo Buildpack for Go"
-  version = "4.13.5"
+  version = "4.13.6"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -24,7 +24,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.0.65"
+    version = "1.1.0"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -78,7 +78,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.0.65"
+    version = "1.1.0"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
