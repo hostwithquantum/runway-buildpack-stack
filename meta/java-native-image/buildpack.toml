@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java-native-image"
   keywords = ["java", "composite", "native-image"]
   name = "Paketo Buildpack for Java Native Image"
-  version = "11.15.7"
+  version = "11.15.8"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -34,7 +34,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/leiningen"
     optional = true
-    version = "4.12.3"
+    version = "4.13.0"
 
   [[order.group]]
     id = "paketo-buildpacks/gradle"
