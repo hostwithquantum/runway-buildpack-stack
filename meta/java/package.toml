@@ -15,7 +15,7 @@
   uri = "docker://docker.io/paketobuildpacks/syft:2.20.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/leiningen:4.12.3"
+  uri = "docker://docker.io/paketobuildpacks/leiningen:4.13.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.15.4"
@@ -33,7 +33,7 @@
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.7.0"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.7.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.14.0"
