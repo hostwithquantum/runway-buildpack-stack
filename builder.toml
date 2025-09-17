@@ -1,40 +1,40 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.10"
-  version = "3.1.10"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.11"
+  version = "3.1.11"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.7"
-  version = "4.13.7"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.8"
+  version = "4.13.8"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.8"
-  version = "11.15.8"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.9"
+  version = "11.15.9"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.13"
-  version = "18.12.13"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.14"
+  version = "18.12.14"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.7"
-  version = "9.3.7"
+  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.8"
+  version = "9.3.8"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.12"
-  version = "2.19.12"
+  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.13"
+  version = "2.19.13"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.11.3"
   version = "5.11.3"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/python:2.30.7"
-  version = "2.30.7"
+  uri = "docker://r.planetary-quantum.com/buildpacks/python:2.30.8"
+  version = "2.30.8"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.14"
-  version = "0.47.14"
+  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.15"
+  version = "0.47.15"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/web-servers:2.8.0"
@@ -45,8 +45,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.5.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.7"
-  version = "0.1.7"
+  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.8"
+  version = "0.1.8"
 
 [lifecycle]
   version = "0.20.14"
@@ -55,37 +55,37 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/ruby"
-    version = "0.47.14"
+    version = "0.47.15"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.10"
+    version = "3.1.11"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.13.7"
+    version = "4.13.8"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/python"
-    version = "2.30.7"
+    version = "2.30.8"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/php"
-    version = "2.19.12"
+    version = "2.19.13"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/runway"
-    version = "0.1.7"
+    version = "0.1.8"
 
 [[order]]
 
@@ -97,19 +97,19 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.8"
+    version = "11.15.9"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.13"
+    version = "18.12.14"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/nodejs"
-    version = "9.3.7"
+    version = "9.3.8"
 
 [[order]]
 
