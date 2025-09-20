@@ -6,7 +6,7 @@
   uri = "docker://docker.io/paketobuildpacks/upx:3.8.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.2.7"
+  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.3.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/syft:2.21.0"
@@ -15,7 +15,7 @@
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.13.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:7.19.5"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.0.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/maven:6.20.5"
