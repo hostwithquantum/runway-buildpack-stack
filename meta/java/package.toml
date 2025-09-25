@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.3.0"
+  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.4.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/yarn:2.2.2"
