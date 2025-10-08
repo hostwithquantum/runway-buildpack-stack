@@ -3,10 +3,10 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.70"
+  uri = "docker://docker.io/paketobuildpacks/httpd:0.7.71"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:0.18.7"
+  uri = "docker://docker.io/paketobuildpacks/nginx:0.18.8"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/composer:0.7.16"
