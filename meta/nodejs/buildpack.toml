@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/javascript/"
   id = "runway-buildpacks/nodejs"
   name = "Paketo Buildpack for Node.js"
-  version = "9.3.11"
+  version = "9.3.12"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -17,7 +17,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.7.1"
+    version = "7.8.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
@@ -61,7 +61,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.7.1"
+    version = "7.8.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -101,7 +101,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.7.1"
+    version = "7.8.0"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
