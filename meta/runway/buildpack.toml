@@ -3,7 +3,7 @@ api = "0.7"
 [buildpack]
   id = "runway-buildpacks/runway"
   name = "Composite buildpack to include our own buildpacks"
-  version = "0.1.15"
+  version = "0.1.16"
 
 [[order]]
 
@@ -20,7 +20,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -56,7 +56,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
