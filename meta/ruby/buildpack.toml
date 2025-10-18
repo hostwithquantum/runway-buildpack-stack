@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Paketo Buildpack for Ruby"
-  version = "0.47.20"
+  version = "0.47.21"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -32,7 +32,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
@@ -85,7 +85,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
@@ -138,7 +138,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
@@ -191,7 +191,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
@@ -244,7 +244,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.8.1"
+    version = "7.9.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
