@@ -21,7 +21,7 @@
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.8.1"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.9.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.5"
