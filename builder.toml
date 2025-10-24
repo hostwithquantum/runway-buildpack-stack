@@ -1,20 +1,20 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.18"
-  version = "3.1.18"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.19"
+  version = "3.1.19"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.22"
   version = "4.13.22"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.16"
-  version = "11.15.16"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.17"
+  version = "11.15.17"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.29"
-  version = "18.12.29"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.30"
+  version = "18.12.30"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.15"
@@ -33,12 +33,12 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "2.30.14"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.22"
-  version = "0.47.22"
+  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.23"
+  version = "0.47.23"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:2.10.2"
-  version = "2.10.2"
+  uri = "docker://docker.io/paketobuildpacks/web-servers:2.11.0"
+  version = "2.11.0"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno:0.5.0"
@@ -55,13 +55,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/ruby"
-    version = "0.47.22"
+    version = "0.47.23"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.18"
+    version = "3.1.19"
 
 [[order]]
 
@@ -91,19 +91,19 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "2.10.2"
+    version = "2.11.0"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.16"
+    version = "11.15.17"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.29"
+    version = "18.12.30"
 
 [[order]]
 
