@@ -6,7 +6,7 @@
   uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.0.17"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.0.24"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.1.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/dotnet-core-sdk:1.0.22"
