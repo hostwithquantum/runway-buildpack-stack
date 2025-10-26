@@ -1,8 +1,8 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.19"
-  version = "3.1.19"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.20"
+  version = "3.1.20"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.22"
@@ -61,7 +61,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.19"
+    version = "3.1.20"
 
 [[order]]
 
