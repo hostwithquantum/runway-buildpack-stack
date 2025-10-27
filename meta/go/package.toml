@@ -27,10 +27,10 @@
   uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-install:2.1.0"
+  uri = "docker://docker.io/paketobuildpacks/npm-install:2.2.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.11.3"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.26"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.27"
