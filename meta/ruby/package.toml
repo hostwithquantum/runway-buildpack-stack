@@ -15,7 +15,7 @@
   uri = "docker://docker.io/paketobuildpacks/mri:0.19.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.10.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.10.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/passenger:0.14.14"
@@ -42,10 +42,10 @@
   uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.59"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.6.6"
+  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.6.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.6"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.7"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.3"
