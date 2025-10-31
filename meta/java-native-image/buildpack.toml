@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java-native-image"
   keywords = ["java", "composite", "native-image"]
   name = "Paketo Buildpack for Java Native Image"
-  version = "11.15.17"
+  version = "11.15.18"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -39,7 +39,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/gradle"
     optional = true
-    version = "8.0.0"
+    version = "8.1.0"
 
   [[order.group]]
     id = "paketo-buildpacks/maven"
