@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Paketo Buildpack for Java"
-  version = "18.12.31"
+  version = "18.12.32"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -49,7 +49,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/gradle"
     optional = true
-    version = "8.0.0"
+    version = "8.1.0"
 
   [[order.group]]
     id = "paketo-buildpacks/maven"
