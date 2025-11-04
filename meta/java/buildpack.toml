@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Paketo Buildpack for Java"
-  version = "18.12.32"
+  version = "18.12.33"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,7 +19,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bellsoft-liberica"
-    version = "11.4.1"
+    version = "11.4.2"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
