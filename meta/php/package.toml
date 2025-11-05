@@ -6,7 +6,7 @@
   uri = "docker://docker.io/paketobuildpacks/httpd:0.7.72"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.1"
+  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.2"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/composer:0.7.16"
