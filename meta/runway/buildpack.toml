@@ -3,39 +3,39 @@ api = "0.7"
 [buildpack]
   id = "runway-buildpacks/runway"
   name = "Composite buildpack to include our own buildpacks"
-  version = "0.1.19"
+  version = "0.1.20"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.9.4"
+    version = "2.9.5"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.1.6"
+    version = "1.1.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.10.1"
+    version = "7.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
     optional = true
-    version = "2.2.1"
+    version = "2.2.2"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.7"
+    version = "2.3.8"
 
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "1.0.1"
+    version = "1.0.2"
 
   [[order.group]]
     id = "runway-buildpacks/static-websites"
@@ -46,27 +46,27 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.9.4"
+    version = "2.9.5"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
     optional = true
-    version = "1.1.6"
+    version = "1.1.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.10.1"
+    version = "7.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
     optional = true
-    version = "2.2.1"
+    version = "2.2.2"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.7"
+    version = "2.3.8"
 
   [[order.group]]
     id = "paketo-buildpacks/httpd"
