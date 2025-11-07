@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/upx:3.8.3"
+  uri = "docker://docker.io/paketobuildpacks/upx:3.8.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.4.2"
@@ -12,37 +12,37 @@
   uri = "docker://docker.io/paketobuildpacks/syft:2.24.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/leiningen:4.13.0"
+  uri = "docker://docker.io/paketobuildpacks/leiningen:4.13.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:8.1.0"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.1.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.20.6"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.20.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.19.9"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.19.10"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.3"
+  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.13.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.33.4"
+  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.33.5"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/datadog:6.1.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/native-image:5.16.4"
+  uri = "docker://docker.io/paketobuildpacks/native-image:5.16.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.3"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.3"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.2"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.3"
 
 [[targets]]
   arch = "amd64"
