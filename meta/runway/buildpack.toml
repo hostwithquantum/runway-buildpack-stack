@@ -3,14 +3,14 @@ api = "0.7"
 [buildpack]
   id = "runway-buildpacks/runway"
   name = "Composite buildpack to include our own buildpacks"
-  version = "0.1.20"
+  version = "0.1.21"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.9.5"
+    version = "2.9.6"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
@@ -46,7 +46,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.9.5"
+    version = "2.9.6"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
