@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/php"
   id = "runway-buildpacks/php"
   name = "Paketo Buildpack for PHP"
-  version = "2.19.19"
+  version = "2.19.20"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -58,17 +58,17 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.3"
+    version = "5.11.4"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.3"
+    version = "4.9.4"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.2"
+    version = "4.10.3"
 
 [[order]]
 
@@ -115,14 +115,14 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.3"
+    version = "5.11.4"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.3"
+    version = "4.9.4"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.2"
+    version = "4.10.3"
