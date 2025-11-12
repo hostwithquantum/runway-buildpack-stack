@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Paketo Buildpack for Java"
-  version = "18.12.36"
+  version = "18.12.37"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -24,12 +24,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.8"
+    version = "2.2.9"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "7.11.0"
+    version = "7.11.1"
 
   [[order.group]]
     id = "paketo-buildpacks/syft"
@@ -69,7 +69,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/apache-tomcat"
     optional = true
-    version = "8.7.5"
+    version = "8.7.6"
 
   [[order.group]]
     id = "paketo-buildpacks/apache-tomee"
