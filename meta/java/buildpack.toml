@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Paketo Buildpack for Java"
-  version = "18.12.37"
+  version = "18.12.38"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -114,7 +114,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/encrypt-at-rest"
     optional = true
-    version = "4.9.9"
+    version = "4.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
