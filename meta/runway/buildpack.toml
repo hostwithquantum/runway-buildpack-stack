@@ -3,7 +3,7 @@ api = "0.7"
 [buildpack]
   id = "runway-buildpacks/runway"
   name = "Composite buildpack to include our own buildpacks"
-  version = "0.1.22"
+  version = "0.1.23"
 
 [[order]]
 
@@ -71,7 +71,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "0.7.72"
+    version = "1.0.0"
 
   [[order.group]]
     id = "runway-buildpacks/static-websites"
