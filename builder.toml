@@ -21,8 +21,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "9.3.20"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.21"
-  version = "2.19.21"
+  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.22"
+  version = "2.19.22"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.11.4"
@@ -37,16 +37,16 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.47.27"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:3.0.0"
-  version = "3.0.0"
+  uri = "docker://docker.io/paketobuildpacks/web-servers:3.0.1"
+  version = "3.0.1"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno:0.5.0"
   version = "0.5.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.22"
-  version = "0.1.22"
+  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.23"
+  version = "0.1.23"
 
 [lifecycle]
   version = "0.20.18"
@@ -79,19 +79,19 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/php"
-    version = "2.19.21"
+    version = "2.19.22"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/runway"
-    version = "0.1.22"
+    version = "0.1.23"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "3.0.0"
+    version = "3.0.1"
 
 [[order]]
 
