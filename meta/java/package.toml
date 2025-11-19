@@ -6,13 +6,13 @@
   uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.4.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.9"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.10"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.11.1"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.12.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.24.0"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.25.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.13.1"
@@ -21,7 +21,7 @@
   uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.15.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:8.1.1"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.1.2"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/maven:6.20.8"
