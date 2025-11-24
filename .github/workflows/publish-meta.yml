@@ -24,7 +24,7 @@ jobs:
           - runway
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: buildpacks/github-actions/setup-pack@main
         with:
           pack-version: 0.38.2
