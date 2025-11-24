@@ -7,7 +7,7 @@ jobs:
   validate-workflows:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: asdf-vm/actions/install@v4
       - run: |
           action-validator ./.github/workflows/*
