@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/php"
   id = "runway-buildpacks/php"
   name = "Paketo Buildpack for PHP"
-  version = "2.19.24"
+  version = "2.19.25"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -88,7 +88,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/nginx"
-    version = "1.0.4"
+    version = "1.0.5"
 
   [[order.group]]
     id = "paketo-buildpacks/php-fpm"
