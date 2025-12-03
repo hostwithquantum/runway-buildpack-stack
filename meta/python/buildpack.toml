@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Paketo Buildpack for Python"
-  version = "2.30.20"
+  version = "2.30.21"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -32,7 +32,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.15.3"
+    version = "0.15.4"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -65,7 +65,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.15.3"
+    version = "0.15.4"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -94,7 +94,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.15.3"
+    version = "0.15.4"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -168,7 +168,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.15.3"
+    version = "0.15.4"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -193,7 +193,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.15.3"
+    version = "0.15.4"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
