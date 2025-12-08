@@ -33,4 +33,4 @@
   uri = "docker://docker.io/paketobuildpacks/procfile:5.11.4"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.31"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.32"
