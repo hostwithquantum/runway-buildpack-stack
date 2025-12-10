@@ -3,19 +3,19 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.2.3"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.2.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.6.0"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.6.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core-sdk:1.5.0"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core-sdk:1.6.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/icu:0.9.3"
+  uri = "docker://docker.io/paketobuildpacks/icu:0.9.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.12.2"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.12.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/dotnet-publish:1.2.3"
