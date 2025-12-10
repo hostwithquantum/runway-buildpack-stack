@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Paketo Buildpack for Python"
-  version = "2.30.21"
+  version = "2.30.22"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -127,7 +127,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-install"
-    version = "0.6.11"
+    version = "0.6.12"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-run"
@@ -164,7 +164,7 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-install"
-    version = "0.6.11"
+    version = "0.6.12"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
