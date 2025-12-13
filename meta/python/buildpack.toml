@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Paketo Buildpack for Python"
-  version = "2.30.22"
+  version = "2.30.23"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -37,17 +37,17 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
@@ -70,17 +70,17 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
@@ -99,17 +99,17 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
@@ -136,17 +136,17 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
@@ -173,17 +173,17 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
@@ -198,14 +198,14 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
