@@ -1,0 +1,60 @@
+name: Update Documentation
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    env:
+      TOOL_PATH: runway-buildpack-stack/scripts/generate-buildpack-docs
+      DOC_PATH: www/content/docs/platform/buildpacks/included-buildpacks
+    steps:
+    - id: generate-token
+      uses: actions/create-github-app-token@v2
+      with:
+        app-id: ${{ secrets.RUNWAY_CI_BOT_APP_ID }}
+        private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
+        owner: ${{ github.repository_owner }}
+        repositories: |
+          runway-buildpack-stack
+          ${{ secrets.WWW_REPO }}
+    - id: get-user-id
+      run: echo "user-id=$(gh api "/users/${{ steps.generate-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+      env:
+        GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+
+    - uses: actions/checkout@v6
+      with:
+        path: runway-buildpack-stack
+
+    - uses: actions/setup-go@v5
+      with:
+        go-version-file: ${{ env.TOOL_PATH }}/go.mod
+
+    - name: Generate buildpack documentation
+      working-directory: ${{ env.TOOL_PATH }}
+      run: |
+        go run main.go
+
+    - uses: actions/checkout@v6
+      with:
+        repository: ${{ github.repository_owner }}/${{ secrets.WWW_REPO }}
+        token: ${{ steps.generate-token.outputs.token }}
+        path: www
+
+    - run: |
+        mkdir -p ${{ env.DOC_PATH }}
+        cp -r runway-buildpack-stack/bp-docs/* ${{ env.DOC_PATH }}
+
+    - uses: peter-evans/create-pull-request@v7
+      with:
+        token: ${{ steps.generate-token.outputs.token }}
+        path: www
+        commit-message: "chore(docs): update buildpacks"
+        title: "chore(docs): update buildpacks"
+        branch: update-buildpack-docs
+        delete-branch: true
+        committer: ${{ steps.generate-token.outputs.app-slug }}[bot] <${{ steps.get-user-id.outputs.user-id }}+${{ steps.generate-token.outputs.app-slug }}[bot]@users.noreply.github.com>
+        author: ${{ steps.generate-token.outputs.app-slug }}[bot] <${{ steps.get-user-id.outputs.user-id }}+${{ steps.generate-token.outputs.app-slug }}[bot]@users.noreply.github.com>

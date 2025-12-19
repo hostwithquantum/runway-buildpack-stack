@@ -1,5 +1,13 @@
 version: 2
 updates:
+  - package-ecosystem: "gomod"
+    directory: "/scripts/generate-buildpack-docs"
+    schedule:
+      interval: "weekly"
+    groups:
+      go:
+        patterns:
+          - "*"
   - package-ecosystem: "docker"
     directory: "/runimage"
     schedule:
