@@ -5,7 +5,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/java/"
   id = "runway-buildpacks/java-native-image"
   keywords = ["java", "composite", "native-image"]
-  name = "Paketo Buildpack for Java Native Image"
+  name = "Buildpack for Java Native Image"
   version = "11.15.29"
 
   [[buildpack.licenses]]

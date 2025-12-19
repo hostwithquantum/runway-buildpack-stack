@@ -3,7 +3,7 @@ api = "0.7"
 [buildpack]
   homepage = "https://www.runway.horse/docs/recipes/javascript/"
   id = "runway-buildpacks/nodejs"
-  name = "Paketo Buildpack for Node.js"
+  name = "Buildpack for Node.js"
   version = "9.3.24"
 
   [[buildpack.licenses]]

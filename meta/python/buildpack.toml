@@ -2,7 +2,7 @@ api = "0.8"
 
 [buildpack]
   id = "runway-buildpacks/python"
-  name = "Paketo Buildpack for Python"
+  name = "Buildpack for Python"
   version = "2.30.24"
 
   [[buildpack.licenses]]

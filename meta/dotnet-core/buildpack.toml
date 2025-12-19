@@ -5,7 +5,7 @@ api = "0.8"
   homepage = "https://www.runway.horse/docs/recipes/deploy-dotnet/"
   id = "runway-buildpacks/dotnet-core"
   keywords = ["dotnet"]
-  name = "Paketo Buildpack for .NET Core"
+  name = "Buildpack for .NET Core"
   version = "3.1.33"
 
   [[buildpack.licenses]]

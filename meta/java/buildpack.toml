@@ -5,7 +5,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/java/"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
-  name = "Paketo Buildpack for Java"
+  name = "Buildpack for Java"
   version = "18.12.47"
 
   [[buildpack.licenses]]
