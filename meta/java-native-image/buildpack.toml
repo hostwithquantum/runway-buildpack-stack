@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java-native-image"
   keywords = ["java", "composite", "native-image"]
   name = "Buildpack for Java Native Image"
-  version = "11.15.29"
+  version = "11.15.30"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -64,7 +64,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/datadog"
     optional = true
-    version = "6.3.0"
+    version = "6.4.0"
 
   [[order.group]]
     id = "paketo-buildpacks/native-image"
