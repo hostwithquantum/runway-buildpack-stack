@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/javascript/"
   id = "runway-buildpacks/nodejs"
   name = "Buildpack for Node.js"
-  version = "9.3.24"
+  version = "9.3.25"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -17,107 +17,107 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.12.3"
+    version = "7.13.0"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
-    version = "2.2.13"
+    version = "2.2.14"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
-    version = "2.6.13"
+    version = "2.6.14"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.13"
+    version = "2.3.14"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
     optional = true
-    version = "2.5.13"
+    version = "2.5.14"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-start"
     optional = true
-    version = "2.4.12"
+    version = "2.4.13"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.12.3"
+    version = "7.13.0"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
-    version = "2.2.6"
+    version = "2.2.7"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.13"
+    version = "2.3.14"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
     optional = true
-    version = "2.5.13"
+    version = "2.5.14"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-start"
     optional = true
-    version = "2.3.12"
+    version = "2.3.13"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "7.12.3"
+    version = "7.13.0"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
-    version = "2.5.13"
+    version = "2.5.14"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.11.4"
+    version = "5.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.9.4"
+    version = "4.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.10.3"
+    version = "4.11.0"
