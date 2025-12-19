@@ -29,7 +29,7 @@ jobs:
       with:
         path: runway-buildpack-stack
 
-    - uses: actions/setup-go@v5
+    - uses: actions/setup-go@v6
       with:
         go-version-file: ${{ env.TOOL_PATH }}/go.mod
 
@@ -48,7 +48,7 @@ jobs:
         mkdir -p ${{ env.DOC_PATH }}
         cp -r runway-buildpack-stack/bp-docs/* ${{ env.DOC_PATH }}
 
-    - uses: peter-evans/create-pull-request@v7
+    - uses: peter-evans/create-pull-request@v8
       with:
         token: ${{ steps.generate-token.outputs.token }}
         path: www
