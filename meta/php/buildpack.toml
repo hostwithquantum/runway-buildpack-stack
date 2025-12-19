@@ -3,7 +3,7 @@ api = "0.7"
 [buildpack]
   homepage = "https://github.com/paketo-buildpacks/php"
   id = "runway-buildpacks/php"
-  name = "Paketo Buildpack for PHP"
+  name = "Buildpack for PHP"
   version = "2.19.26"
 
   [[buildpack.licenses]]

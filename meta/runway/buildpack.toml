@@ -2,7 +2,7 @@ api = "0.7"
 
 [buildpack]
   id = "runway-buildpacks/runway"
-  name = "Composite buildpack to include our own buildpacks"
+  name = "Buildpack for hugo/mdbook"
   version = "0.1.27"
 
 [[order]]

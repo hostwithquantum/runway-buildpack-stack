@@ -5,7 +5,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/deploy-ruby/"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
-  name = "Paketo Buildpack for Ruby"
+  name = "Buildpack for Ruby"
   version = "0.47.32"
 
   [[buildpack.licenses]]

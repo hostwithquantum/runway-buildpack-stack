@@ -5,7 +5,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/deploy-go/"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
-  name = "Runway version of the Paketo Buildpack for Go"
+  name = "Buildpack for Go"
   version = "4.13.36"
 
   [[buildpack.licenses]]
