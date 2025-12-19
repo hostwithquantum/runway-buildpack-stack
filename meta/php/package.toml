@@ -6,7 +6,7 @@
   uri = "docker://docker.io/paketobuildpacks/httpd:1.0.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.6"
+  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.7"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/composer:0.7.16"
@@ -36,10 +36,10 @@
   uri = "docker://docker.io/paketobuildpacks/php-memcached-session-handler:0.2.32"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.4"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.12.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.9.4"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.10.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.10.3"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.11.0"
