@@ -12,10 +12,10 @@
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.11.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:0.19.6"
+  uri = "docker://docker.io/paketobuildpacks/mri:0.19.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.13.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:7.13.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/passenger:0.14.14"
@@ -42,10 +42,10 @@
   uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.59"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.6.14"
+  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.6.15"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.14"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.15"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.10.0"
