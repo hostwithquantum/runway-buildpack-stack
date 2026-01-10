@@ -5,24 +5,24 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "3.1.35"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.40"
-  version = "4.13.40"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.41"
+  version = "4.13.41"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.31"
-  version = "11.15.31"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.32"
+  version = "11.15.32"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.50"
-  version = "18.12.50"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.51"
+  version = "18.12.51"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.27"
   version = "9.3.27"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.28"
-  version = "2.19.28"
+  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.29"
+  version = "2.19.29"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.12.0"
@@ -45,8 +45,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.5.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.30"
-  version = "0.1.30"
+  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.31"
+  version = "0.1.31"
 
 [lifecycle]
   version = "0.21.0"
@@ -67,7 +67,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.13.40"
+    version = "4.13.41"
 
 [[order]]
 
@@ -79,13 +79,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/php"
-    version = "2.19.28"
+    version = "2.19.29"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/runway"
-    version = "0.1.30"
+    version = "0.1.31"
 
 [[order]]
 
@@ -97,13 +97,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.31"
+    version = "11.15.32"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.50"
+    version = "18.12.51"
 
 [[order]]
 
