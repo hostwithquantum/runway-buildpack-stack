@@ -9,10 +9,10 @@
   uri = "docker://docker.io/paketobuildpacks/yarn:2.2.16"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:7.13.2"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.27.0"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.28.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.14.0"
@@ -54,7 +54,7 @@
   uri = "docker://docker.io/paketobuildpacks/jattach:1.11.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.4.0"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.5.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.9.0"
