@@ -18,7 +18,7 @@
   uri = "docker://docker.io/paketobuildpacks/git:1.1.18"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.9.16"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.9.17"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/httpd:1.0.2"
