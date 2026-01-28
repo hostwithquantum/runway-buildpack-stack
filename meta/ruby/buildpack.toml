@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Buildpack for Ruby"
-  version = "0.47.37"
+  version = "0.47.38"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,7 +19,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "0.19.9"
+    version = "0.19.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -72,7 +72,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "0.19.9"
+    version = "0.19.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -125,7 +125,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "0.19.9"
+    version = "0.19.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -178,7 +178,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "0.19.9"
+    version = "0.19.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -231,7 +231,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "0.19.9"
+    version = "0.19.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -284,7 +284,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "0.19.9"
+    version = "0.19.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
