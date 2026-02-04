@@ -45,7 +45,7 @@
   uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.18"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.19"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.10.0"
