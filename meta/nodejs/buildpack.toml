@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://www.runway.horse/docs/recipes/javascript/"
   id = "runway-buildpacks/nodejs"
   name = "Buildpack for Node.js"
-  version = "9.3.32"
+  version = "9.3.33"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -21,7 +21,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
-    version = "2.2.19"
+    version = "2.2.20"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
