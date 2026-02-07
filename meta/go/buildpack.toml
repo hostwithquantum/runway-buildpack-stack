@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Buildpack for Go"
-  version = "4.13.50"
+  version = "4.13.51"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -57,17 +57,17 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.12.0"
+    version = "5.12.1"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.10.0"
+    version = "4.10.1"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.11.0"
+    version = "4.11.1"
 
 [[order]]
 
@@ -107,14 +107,14 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.12.0"
+    version = "5.12.1"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.10.0"
+    version = "4.10.1"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.11.0"
+    version = "4.11.1"
