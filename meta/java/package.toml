@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.5.3"
+  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.5.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/yarn:2.2.20"
@@ -15,58 +15,58 @@
   uri = "docker://docker.io/paketobuildpacks/syft:2.29.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/leiningen:4.14.0"
+  uri = "docker://docker.io/paketobuildpacks/leiningen:4.14.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.16.2"
+  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.16.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:8.2.1"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.2.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.21.1"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.21.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.21.1"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.21.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.14.0"
+  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.14.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.8.3"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.8.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.16.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/liberty:6.0.0"
+  uri = "docker://docker.io/paketobuildpacks/liberty:6.0.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dist-zip:5.11.0"
+  uri = "docker://docker.io/paketobuildpacks/dist-zip:5.11.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.35.1"
+  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.35.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.12.0"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/jattach:1.11.0"
+  uri = "docker://docker.io/paketobuildpacks/jattach:1.11.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/datadog:6.6.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.9.0"
+  uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.9.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/encrypt-at-rest:4.10.1"
+  uri = "docker://docker.io/paketobuildpacks/encrypt-at-rest:4.10.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.10.0"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.10.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.11.0"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.11.1"
 
 [[targets]]
   arch = "amd64"
