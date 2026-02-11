@@ -9,19 +9,19 @@
   uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.4"
+  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.21"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.22"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/git:1.1.18"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.9.17"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.9.18"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/httpd:1.0.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.12"
+  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.13"
