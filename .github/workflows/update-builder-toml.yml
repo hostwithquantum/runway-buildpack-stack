@@ -20,6 +20,7 @@ jobs:
     - name: Check out
       uses: actions/checkout@v6
       with:
+        persist-credentials: false
         token: ${{ steps.generate-token.outputs.token }}
 
     - name: Checkout branch

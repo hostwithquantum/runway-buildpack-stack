@@ -22,6 +22,7 @@ jobs:
         private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
     - uses: actions/checkout@v6
       with:
+        persist-credentials: false
         token: ${{ steps.generate-token.outputs.token }}
 
     - id: names
