@@ -15,6 +15,6 @@ jobs:
           persist-credentials: false
       - uses: buildpacks/github-actions/setup-pack@main
         with:
-          pack-version: 0.38.2
+          pack-version: 0.40.0
       - run: pack config experimental true
       - run: make meta/${{ matrix.buildpack }}/buildpack.cnb
