@@ -106,9 +106,11 @@ jobs:
     steps:
 
     - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
     - uses: buildpacks/github-actions/setup-pack@main
       with:
-        pack-version: 0.38.2
+        pack-version: 0.40.0
 
     - uses: docker/login-action@v3
       with:
