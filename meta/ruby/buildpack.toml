@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Buildpack for Ruby"
-  version = "0.47.42"
+  version = "0.47.43"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -32,12 +32,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.2"
+    version = "8.0.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.21"
+    version = "2.2.22"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -85,12 +85,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.2"
+    version = "8.0.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.21"
+    version = "2.2.22"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -138,12 +138,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.2"
+    version = "8.0.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.21"
+    version = "2.2.22"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -191,12 +191,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.2"
+    version = "8.0.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.21"
+    version = "2.2.22"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
@@ -244,12 +244,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.2"
+    version = "8.0.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.21"
+    version = "2.2.22"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
