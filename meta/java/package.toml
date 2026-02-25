@@ -6,10 +6,10 @@
   uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.6.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.22"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.23"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.3"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/syft:2.31.0"
@@ -27,7 +27,7 @@
   uri = "docker://docker.io/paketobuildpacks/maven:6.22.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.22.0"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.22.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.15.0"
