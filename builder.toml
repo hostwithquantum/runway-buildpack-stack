@@ -21,8 +21,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "9.3.38"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.37"
-  version = "2.19.37"
+  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.38"
+  version = "2.19.38"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.0"
@@ -79,7 +79,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/php"
-    version = "2.19.37"
+    version = "2.19.38"
 
 [[order]]
 
