@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Buildpack for Java"
-  version = "18.12.77"
+  version = "18.12.78"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -24,17 +24,17 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.24"
+    version = "2.2.25"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.5"
+    version = "8.0.6"
 
   [[order.group]]
     id = "paketo-buildpacks/syft"
     optional = true
-    version = "2.31.0"
+    version = "2.31.1"
 
   [[order.group]]
     id = "paketo-buildpacks/leiningen"
@@ -44,7 +44,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/clojure-tools"
     optional = true
-    version = "2.17.2"
+    version = "2.17.3"
 
   [[order.group]]
     id = "paketo-buildpacks/gradle"
