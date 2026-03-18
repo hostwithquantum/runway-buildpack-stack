@@ -6,16 +6,16 @@
   uri = "docker://docker.io/paketobuildpacks/bundle-install:0.8.18"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundler:0.8.48"
+  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:1.0.2"
+  uri = "docker://docker.io/paketobuildpacks/mri:1.1.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.6"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.7"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/passenger:0.14.14"
@@ -42,10 +42,10 @@
   uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.59"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.4"
+  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.25"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.26"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.1"
