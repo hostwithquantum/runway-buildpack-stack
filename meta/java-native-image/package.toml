@@ -18,10 +18,10 @@
   uri = "docker://docker.io/paketobuildpacks/gradle:8.4.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.22.4"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.22.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.22.4"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.22.5"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.15.1"
@@ -30,7 +30,7 @@
   uri = "docker://docker.io/paketobuildpacks/spring-boot:5.36.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.8.2"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.8.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/native-image:5.18.1"
