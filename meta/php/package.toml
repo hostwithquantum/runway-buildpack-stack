@@ -6,7 +6,7 @@
   uri = "docker://docker.io/paketobuildpacks/httpd:1.0.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.19"
+  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.20"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/composer:0.7.16"
@@ -15,7 +15,7 @@
   uri = "docker://docker.io/paketobuildpacks/composer-install:0.3.28"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-dist:2.8.2"
+  uri = "docker://docker.io/paketobuildpacks/php-dist:2.8.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/php-httpd:0.3.44"
