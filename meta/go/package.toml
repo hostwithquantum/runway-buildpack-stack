@@ -9,25 +9,25 @@
   uri = "docker://docker.io/paketobuildpacks/git:1.1.18"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-build:2.4.16"
+  uri = "docker://docker.io/paketobuildpacks/go-build:2.4.17"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.10.4"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.10.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.1.17"
+  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.1.18"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.8"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.9"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.28"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.11"
+  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.12"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.1"
