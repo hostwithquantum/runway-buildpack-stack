@@ -1,8 +1,8 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.51"
-  version = "3.1.51"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.52"
+  version = "3.1.52"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.62"
@@ -13,8 +13,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "11.15.58"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.89"
-  version = "18.12.89"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.90"
+  version = "18.12.90"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.44"
@@ -45,8 +45,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.5.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.47"
-  version = "0.1.47"
+  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.48"
+  version = "0.1.48"
 
 [lifecycle]
   version = "0.21.7"
@@ -61,7 +61,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.51"
+    version = "3.1.52"
 
 [[order]]
 
@@ -85,7 +85,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/runway"
-    version = "0.1.47"
+    version = "0.1.48"
 
 [[order]]
 
@@ -103,7 +103,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.89"
+    version = "18.12.90"
 
 [[order]]
 
