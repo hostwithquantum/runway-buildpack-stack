@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.2.18"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.2.19"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.6.16"
