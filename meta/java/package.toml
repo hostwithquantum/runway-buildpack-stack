@@ -12,7 +12,7 @@
   uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.10"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.31.3"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.31.4"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.15.1"
@@ -54,7 +54,7 @@
   uri = "docker://docker.io/paketobuildpacks/jattach:1.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.8.4"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.9.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.10.1"
