@@ -1,23 +1,26 @@
 .PHONY: build test
 
 EXAMPLES_DIR=../runway-examples/content
+BUILDER_BASE?=jammy
 
 META_BUILDPACKS=$(patsubst %, %buildpack.cnb, $(wildcard meta/*/))
 
 build: build-builder
-	docker build -t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full ./runimage
+	docker build \
+		-t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full \
+		./builders/$(BUILDER_BASE)/runimage
 
 build-builder-unflattened:
 	$(info Build builder)
 	pack builder create builder-unflattened \
 		--target linux/amd64 \
-		--config builder.toml
+		--config builders/$(BUILDER_BASE)/builder.toml
 
 build-builder:
 	$(info Build and publish builder)
 	pack builder create --publish "$(PUBLISH_TAG)" \
 		--target linux/amd64 \
-		--config builder.toml \
+		--config builders/$(BUILDER_BASE)/builder.toml \
 		--verbose
 
 meta/%/buildpack.cnb: meta/%/*.toml
