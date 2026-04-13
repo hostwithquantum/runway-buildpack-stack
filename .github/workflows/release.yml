@@ -7,44 +7,27 @@ on:
       - 'v*'
 
 jobs:
-  names:
-    runs-on: ubuntu-latest
-    outputs:
-      runimage-tags: ${{ steps.meta-runimage.outputs.tags }}
-      runimage-labels: ${{ steps.meta-runimage.outputs.labels }}
-      builder-tags: ${{ steps.meta-builder.outputs.tags }}
-      builder-labels: ${{ steps.meta-builder.outputs.labels }}
-    steps:
-    - uses: actions/checkout@v6
-    
-    
-    - id: meta-runimage
-      uses: docker/metadata-action@v6
-      with:
-        images: |
-          r.planetary-quantum.com/runway-public/runway-runimage
-        tags: |
-          type=semver,prefix=jammy-full-,pattern={{version}}
-          type=raw,value=jammy-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
-          type=ref,event=pr,prefix=jammy-full-pr-
-
-    - id: meta-builder
-      uses: docker/metadata-action@v6
-      with:
-        images: |
-          r.planetary-quantum.com/runway-public/runway-buildpack-stack
-        tags: |
-          type=semver,prefix=jammy-full-,pattern={{version}}
-          type=raw,value=jammy-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
-          type=ref,event=pr,prefix=jammy-full-pr-
-
   runimage:
-    needs: [names]
+    strategy:
+      matrix:
+        ubuntu:
+          - jammy
+          - noble
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
+
+    - id: meta
+      uses: docker/metadata-action@v6
+      with:
+        images: |
+          r.planetary-quantum.com/runway-public/runway-runimage
+        tags: |
+          type=semver,prefix=${{ matrix.ubuntu }}-full-,pattern={{version}}
+          type=raw,value=${{ matrix.ubuntu }}-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
+          type=ref,event=pr,prefix=${{ matrix.ubuntu }}-full-pr-
 
     - uses: docker/login-action@v4
       with:
@@ -54,63 +37,37 @@ jobs:
     - uses: docker/setup-buildx-action@v4
     - uses: docker/build-push-action@v7
       with:
-        context: builders/jammy/runimage
-        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:jammy-full
+        context: builders/${{ matrix.ubuntu }}/runimage
+        platforms: linux/amd64,linux/arm64
+        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:${{ matrix.ubuntu }}-full
         push: true
-        tags: ${{ needs.names.outputs.runimage-tags }}
-        labels: ${{ needs.names.outputs.runimage-labels }}
-
-  # unflattened:
-  #   needs: [names, runimage]
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #     buildpacks: ${{ steps.flatten.outputs.buildpacks }}
-  #   steps:
-
-  #   - uses: actions/checkout@v6
-  #   - uses: buildpacks/github-actions/setup-pack@main
-  #     with:
-  #       pack-version: 0.38.2
-
-  #   - uses: docker/login-action@v4
-  #     with:
-  #       registry: r.planetary-quantum.com
-  #       username: ${{ secrets.QUANTUM_REGISTRY_USERNAME }}
-  #       password: ${{ secrets.QUANTUM_REGISTRY_PASSWORD }}
-  #   - uses: docker/setup-buildx-action@v4
-
-  #   - name: Create Builder Unflattened
-  #     run: make build-builder-unflattened
-
-  #   - env:
-  #       BUILDER: builder-unflattened
-  #     run: |
-  #       echo "## Duplicate Analysis" >> $GITHUB_STEP_SUMMARY
-  #       echo '```' >> $GITHUB_STEP_SUMMARY
-  #       ./scripts/builder-analyzer builder --builder-name $BUILDER duplicates >> $GITHUB_STEP_SUMMARY || echo "No duplicates found" >> $GITHUB_STEP_SUMMARY
-  #       echo '```' >> $GITHUB_STEP_SUMMARY
-  #       echo "" >> $GITHUB_STEP_SUMMARY
-  #       echo "## Buildpacks to Flatten" >> $GITHUB_STEP_SUMMARY
-  #       echo '```' >> $GITHUB_STEP_SUMMARY
-  #       ./scripts/builder-analyzer builder --builder-name $BUILDER flatten --pretty >> $GITHUB_STEP_SUMMARY
-  #       echo '```' >> $GITHUB_STEP_SUMMARY
-
-  #   - id: flatten
-  #     env:
-  #       BUILDER: builder-unflattened
-  #     run: |
-  #       buildpacks=$(./scripts/builder-analyzer builder --builder-name $BUILDER flatten)
-  #       echo "buildpacks=${buildpacks}" >> $GITHUB_OUTPUT
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
 
   builder:
-    # needs: [names, unflattened]
-    needs: names
+    needs: [runimage]
+    strategy:
+      matrix:
+        ubuntu:
+          - jammy
+          - noble
     runs-on: ubuntu-latest
     steps:
 
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
+
+    - id: meta
+      uses: docker/metadata-action@v6
+      with:
+        images: |
+          r.planetary-quantum.com/runway-public/runway-buildpack-stack
+        tags: |
+          type=semver,prefix=${{ matrix.ubuntu }}-full-,pattern={{version}}
+          type=raw,value=${{ matrix.ubuntu }}-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
+          type=ref,event=pr,prefix=${{ matrix.ubuntu }}-full-pr-
+
     - uses: buildpacks/github-actions/setup-pack@main
       with:
         pack-version: 0.40.0
@@ -124,15 +81,14 @@ jobs:
 
     - id: tag
       run: |
-        PRIMARY_TAG=$(echo "${{ needs.names.outputs.builder-tags }}" | head -n1)
+        PRIMARY_TAG=$(echo "${{ steps.meta.outputs.tags }}" | head -n1)
         echo "primary=${PRIMARY_TAG}" >> $GITHUB_OUTPUT
         echo "Building: ${PRIMARY_TAG}" >> $GITHUB_STEP_SUMMARY
 
-    # BUILDPACKS=$(echo "${{ needs.unflattened.outputs.buildpacks }}")
-    # ALL_BUILDPACKS="$BUILDPACKS"
     - name: Create Builder Image
       run: |
         make build-builder \
+          BUILDER_BASE=${{ matrix.ubuntu }} \
           PUBLISH_TAG="${{ steps.tag.outputs.primary }}"
 
     - run: |
@@ -152,7 +108,7 @@ jobs:
     - name: Tag additional tags
       if: startsWith(github.ref, 'refs/tags/')
       run: |
-        TAGS="${{ needs.names.outputs.builder-tags }}"
+        TAGS="${{ steps.meta.outputs.tags }}"
         PRIMARY_TAG=$(echo "$TAGS" | head -n1)
         echo "$TAGS" | tail -n+2 | while read -r tag; do
           docker tag "$PRIMARY_TAG" "$tag"
@@ -171,6 +127,7 @@ jobs:
         private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
     - uses: actions/checkout@v6
       with:
+        persist-credentials: false
         token: ${{ steps.generate-token.outputs.token }}
     - uses: softprops/action-gh-release@v3
       with:

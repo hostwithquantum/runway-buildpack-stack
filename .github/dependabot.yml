@@ -4,18 +4,26 @@ updates:
     directory: "/scripts/generate-buildpack-docs"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       go:
         patterns:
           - "*"
   - package-ecosystem: "docker"
-    directory: "/builders/jammy/runimage"
+    directories:
+      - "/builders/jammy/runimage"
+      - "/builders/noble/runimage"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 1
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'weekly'
+    cooldown:
+      default-days: 7
     groups:
       actions-deps:
         patterns:
