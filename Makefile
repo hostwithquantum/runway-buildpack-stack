@@ -5,9 +5,15 @@ BUILDER_BASE?=jammy
 
 META_BUILDPACKS=$(patsubst %, %buildpack.cnb, $(wildcard meta/*/))
 
-build: build-builder
-	docker build \
-		-t r.planetary-quantum.com/runway-public/runway-runimage:jammy-full \
+build: build-runimage build-builder
+
+PLATFORM?=linux/amd64,linux/arm64
+
+build-runimage:
+	docker buildx build \
+		--platform $(PLATFORM) \
+		--push \
+		-t r.planetary-quantum.com/runway-public/runway-runimage:$(BUILDER_BASE)-full \
 		./builders/$(BUILDER_BASE)/runimage
 
 build-builder-unflattened:

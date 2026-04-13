@@ -9,8 +9,15 @@ concurrency: builder_update
 
 jobs:
   update:
-    name: Update builder.toml
+    strategy:
+      matrix:
+        ubuntu:
+          - jammy
+          - noble
+    name: Update builders/${{ matrix.ubuntu }}/builder.toml
     runs-on: ubuntu-22.04
+    env:
+      BRANCH: "automation/${{ matrix.ubuntu }}/builder-toml"
     steps:
     - id: generate-token
       uses: actions/create-github-app-token@v3
@@ -25,7 +32,7 @@ jobs:
     - name: Checkout branch
       uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
       with:
-        branch: "automation/builder-toml"
+        branch: ${{ env.BRANCH }}
 
     - uses: docker/login-action@v4
       with:
@@ -35,15 +42,15 @@ jobs:
     - name: Update builder.toml
       uses: paketo-buildpacks/github-config/actions/builder/update@main
       with:
-        filename: builders/jammy/builder.toml
+        filename: builders/${{ matrix.ubuntu }}/builder.toml
         token: ${{ steps.generate-token.outputs.token }}
 
     - name: Git commit
       id: commit
       uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
       with:
-        message: "Update builder.toml"
-        pathspec: "builders/jammy/builder.toml"
+        message: "feat(builders): update builder.toml for ${{ matrix.ubuntu}}"
+        pathspec: "builders/${{ matrix.ubuntu }}/builder.toml"
         committer_name: ${{ steps.generate-token.outputs.app-slug }}[bot]
         committer_email: ${{ steps.generate-token.outputs.user-id }}+${{ steps.generate-token.outputs.app-slug }}[bot]@users.noreply.github.com
 
@@ -51,12 +58,12 @@ jobs:
       if: ${{ steps.commit.outputs.commit_sha != '' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
       with:
-        branch: "automation/builder-toml"
+        branch: ${{ env.BRANCH }}
 
     - name: Open Pull Request
       if: ${{ steps.commit.outputs.commit_sha != '' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
         token: ${{ steps.generate-token.outputs.token }}
-        title: "Updating builder.toml"
-        branch: "automation/builder-toml"
+        title: "Updating ${{ matrix.ubuntu }}/builder.toml"
+        branch: ${{ env.BRANCH }}
