@@ -16,12 +16,6 @@ build-runimage:
 		-t r.planetary-quantum.com/runway-public/runway-runimage:$(BUILDER_BASE)-full \
 		./builders/$(BUILDER_BASE)/runimage
 
-build-builder-unflattened:
-	$(info Build builder)
-	pack builder create builder-unflattened \
-		--target linux/amd64 \
-		--config builders/$(BUILDER_BASE)/builder.toml
-
 build-builder:
 	$(info Build and publish builder)
 	pack builder create --publish "$(PUBLISH_TAG)" \

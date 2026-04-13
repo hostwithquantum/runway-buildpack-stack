@@ -24,6 +24,8 @@ jobs:
       with:
         images: |
           r.planetary-quantum.com/runway-public/runway-runimage
+        flavor: |
+          latest=false
         tags: |
           type=semver,prefix=${{ matrix.ubuntu }}-full-,pattern={{version}}
           type=raw,value=${{ matrix.ubuntu }}-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
@@ -63,6 +65,8 @@ jobs:
       with:
         images: |
           r.planetary-quantum.com/runway-public/runway-buildpack-stack
+        flavor: |
+          latest=false
         tags: |
           type=semver,prefix=${{ matrix.ubuntu }}-full-,pattern={{version}}
           type=raw,value=${{ matrix.ubuntu }}-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
