@@ -5,9 +5,13 @@ on:
   schedule:
     - cron: "0 0 * * 1"
 
+permissions: {}
+
 jobs:
   mirror:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v6
         with:
@@ -27,7 +31,9 @@ jobs:
           url: ${{ steps.info.outputs.download_url }}
           output: "/github/workspace/buildpackage.cnb"
           token: ${{ secrets.GITHUB_TOKEN }}
-      - run: >
-          sudo skopeo copy
-          "oci-archive:${GITHUB_WORKSPACE}/buildpackage.cnb"
-          docker://r.planetary-quantum.com/buildpacks/go-generate:${{ steps.info.outputs.version }}
+      - env:
+          VERSION: ${{ steps.info.outputs.version }}
+        run: |
+          sudo skopeo copy \
+            "oci-archive:${GITHUB_WORKSPACE}/buildpackage.cnb" \
+            docker://r.planetary-quantum.com/buildpacks/go-generate:${VERSION}

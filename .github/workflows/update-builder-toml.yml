@@ -7,6 +7,8 @@ on:
 
 concurrency: builder_update
 
+permissions: {}
+
 jobs:
   update:
     strategy:
@@ -49,7 +51,7 @@ jobs:
       id: commit
       uses: paketo-buildpacks/github-config/actions/pull-request/create-commit@main
       with:
-        message: "feat(builders): update builder.toml for ${{ matrix.ubuntu}}"
+        message: "feat(builders): update builder.toml for ${{ matrix.ubuntu }}"
         pathspec: "builders/${{ matrix.ubuntu }}/builder.toml"
         committer_name: ${{ steps.generate-token.outputs.app-slug }}[bot]
         committer_email: ${{ steps.generate-token.outputs.user-id }}+${{ steps.generate-token.outputs.app-slug }}[bot]@users.noreply.github.com

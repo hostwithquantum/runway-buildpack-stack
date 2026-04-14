@@ -3,12 +3,13 @@ name: meta
 on:
   pull_request:
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         buildpack: [dotnet-core, go, java, java-native-image, nodejs, php, python, ruby, runway]
