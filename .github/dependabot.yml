@@ -19,7 +19,9 @@ updates:
     cooldown:
       default-days: 1
   - package-ecosystem: 'github-actions'
-    directory: '/'
+    directories:
+      - "/"
+      - "/.github/actions/*"
     schedule:
       interval: 'weekly'
     cooldown:
