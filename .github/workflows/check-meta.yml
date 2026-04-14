@@ -16,8 +16,6 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: buildpacks/github-actions/setup-pack@main
-        with:
-          pack-version: 0.40.0
+      - uses: buildpacks/github-actions/setup-pack@v5.12.0
       - run: pack config experimental true
       - run: make meta/${{ matrix.buildpack }}/buildpack.cnb
