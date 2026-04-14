@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/static-websites:0.5.0"
+  uri = "docker://r.planetary-quantum.com/buildpacks/static-websites:0.6.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.10"
