@@ -3,6 +3,15 @@ name: Update Documentation
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      RUNWAY_CI_BOT_APP_ID:
+        required: true
+      RUNWAY_CI_BOT_PRIVATE_KEY:
+        required: true
+      WWW_REPO:
+        required: true
+
+permissions: {}
 
 jobs:
   update-docs:
@@ -21,13 +30,15 @@ jobs:
           runway-buildpack-stack
           ${{ secrets.WWW_REPO }}
     - id: get-user-id
-      run: echo "user-id=$(gh api "/users/${{ steps.generate-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+      run: echo "user-id=$(gh api "/users/${SLUG}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
       env:
+        SLUG: ${{ steps.generate-token.outputs.app-slug }}
         GH_TOKEN: ${{ steps.generate-token.outputs.token }}
 
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
+        token: ${{ steps.generate-token.outputs.token }}
         path: runway-buildpack-stack
 
     - uses: actions/setup-go@v6

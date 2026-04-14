@@ -7,6 +7,8 @@ on:
 
 concurrency: buildpack_update
 
+permissions: {}
+
 jobs:
   update-buildpack-toml:
     name: Update ${{ matrix.buildpack }}/buildpack.toml
@@ -33,7 +35,9 @@ jobs:
         echo "toml=${LOCAL_PATH}/buildpack.toml" >> $GITHUB_OUTPUT
 
     - name: increase version in buildpack.toml for ${{ steps.names.outputs.path }}
-      run: ./scripts/increase-version.sh ./${{ steps.names.outputs.toml }}
+      env:
+        TOML: ${{ steps.names.outputs.toml }}
+      run: ./scripts/increase-version.sh ./${TOML}
 
     - uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
       with:
