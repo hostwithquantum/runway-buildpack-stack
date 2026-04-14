@@ -5,17 +5,17 @@ on:
   - cron: '36 0,12 * * *' # daily at 00:36 and 12:36 UTC
   workflow_dispatch: {}
 
-concurrency: builder_update
-
 permissions: {}
 
 jobs:
   update:
     strategy:
+      fail-fast: false
       matrix:
         ubuntu:
           - jammy
           - noble
+    concurrency: builder_update-${{ matrix.ubuntu }}
     name: Update builders/${{ matrix.ubuntu }}/builder.toml
     runs-on: ubuntu-22.04
     env:
