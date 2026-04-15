@@ -6,7 +6,7 @@ api = "0.8"
   id = "runway-buildpacks/dotnet-core"
   keywords = ["dotnet"]
   name = "Buildpack for .NET Core"
-  version = "3.1.53"
+  version = "3.1.54"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -20,7 +20,7 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core-sdk"
     optional = true
-    version = "1.6.18"
+    version = "1.6.19"
 
   [[order.group]]
     id = "paketo-buildpacks/icu"
@@ -30,21 +30,21 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.0.10"
+    version = "8.0.11"
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-publish"
     optional = true
-    version = "1.2.16"
+    version = "1.2.17"
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core-aspnet-runtime"
     optional = true
-    version = "1.6.17"
+    version = "1.6.18"
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-execute"
-    version = "1.2.20"
+    version = "1.2.21"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
