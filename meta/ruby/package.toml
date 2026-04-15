@@ -3,49 +3,49 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.2"
+  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.4"
+  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.5"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:1.1.4"
+  uri = "docker://docker.io/paketobuildpacks/mri:1.1.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.10"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.11"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/passenger:0.14.15"
+  uri = "docker://docker.io/paketobuildpacks/passenger:0.14.16"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/puma:0.5.2"
+  uri = "docker://docker.io/paketobuildpacks/puma:0.5.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rackup:0.4.55"
+  uri = "docker://docker.io/paketobuildpacks/rackup:0.4.56"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rails-assets:0.10.28"
+  uri = "docker://docker.io/paketobuildpacks/rails-assets:0.10.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rake:0.4.64"
+  uri = "docker://docker.io/paketobuildpacks/rake:0.4.65"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/thin:0.5.59"
+  uri = "docker://docker.io/paketobuildpacks/thin:0.5.60"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.62"
+  uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.63"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.8"
+  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.9"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.26"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.27"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.1"
