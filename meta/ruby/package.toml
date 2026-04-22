@@ -3,46 +3,46 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.3"
+  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.5"
+  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.6"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:1.1.5"
+  uri = "docker://docker.io/paketobuildpacks/mri:1.1.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.11"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.12"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/passenger:0.14.16"
+  uri = "docker://docker.io/paketobuildpacks/passenger:0.14.17"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/puma:0.5.3"
+  uri = "docker://docker.io/paketobuildpacks/puma:0.5.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rackup:0.4.56"
+  uri = "docker://docker.io/paketobuildpacks/rackup:0.4.57"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rails-assets:0.10.29"
+  uri = "docker://docker.io/paketobuildpacks/rails-assets:0.10.30"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rake:0.4.65"
+  uri = "docker://docker.io/paketobuildpacks/rake:0.4.66"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/thin:0.5.60"
+  uri = "docker://docker.io/paketobuildpacks/thin:0.5.61"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.63"
+  uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.64"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.9"
+  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.10"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/yarn:2.2.27"
