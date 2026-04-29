@@ -6,25 +6,25 @@
   uri = "docker://docker.io/paketobuildpacks/httpd:1.0.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.23"
+  uri = "docker://docker.io/paketobuildpacks/nginx:1.0.24"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/composer:0.7.17"
+  uri = "docker://docker.io/paketobuildpacks/composer:0.8.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/composer-install:0.3.28"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-dist:2.10.1"
+  uri = "docker://docker.io/paketobuildpacks/php-dist:2.10.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-httpd:0.3.44"
+  uri = "docker://docker.io/paketobuildpacks/php-httpd:0.3.45"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/php-nginx:0.3.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-fpm:0.2.47"
+  uri = "docker://docker.io/paketobuildpacks/php-fpm:0.2.48"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/php-start:0.4.46"
