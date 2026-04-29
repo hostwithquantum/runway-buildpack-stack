@@ -3,49 +3,49 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.4"
+  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.6"
+  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.7"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:1.1.6"
+  uri = "docker://docker.io/paketobuildpacks/mri:1.1.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.12"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.13"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/passenger:0.14.17"
+  uri = "docker://docker.io/paketobuildpacks/passenger:0.14.18"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/puma:0.5.4"
+  uri = "docker://docker.io/paketobuildpacks/puma:0.5.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rackup:0.4.57"
+  uri = "docker://docker.io/paketobuildpacks/rackup:0.4.58"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/rails-assets:0.10.30"
+  uri = "docker://docker.io/paketobuildpacks/rails-assets:0.10.31"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/rake:0.4.66"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/thin:0.5.61"
+  uri = "docker://docker.io/paketobuildpacks/thin:0.5.62"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.64"
+  uri = "docker://docker.io/paketobuildpacks/unicorn:0.4.65"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.10"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.27"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.28"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.2"
