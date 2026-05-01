@@ -37,8 +37,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.47.57"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:4.2.7"
-  version = "4.2.7"
+  uri = "docker://docker.io/paketobuildpacks/web-servers:4.2.8"
+  version = "4.2.8"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno:0.6.0"
@@ -91,7 +91,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "4.2.7"
+    version = "4.2.8"
 
 [[order]]
 
