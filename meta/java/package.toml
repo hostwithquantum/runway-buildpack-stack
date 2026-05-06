@@ -6,10 +6,10 @@
   uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.7.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.28"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.2.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.13"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.14"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/syft:2.33.0"
@@ -54,7 +54,7 @@
   uri = "docker://docker.io/paketobuildpacks/jattach:1.12.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.9.2"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.10.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.10.2"
