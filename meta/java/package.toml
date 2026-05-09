@@ -9,7 +9,7 @@
   uri = "docker://docker.io/paketobuildpacks/yarn:2.2.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.0.14"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.1.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/syft:2.33.0"
@@ -33,10 +33,10 @@
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.15.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.9.5"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomcat:8.9.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.17.2"
+  uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.17.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/liberty:6.1.4"
