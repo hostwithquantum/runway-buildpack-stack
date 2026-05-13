@@ -2,6 +2,10 @@ name: meta
 
 on:
   pull_request:
+    paths:
+      - 'meta/**'
+      - 'Makefile'
+      - '.github/workflows/check-meta.yml'
 
 permissions: {}
 
