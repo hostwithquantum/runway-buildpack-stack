@@ -31,6 +31,14 @@ jobs:
     env:
       IMAGE: r.planetary-quantum.com/buildpacks/${{ matrix.buildpack }}
     steps:
+      - id: load-registry-credentials
+        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4.0.0
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_RUNWAYOSS_SERVICE_ACCOUNT }}
+          REGISTRY_USERNAME: op://RunwayOSS/robot-harbor-buildpacks/username
+          REGISTRY_PASSWORD: op://RunwayOSS/robot-harbor-buildpacks/password
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
@@ -79,9 +87,12 @@ jobs:
       - if: ${{ steps.exists.outputs.status == 'publish' }}
         run: |
           skopeo login \
-            --username ${{ secrets.QUANTUM_REGISTRY_USERNAME }} \
-            --password ${{ secrets.QUANTUM_REGISTRY_PASSWORD }} \
+            --username ${REGISTRY_USERNAME} \
+            --password ${REGISTRY_PASSWORD} \
             r.planetary-quantum.com
+        env:
+          REGISTRY_USERNAME: ${{ steps.load-registry-credentials.outputs.REGISTRY_USERNAME }}
+          REGISTRY_PASSWORD: ${{ steps.load-registry-credentials.outputs.REGISTRY_PASSWORD }}
       - if: ${{ steps.exists.outputs.status == 'publish' }}
         name: "publish meta/${{ matrix.buildpack }}"
         env:
