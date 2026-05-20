@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Buildpack for Ruby"
-  version = "0.47.60"
+  version = "0.47.61"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,39 +19,39 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.9"
+    version = "1.1.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.9"
+    version = "0.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.7"
+    version = "0.9.8"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.1.1"
+    version = "8.1.2"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.30"
+    version = "2.2.31"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
     optional = true
-    version = "2.7.12"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/rails-assets"
     optional = true
-    version = "0.10.33"
+    version = "0.10.34"
 
   [[order.group]]
     id = "paketo-buildpacks/puma"
-    version = "0.5.7"
+    version = "0.5.8"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -72,39 +72,39 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.9"
+    version = "1.1.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.9"
+    version = "0.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.7"
+    version = "0.9.8"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.1.1"
+    version = "8.1.2"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.30"
+    version = "2.2.31"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
     optional = true
-    version = "2.7.12"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/rails-assets"
     optional = true
-    version = "0.10.33"
+    version = "0.10.34"
 
   [[order.group]]
     id = "paketo-buildpacks/thin"
-    version = "0.5.64"
+    version = "0.5.65"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -125,39 +125,39 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.9"
+    version = "1.1.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.9"
+    version = "0.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.7"
+    version = "0.9.8"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.1.1"
+    version = "8.1.2"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.30"
+    version = "2.2.31"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
     optional = true
-    version = "2.7.12"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/rails-assets"
     optional = true
-    version = "0.10.33"
+    version = "0.10.34"
 
   [[order.group]]
     id = "paketo-buildpacks/unicorn"
-    version = "0.4.67"
+    version = "0.4.68"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -178,39 +178,39 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.9"
+    version = "1.1.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.9"
+    version = "0.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.7"
+    version = "0.9.8"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.1.1"
+    version = "8.1.2"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.30"
+    version = "2.2.31"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
     optional = true
-    version = "2.7.12"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/rails-assets"
     optional = true
-    version = "0.10.33"
+    version = "0.10.34"
 
   [[order.group]]
     id = "paketo-buildpacks/passenger"
-    version = "0.14.20"
+    version = "0.14.21"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -231,39 +231,39 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.9"
+    version = "1.1.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.9"
+    version = "0.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.7"
+    version = "0.9.8"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.1.1"
+    version = "8.1.2"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.2.30"
+    version = "2.2.31"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-install"
     optional = true
-    version = "2.7.12"
+    version = "2.7.13"
 
   [[order.group]]
     id = "paketo-buildpacks/rails-assets"
     optional = true
-    version = "0.10.33"
+    version = "0.10.34"
 
   [[order.group]]
     id = "paketo-buildpacks/rackup"
-    version = "0.4.60"
+    version = "0.4.61"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -284,21 +284,21 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.9"
+    version = "1.1.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
     optional = true
-    version = "0.9.9"
+    version = "0.9.10"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
     optional = true
-    version = "0.9.7"
+    version = "0.9.8"
 
   [[order.group]]
     id = "paketo-buildpacks/rake"
-    version = "0.4.68"
+    version = "0.4.69"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
