@@ -9,7 +9,7 @@
   uri = "docker://docker.io/paketobuildpacks/bundler:0.9.10"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.2"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/mri:1.1.10"
@@ -21,7 +21,7 @@
   uri = "docker://docker.io/paketobuildpacks/passenger:0.14.21"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.2"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/puma:0.5.8"
@@ -48,4 +48,4 @@
   uri = "docker://docker.io/paketobuildpacks/yarn:2.2.31"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.2"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.3"
