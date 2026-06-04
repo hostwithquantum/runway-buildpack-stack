@@ -18,7 +18,7 @@ jobs:
       matrix:
         buildpack: [dotnet-core, go, java, java-native-image, nodejs, php, python, ruby, runway]
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
         with:
           persist-credentials: false
       - uses: buildpacks/github-actions/setup-pack@v5.12.3

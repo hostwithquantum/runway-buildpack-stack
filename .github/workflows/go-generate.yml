@@ -21,7 +21,7 @@ jobs:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_RUNWAYOSS_SERVICE_ACCOUNT }}
           REGISTRY_USERNAME: op://RunwayOSS/robot-harbor-buildpacks/username
           REGISTRY_PASSWORD: op://RunwayOSS/robot-harbor-buildpacks/password
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
         with:
           persist-credentials: false
       - uses: warjiang/setup-skopeo@v0.1.3
