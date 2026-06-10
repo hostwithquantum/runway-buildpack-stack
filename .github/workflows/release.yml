@@ -32,7 +32,7 @@ jobs:
         REGISTRY_USERNAME: op://RunwayOSS/robot-harbor-runway-public/username
         REGISTRY_PASSWORD: op://RunwayOSS/robot-harbor-runway-public/password
 
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
       with:
         persist-credentials: false
 
@@ -83,7 +83,7 @@ jobs:
         REGISTRY_USERNAME: op://RunwayOSS/robot-harbor-runway-public/username
         REGISTRY_PASSWORD: op://RunwayOSS/robot-harbor-runway-public/password
 
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
       with:
         persist-credentials: false
 
