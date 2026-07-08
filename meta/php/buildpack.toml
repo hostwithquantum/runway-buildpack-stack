@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/php"
   id = "runway-buildpacks/php"
   name = "Buildpack for PHP"
-  version = "2.19.59"
+  version = "2.19.60"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -17,12 +17,12 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/php-dist"
-    version = "2.10.12"
+    version = "2.10.13"
 
   [[order.group]]
     id = "paketo-buildpacks/composer"
     optional = true
-    version = "0.8.8"
+    version = "0.8.9"
 
   [[order.group]]
     id = "paketo-buildpacks/composer-install"
@@ -31,15 +31,15 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/httpd"
-    version = "1.0.11"
+    version = "1.0.12"
 
   [[order.group]]
     id = "paketo-buildpacks/php-fpm"
-    version = "0.2.57"
+    version = "0.2.58"
 
   [[order.group]]
     id = "paketo-buildpacks/php-httpd"
-    version = "0.3.54"
+    version = "0.3.55"
 
   [[order.group]]
     id = "paketo-buildpacks/php-memcached-session-handler"
@@ -49,11 +49,11 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/php-redis-session-handler"
     optional = true
-    version = "0.2.44"
+    version = "0.2.45"
 
   [[order.group]]
     id = "paketo-buildpacks/php-start"
-    version = "0.5.2"
+    version = "0.5.3"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -74,12 +74,12 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/php-dist"
-    version = "2.10.12"
+    version = "2.10.13"
 
   [[order.group]]
     id = "paketo-buildpacks/composer"
     optional = true
-    version = "0.8.8"
+    version = "0.8.9"
 
   [[order.group]]
     id = "paketo-buildpacks/composer-install"
@@ -92,11 +92,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/php-fpm"
-    version = "0.2.57"
+    version = "0.2.58"
 
   [[order.group]]
     id = "paketo-buildpacks/php-nginx"
-    version = "0.3.33"
+    version = "0.3.34"
 
   [[order.group]]
     id = "paketo-buildpacks/php-memcached-session-handler"
@@ -106,11 +106,11 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/php-redis-session-handler"
     optional = true
-    version = "0.2.44"
+    version = "0.2.45"
 
   [[order.group]]
     id = "paketo-buildpacks/php-start"
-    version = "0.5.2"
+    version = "0.5.3"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
