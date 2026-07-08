@@ -3,14 +3,14 @@ api = "0.7"
 [buildpack]
   id = "runway-buildpacks/runway"
   name = "Buildpack for hugo/mdbook"
-  version = "0.1.61"
+  version = "0.1.62"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.10.19"
+    version = "2.10.20"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
@@ -20,17 +20,17 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.3.0"
+    version = "8.3.1"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
     optional = true
-    version = "2.3.24"
+    version = "2.3.25"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.42"
+    version = "2.3.43"
 
   [[order.group]]
     id = "paketo-buildpacks/nginx"
@@ -46,7 +46,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
     optional = true
-    version = "2.10.19"
+    version = "2.10.20"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
@@ -56,22 +56,22 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.3.0"
+    version = "8.3.1"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
     optional = true
-    version = "2.3.24"
+    version = "2.3.25"
 
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.42"
+    version = "2.3.43"
 
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "1.0.11"
+    version = "1.0.12"
 
   [[order.group]]
     id = "runway-buildpacks/static-websites"
