@@ -6,43 +6,43 @@
   uri = "docker://docker.io/paketobuildpacks/upx:4.3.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.7.5"
+  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.7.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.36.0"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.37.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/leiningen:4.16.0"
+  uri = "docker://docker.io/paketobuildpacks/leiningen:4.16.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:8.7.1"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.7.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.23.0"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.24.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.22.11"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.22.12"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.15.4"
+  uri = "docker://docker.io/paketobuildpacks/executable-jar:6.15.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.36.4"
+  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.36.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.12.0"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/native-image:5.18.4"
+  uri = "docker://docker.io/paketobuildpacks/native-image:5.18.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.4"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.4"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.11.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.4"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.5"
 
 [[targets]]
   arch = "amd64"
