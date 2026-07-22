@@ -3,37 +3,37 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:1.0.13"
+  uri = "docker://docker.io/paketobuildpacks/httpd:1.0.14"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/nginx:1.0.31"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/composer:0.8.10"
+  uri = "docker://docker.io/paketobuildpacks/composer:0.8.11"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/composer-install:0.3.28"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-dist:2.10.15"
+  uri = "docker://docker.io/paketobuildpacks/php-dist:2.10.16"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-httpd:0.3.56"
+  uri = "docker://docker.io/paketobuildpacks/php-httpd:0.3.57"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-nginx:0.3.35"
+  uri = "docker://docker.io/paketobuildpacks/php-nginx:0.3.36"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-fpm:0.2.59"
+  uri = "docker://docker.io/paketobuildpacks/php-fpm:0.2.60"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-start:0.5.4"
+  uri = "docker://docker.io/paketobuildpacks/php-start:0.5.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-redis-session-handler:0.2.46"
+  uri = "docker://docker.io/paketobuildpacks/php-redis-session-handler:0.2.47"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/php-memcached-session-handler:0.2.33"
+  uri = "docker://docker.io/paketobuildpacks/php-memcached-session-handler:0.2.34"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
