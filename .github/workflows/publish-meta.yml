@@ -39,10 +39,10 @@ jobs:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_RUNWAYOSS_SERVICE_ACCOUNT }}
           REGISTRY_USERNAME: op://RunwayOSS/robot-harbor-buildpacks/username
           REGISTRY_PASSWORD: op://RunwayOSS/robot-harbor-buildpacks/password
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-      - uses: buildpacks/github-actions/setup-pack@v5.12.5
+      - uses: buildpacks/github-actions/setup-pack@v6.0.0
       - run: pack config experimental true
       - uses: warjiang/setup-skopeo@v0.1.3
       - uses: SebRollen/toml-action@v1.2.0
