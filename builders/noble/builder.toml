@@ -125,7 +125,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
 [run]
   [[run.images]]
-    image = "r.planetary-quantum.com/runway-public/runway-runimage:noble-full"
+    image = "r.planetary-quantum.com/runway-public/noble/run:latest"
 
 [build]
   image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.77"

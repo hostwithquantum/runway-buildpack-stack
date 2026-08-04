@@ -35,17 +35,17 @@ Each git tag publishes the following images. Replace `X.Y.Z` with a tag from thi
 
 ### Builders
 
-- `r.planetary-quantum.com/runway-public/runway-buildpack-stack:jammy-full`
-- `r.planetary-quantum.com/runway-public/runway-buildpack-stack:jammy-full-X.Y.Z`
-- `r.planetary-quantum.com/runway-public/runway-buildpack-stack:noble-full`
-- `r.planetary-quantum.com/runway-public/runway-buildpack-stack:noble-full-X.Y.Z`
+- `r.planetary-quantum.com/runway-public/jammy/builder:latest`
+- `r.planetary-quantum.com/runway-public/jammy/builder:X.Y.Z`
+- `r.planetary-quantum.com/runway-public/noble/builder:latest`
+- `r.planetary-quantum.com/runway-public/noble/builder:X.Y.Z`
 
 ### Run images
 
-- `r.planetary-quantum.com/runway-public/runway-runimage:jammy-full`
-- `r.planetary-quantum.com/runway-public/runway-runimage:jammy-full-X.Y.Z`
-- `r.planetary-quantum.com/runway-public/runway-runimage:noble-full`
-- `r.planetary-quantum.com/runway-public/runway-runimage:noble-full-X.Y.Z`
+- `r.planetary-quantum.com/runway-public/jammy/run:latest`
+- `r.planetary-quantum.com/runway-public/jammy/run:X.Y.Z`
+- `r.planetary-quantum.com/runway-public/noble/run:latest`
+- `r.planetary-quantum.com/runway-public/noble/run:X.Y.Z`
 
 ---
 
