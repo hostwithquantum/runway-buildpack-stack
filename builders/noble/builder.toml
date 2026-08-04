@@ -1,121 +1,124 @@
 description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
-[[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.53"
-  version = "3.1.53"
+[build]
+  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.112"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.63"
-  version = "4.13.63"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.70"
+  version = "3.1.70"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.60"
-  version = "11.15.60"
+  uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.82"
+  version = "4.13.82"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.94"
-  version = "18.12.94"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.78"
+  version = "11.15.78"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.45"
-  version = "9.3.45"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.125"
+  version = "18.12.125"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.46"
-  version = "2.19.46"
+  uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.64"
+  version = "9.3.64"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.1"
-  version = "5.13.1"
+  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.68"
+  version = "2.19.68"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/python:2.30.43"
-  version = "2.30.43"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.6"
+  version = "5.13.6"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.53"
-  version = "0.47.53"
+  uri = "docker://r.planetary-quantum.com/buildpacks/python:2.30.60"
+  version = "2.30.60"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:4.2.5"
-  version = "4.2.5"
+  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.71"
+  version = "0.47.71"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/web-servers:4.7.0"
+  version = "4.7.0"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno:0.6.0"
   version = "0.6.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.49"
-  version = "0.1.49"
+  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.65"
+  version = "0.1.65"
 
 [lifecycle]
-  version = "0.21.8"
+  version = "0.21.14"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/ruby"
-    version = "0.47.53"
+    version = "0.47.71"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.53"
+    version = "3.1.70"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/go"
-    version = "4.13.63"
+    version = "4.13.82"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/python"
-    version = "2.30.43"
+    version = "2.30.60"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/php"
-    version = "2.19.46"
+    version = "2.19.68"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/runway"
-    version = "0.1.49"
+    version = "0.1.65"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "4.2.5"
+    version = "4.7.0"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.60"
+    version = "11.15.78"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.94"
+    version = "18.12.125"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/nodejs"
-    version = "9.3.45"
+    version = "9.3.64"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.13.1"
+    version = "5.13.6"
 
 [[order]]
 
@@ -124,11 +127,9 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
     version = "0.6.0"
 
 [run]
+
   [[run.images]]
     image = "r.planetary-quantum.com/runway-public/noble/run:latest"
-
-[build]
-  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.77"
 
 [stack]
   id = "io.buildpacks.stacks.noble"
