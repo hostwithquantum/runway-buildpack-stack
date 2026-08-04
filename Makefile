@@ -9,11 +9,13 @@ build: build-runimage build-builder
 
 PLATFORM?=linux/amd64,linux/arm64
 
+RUNIMAGE_TAG?=latest
+
 build-runimage:
 	docker buildx build \
 		--platform $(PLATFORM) \
 		--push \
-		-t r.planetary-quantum.com/runway-public/runway-runimage:$(BUILDER_BASE)-full \
+		-t r.planetary-quantum.com/runway-public/$(BUILDER_BASE)/run:$(RUNIMAGE_TAG) \
 		./builders/$(BUILDER_BASE)/runimage
 
 build-builder:

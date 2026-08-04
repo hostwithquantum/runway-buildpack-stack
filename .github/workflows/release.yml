@@ -40,13 +40,13 @@ jobs:
       uses: docker/metadata-action@v6.2.0
       with:
         images: |
-          r.planetary-quantum.com/runway-public/runway-runimage
+          r.planetary-quantum.com/runway-public/${{ matrix.ubuntu }}/run
         flavor: |
           latest=false
         tags: |
-          type=semver,prefix=${{ matrix.ubuntu }}-full-,pattern={{version}}
-          type=raw,value=${{ matrix.ubuntu }}-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
-          type=ref,event=pr,prefix=${{ matrix.ubuntu }}-full-pr-
+          type=semver,pattern={{version}}
+          type=raw,value=latest,enable=${{ startsWith(github.ref, 'refs/tags/') }}
+          type=ref,event=pr,prefix=pr-
 
     - uses: docker/login-action@v4.4.0
       with:
@@ -58,7 +58,7 @@ jobs:
       with:
         context: builders/${{ matrix.ubuntu }}/runimage
         platforms: linux/amd64,linux/arm64
-        cache-from: r.planetary-quantum.com/runway-public/runway-runimage:${{ matrix.ubuntu }}-full
+        cache-from: r.planetary-quantum.com/runway-public/${{ matrix.ubuntu }}/run:latest
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
@@ -91,13 +91,13 @@ jobs:
       uses: docker/metadata-action@v6.2.0
       with:
         images: |
-          r.planetary-quantum.com/runway-public/runway-buildpack-stack
+          r.planetary-quantum.com/runway-public/${{ matrix.ubuntu }}/builder
         flavor: |
           latest=false
         tags: |
-          type=semver,prefix=${{ matrix.ubuntu }}-full-,pattern={{version}}
-          type=raw,value=${{ matrix.ubuntu }}-full,enable=${{ startsWith(github.ref, 'refs/tags/') }}
-          type=ref,event=pr,prefix=${{ matrix.ubuntu }}-full-pr-
+          type=semver,pattern={{version}}
+          type=raw,value=latest,enable=${{ startsWith(github.ref, 'refs/tags/') }}
+          type=ref,event=pr,prefix=pr-
 
     - uses: buildpacks/github-actions/setup-pack@v6.0.0
 
