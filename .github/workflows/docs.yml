@@ -61,8 +61,12 @@ jobs:
         token: ${{ steps.token.outputs.token }}
         path: www
         commit-message: "chore(docs): update buildpacks"
-        title: "chore(docs): update buildpacks"
+        title: "feat(docs): update buildpacks"
         branch: update-buildpack-docs
+        branch-suffix: short-commit-hash
         delete-branch: true
         committer: ${{ steps.token.outputs.committer-name }} <${{ steps.token.outputs.committer-email }}>
         author: ${{ steps.token.outputs.committer-name }} <${{ steps.token.outputs.committer-email }}>
+        assignees: |
+          till
+          rwos
