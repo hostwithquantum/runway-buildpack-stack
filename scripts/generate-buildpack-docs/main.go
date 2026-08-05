@@ -13,18 +13,18 @@ import (
 	"github.com/buildpacks/libcnb/v2"
 )
 
-// BuildpackToml represents the structure of a buildpack.toml file
-type BuildpackToml struct {
+// buildpackToml represents the structure of a buildpack.toml file
+type buildpackToml struct {
 	API       string                  `toml:"api"`
 	Buildpack libcnb.BuildpackInfo    `toml:"buildpack"`
 	Metadata  map[string]any          `toml:"metadata"`
 	Order     []libcnb.BuildpackOrder `toml:"order"`
 }
 
-type BuildpackInfo struct {
+type buildpackInfo struct {
 	Name        string
 	Path        string
-	TOML        BuildpackToml
+	TOML        buildpackToml
 	LastUpdated time.Time
 }
 
@@ -73,14 +73,14 @@ func main() {
 	fmt.Printf("Successfully generated documentation for %d buildpacks in %s\n", len(buildpacks), docsDir)
 }
 
-func parseAllBuildpacks(projectRoot string) ([]BuildpackInfo, error) {
+func parseAllBuildpacks(projectRoot string) ([]buildpackInfo, error) {
 	metaDir := filepath.Join(projectRoot, "meta")
 	entries, err := os.ReadDir(metaDir)
 	if err != nil {
 		return nil, fmt.Errorf("reading meta directory: %w", err)
 	}
 
-	var buildpacks []BuildpackInfo
+	var buildpacks []buildpackInfo
 	for _, entry := range entries {
 		if !entry.IsDir() {
 			continue
@@ -91,7 +91,7 @@ func parseAllBuildpacks(projectRoot string) ([]BuildpackInfo, error) {
 			continue
 		}
 
-		var bp BuildpackToml
+		var bp buildpackToml
 		if _, err := toml.DecodeFile(buildpackPath, &bp); err != nil {
 			return nil, fmt.Errorf("parsing %s: %w", buildpackPath, err)
 		}
@@ -102,7 +102,7 @@ func parseAllBuildpacks(projectRoot string) ([]BuildpackInfo, error) {
 			lastUpdated = time.Now()
 		}
 
-		buildpacks = append(buildpacks, BuildpackInfo{
+		buildpacks = append(buildpacks, buildpackInfo{
 			Name:        entry.Name(),
 			Path:        buildpackPath,
 			TOML:        bp,
@@ -148,7 +148,7 @@ var buildpackDocURLs = map[string]string{
 	"runway":            "/docs/recipes/static/",
 }
 
-func generateIndexPage(docsDir string, buildpacks []BuildpackInfo) error {
+func generateIndexPage(docsDir string, buildpacks []buildpackInfo) error {
 	var sb strings.Builder
 
 	// Hugo front matter
@@ -174,8 +174,8 @@ func generateIndexPage(docsDir string, buildpacks []BuildpackInfo) error {
 		version := bp.TOML.Buildpack.Version
 		lastUpdate := bp.LastUpdated.Format("2006-01-02")
 
-		sb.WriteString(fmt.Sprintf("| [`%s`](buildpacks/%s) | `%s` | %s |\n",
-			name, bp.Name, version, lastUpdate))
+		fmt.Fprintf(&sb, "| [`%s`](buildpacks/%s) | `%s` | %s |\n",
+			name, bp.Name, version, lastUpdate)
 	}
 
 	// Write to file
@@ -183,7 +183,7 @@ func generateIndexPage(docsDir string, buildpacks []BuildpackInfo) error {
 	return os.WriteFile(indexPath, []byte(sb.String()), 0644)
 }
 
-func generateBuildpackPage(buildpacksDir string, bp BuildpackInfo) error {
+func generateBuildpackPage(buildpacksDir string, bp buildpackInfo) error {
 	var sb strings.Builder
 
 	// Look up the documentation URL for this buildpack
@@ -192,23 +192,30 @@ func generateBuildpackPage(buildpacksDir string, bp BuildpackInfo) error {
 		return fmt.Errorf("no documentation URL mapping found for buildpack: %s", bp.Name)
 	}
 
+	// Prefer the human-readable buildpack name; fall back to the dir name.
+	title := bp.TOML.Buildpack.Name
+	if title == "" {
+		title = bp.Name
+	}
+
 	// Hugo front matter
 	sb.WriteString("---\n")
-	sb.WriteString(fmt.Sprintf("title: 'Runway Docs: %s'\n", bp.TOML.Buildpack.ID))
+	fmt.Fprintf(&sb, "title: '%s'\n", title)
 	sb.WriteString("meta:\n")
-	sb.WriteString(fmt.Sprintf("  description: 'use %s to deploy on Runway'", bp.TOML.Buildpack.ID) + "\n")
+	fmt.Fprintf(&sb, "  description: 'use %s to deploy on Runway'\n", bp.TOML.Buildpack.ID)
 	if len(bp.TOML.Buildpack.Keywords) > 0 {
 		sb.WriteString("  keywords: runway,buildpack,")
-		sb.WriteString(strings.Join(bp.TOML.Buildpack.Keywords, ",") + "\n")
+		sb.WriteString(strings.Join(bp.TOML.Buildpack.Keywords, ","))
+		sb.WriteString("\n")
 	}
 	sb.WriteString("---\n")
 
 	// Hint box with deployment guide link
-	sb.WriteString(fmt.Sprintf("{{<hint>}}[Learn how to use this buildpack](%s) to deploy an application on Runway.{{</hint>}}\n\n", docURL))
+	fmt.Fprintf(&sb, "{{<hint>}}[Learn how to use this buildpack](%s) to deploy an application on Runway.{{</hint>}}\n\n", docURL)
 
 	// Title and metadata
-	sb.WriteString(fmt.Sprintf("**ID:** `%s`\n", bp.TOML.Buildpack.ID))
-	sb.WriteString(fmt.Sprintf("**Version:** `%s`\n", bp.TOML.Buildpack.Version))
+	fmt.Fprintf(&sb, "- **ID:** `%s`\n", bp.TOML.Buildpack.ID)
+	fmt.Fprintf(&sb, "- **Version:** `%s`\n", bp.TOML.Buildpack.Version)
 	// if bp.TOML.Buildpack.Homepage != "" {
 	// 	sb.WriteString(fmt.Sprintf("**Homepage:** %s  \n", bp.TOML.Buildpack.Homepage))
 	// }
@@ -220,12 +227,12 @@ func generateBuildpackPage(buildpacksDir string, bp BuildpackInfo) error {
 			sb.WriteString("## Dependencies\n\n")
 		} else {
 			sb.WriteString("## Build Order Groups\n\n")
-			sb.WriteString(fmt.Sprintf("This buildpack provides %d different build configurations.\n\n", len(bp.TOML.Order)))
+			fmt.Fprintf(&sb, "This buildpack provides %d different build configurations.\n\n", len(bp.TOML.Order))
 		}
 
 		for idx, order := range bp.TOML.Order {
 			if len(bp.TOML.Order) > 1 {
-				sb.WriteString(fmt.Sprintf("### Order %d\n\n", idx+1))
+				fmt.Fprintf(&sb, "### Order %d\n\n", idx+1)
 			}
 
 			// Sort dependencies: required first, then optional, alphabetically within each group
@@ -245,7 +252,7 @@ func generateBuildpackPage(buildpacksDir string, bp BuildpackInfo) error {
 				if group.Optional {
 					required = "Optional"
 				}
-				sb.WriteString(fmt.Sprintf("| `%s` | `%s` | %s |\n", group.ID, group.Version, required))
+				fmt.Fprintf(&sb, "| `%s` | `%s` | %s |\n", group.ID, group.Version, required)
 			}
 
 			sb.WriteString("\n")
@@ -253,7 +260,7 @@ func generateBuildpackPage(buildpacksDir string, bp BuildpackInfo) error {
 	}
 
 	// Last updated
-	sb.WriteString(fmt.Sprintf("**Last Updated:** %s\n", bp.LastUpdated.Format("2006-01-02")))
+	fmt.Fprintf(&sb, "**Last Updated:** %s\n", bp.LastUpdated.Format("2006-01-02"))
 
 	// Write to file
 	pagePath := filepath.Join(buildpacksDir, bp.Name+".md")
