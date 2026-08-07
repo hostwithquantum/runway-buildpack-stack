@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Buildpack for Ruby"
-  version = "0.47.72"
+  version = "0.47.73"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,11 +19,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.21"
+    version = "2.0.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.20"
+    version = "0.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
@@ -72,11 +72,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.21"
+    version = "2.0.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.20"
+    version = "0.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
@@ -125,11 +125,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.21"
+    version = "2.0.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.20"
+    version = "0.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
@@ -178,11 +178,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.21"
+    version = "2.0.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.20"
+    version = "0.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
@@ -231,11 +231,11 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.21"
+    version = "2.0.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
-    version = "0.9.20"
+    version = "0.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
@@ -284,12 +284,12 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "1.1.21"
+    version = "2.0.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
     optional = true
-    version = "0.9.20"
+    version = "0.10.0"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
