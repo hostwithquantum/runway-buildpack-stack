@@ -6,13 +6,13 @@
   uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.19"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundler:0.9.20"
+  uri = "docker://docker.io/paketobuildpacks/bundler:0.10.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:1.1.21"
+  uri = "docker://docker.io/paketobuildpacks/mri:2.0.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/node-engine:8.5.0"
