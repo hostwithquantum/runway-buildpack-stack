@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.20"
+  uri = "docker://docker.io/paketobuildpacks/bundle-install:0.9.21"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/bundler:0.10.1"
@@ -12,7 +12,7 @@
   uri = "docker://docker.io/paketobuildpacks/image-labels:4.12.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/mri:2.0.1"
+  uri = "docker://docker.io/paketobuildpacks/mri:2.0.2"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/node-engine:8.5.1"
