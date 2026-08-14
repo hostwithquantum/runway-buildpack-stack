@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/ruby"
   keywords = ["ruby"]
   name = "Buildpack for Ruby"
-  version = "0.47.74"
+  version = "0.47.75"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,7 +19,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "2.0.1"
+    version = "2.0.2"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -27,7 +27,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.20"
+    version = "0.9.21"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -72,7 +72,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "2.0.1"
+    version = "2.0.2"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -80,7 +80,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.20"
+    version = "0.9.21"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -125,7 +125,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "2.0.1"
+    version = "2.0.2"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -133,7 +133,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.20"
+    version = "0.9.21"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -178,7 +178,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "2.0.1"
+    version = "2.0.2"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -186,7 +186,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.20"
+    version = "0.9.21"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -231,7 +231,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "2.0.1"
+    version = "2.0.2"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -239,7 +239,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
-    version = "0.9.20"
+    version = "0.9.21"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
@@ -284,7 +284,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/mri"
-    version = "2.0.1"
+    version = "2.0.2"
 
   [[order.group]]
     id = "paketo-buildpacks/bundler"
@@ -294,7 +294,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/bundle-install"
     optional = true
-    version = "0.9.20"
+    version = "0.9.21"
 
   [[order.group]]
     id = "paketo-buildpacks/rake"
