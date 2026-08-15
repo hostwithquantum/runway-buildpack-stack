@@ -1,7 +1,7 @@
 description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.113"
+  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.114"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.73"
