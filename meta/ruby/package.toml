@@ -24,7 +24,7 @@
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.6"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/puma:0.5.20"
+  uri = "docker://docker.io/paketobuildpacks/puma:0.5.21"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/rackup:0.4.72"
