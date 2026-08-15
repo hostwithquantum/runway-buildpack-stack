@@ -4,20 +4,20 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   image = "docker.io/paketobuildpacks/build-jammy-full:0.1.202"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.73"
-  version = "3.1.73"
+  uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.74"
+  version = "3.1.74"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go:4.13.84"
   version = "4.13.84"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.81"
-  version = "11.15.81"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.82"
+  version = "11.15.82"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.129"
-  version = "18.12.129"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.130"
+  version = "18.12.130"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.67"
@@ -36,8 +36,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "2.30.62"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.75"
-  version = "0.47.75"
+  uri = "docker://r.planetary-quantum.com/buildpacks/ruby:0.47.76"
+  version = "0.47.76"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/web-servers:4.9.0"
@@ -58,13 +58,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/ruby"
-    version = "0.47.75"
+    version = "0.47.76"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/dotnet-core"
-    version = "3.1.73"
+    version = "3.1.74"
 
 [[order]]
 
@@ -100,13 +100,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.81"
+    version = "11.15.82"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.129"
+    version = "18.12.130"
 
 [[order]]
 
