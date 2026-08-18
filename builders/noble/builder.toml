@@ -1,7 +1,7 @@
 description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.114"
+  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.116"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.74"
@@ -52,7 +52,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
   version = "0.1.68"
 
 [lifecycle]
-  version = "0.21.15"
+  version = "0.21.16"
 
 [[order]]
 
