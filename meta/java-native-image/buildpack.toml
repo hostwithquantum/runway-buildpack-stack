@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java-native-image"
   keywords = ["java", "composite", "native-image"]
   name = "Buildpack for Java Native Image"
-  version = "11.15.84"
+  version = "11.15.85"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -24,63 +24,63 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bellsoft-liberica"
-    version = "11.8.2"
+    version = "11.8.3"
 
   [[order.group]]
     id = "paketo-buildpacks/syft"
     optional = true
-    version = "2.40.0"
+    version = "2.40.1"
 
   [[order.group]]
     id = "paketo-buildpacks/leiningen"
     optional = true
-    version = "4.16.2"
+    version = "4.16.3"
 
   [[order.group]]
     id = "paketo-buildpacks/gradle"
     optional = true
-    version = "8.8.1"
+    version = "8.8.2"
 
   [[order.group]]
     id = "paketo-buildpacks/maven"
     optional = true
-    version = "6.24.2"
+    version = "6.24.3"
 
   [[order.group]]
     id = "paketo-buildpacks/sbt"
     optional = true
-    version = "6.23.0"
+    version = "6.24.0"
 
   [[order.group]]
     id = "paketo-buildpacks/executable-jar"
     optional = true
-    version = "6.15.6"
+    version = "6.15.7"
 
   [[order.group]]
     id = "paketo-buildpacks/spring-boot"
     optional = true
-    version = "5.36.6"
+    version = "5.36.7"
 
   [[order.group]]
     id = "paketo-buildpacks/datadog"
     optional = true
-    version = "6.13.0"
+    version = "6.13.1"
 
   [[order.group]]
     id = "paketo-buildpacks/native-image"
-    version = "5.18.6"
+    version = "5.18.7"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.13.6"
+    version = "5.13.7"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.11.6"
+    version = "4.11.7"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.12.6"
+    version = "4.12.7"
