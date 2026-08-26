@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: load-registry-credentials
-      uses: 1password/load-secrets-action@e544b780808654ba8ceba5fb2fe2897103d92ff4 # v5.0.0
+      uses: 1password/load-secrets-action@70062d7a876d3eb6334754fa26efd2fbd90c32f2 # v5.0.1
       with:
         export-env: false
       env:
@@ -53,7 +53,7 @@ jobs:
         registry: r.planetary-quantum.com
         username: ${{ steps.load-registry-credentials.outputs.REGISTRY_USERNAME }}
         password: ${{ steps.load-registry-credentials.outputs.REGISTRY_PASSWORD }}
-    - uses: docker/setup-buildx-action@v4.2.0
+    - uses: docker/setup-buildx-action@v4.3.0
     - uses: docker/build-push-action@v7.3.0
       with:
         context: builders/${{ matrix.ubuntu }}/runimage
@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: load-registry-credentials
-      uses: 1password/load-secrets-action@e544b780808654ba8ceba5fb2fe2897103d92ff4 # v5.0.0
+      uses: 1password/load-secrets-action@70062d7a876d3eb6334754fa26efd2fbd90c32f2 # v5.0.1
       with:
         export-env: false
       env:
@@ -106,7 +106,7 @@ jobs:
         registry: r.planetary-quantum.com
         username: ${{ steps.load-registry-credentials.outputs.REGISTRY_USERNAME }}
         password: ${{ steps.load-registry-credentials.outputs.REGISTRY_PASSWORD }}
-    - uses: docker/setup-buildx-action@v4.2.0
+    - uses: docker/setup-buildx-action@v4.3.0
 
     - id: tag
       env:
