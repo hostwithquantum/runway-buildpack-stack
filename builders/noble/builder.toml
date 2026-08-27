@@ -1,7 +1,7 @@
 description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.119"
+  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.120"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.77"
@@ -24,8 +24,8 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
   version = "9.3.70"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.75"
-  version = "2.19.75"
+  uri = "docker://r.planetary-quantum.com/buildpacks/php:2.19.76"
+  version = "2.19.76"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.7"
@@ -48,8 +48,8 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
   version = "0.6.0"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.70"
-  version = "0.1.70"
+  uri = "docker://r.planetary-quantum.com/buildpacks/runway:0.1.71"
+  version = "0.1.71"
 
 [lifecycle]
   version = "0.21.18"
@@ -82,13 +82,13 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
   [[order.group]]
     id = "runway-buildpacks/php"
-    version = "2.19.75"
+    version = "2.19.76"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/runway"
-    version = "0.1.70"
+    version = "0.1.71"
 
 [[order]]
 
