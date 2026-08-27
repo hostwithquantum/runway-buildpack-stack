@@ -3,7 +3,7 @@ api = "0.7"
 [buildpack]
   id = "runway-buildpacks/runway"
   name = "Buildpack for hugo/mdbook"
-  version = "0.1.70"
+  version = "0.1.71"
 
 [[order]]
 
@@ -35,7 +35,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/nginx"
     optional = true
-    version = "1.1.2"
+    version = "1.2.0"
 
   [[order.group]]
     id = "runway-buildpacks/static-websites"
@@ -71,7 +71,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/httpd"
     optional = true
-    version = "1.0.19"
+    version = "1.1.0"
 
   [[order.group]]
     id = "runway-buildpacks/static-websites"
