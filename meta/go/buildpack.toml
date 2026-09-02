@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/go"
   keywords = ["go", "golang"]
   name = "Buildpack for Go"
-  version = "4.13.87"
+  version = "4.13.88"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,7 +19,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
-    version = "2.10.27"
+    version = "2.10.28"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
@@ -29,7 +29,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.6.0"
+    version = "8.6.1"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -39,11 +39,11 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.50"
+    version = "2.3.51"
 
   [[order.group]]
     id = "paketo-buildpacks/go-mod-vendor"
-    version = "1.1.38"
+    version = "1.1.39"
 
   [[order.group]]
     id = "paketo-community/go-generate"
@@ -52,7 +52,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
-    version = "2.4.38"
+    version = "2.4.39"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
@@ -73,7 +73,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/go-dist"
-    version = "2.10.27"
+    version = "2.10.28"
 
   [[order.group]]
     id = "paketo-buildpacks/git"
@@ -83,7 +83,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.6.0"
+    version = "8.6.1"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-install"
@@ -93,7 +93,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/node-run-script"
     optional = true
-    version = "2.3.50"
+    version = "2.3.51"
 
   [[order.group]]
     id = "paketo-community/go-generate"
@@ -102,7 +102,7 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/go-build"
-    version = "2.4.38"
+    version = "2.4.39"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
