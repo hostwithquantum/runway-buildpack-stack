@@ -1,7 +1,7 @@
 description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.126"
+  image = "docker.io/paketobuildpacks/ubuntu-noble-build:0.0.127"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.78"
@@ -40,8 +40,8 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
   version = "0.47.80"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:4.10.0"
-  version = "4.10.0"
+  uri = "docker://docker.io/paketobuildpacks/web-servers:4.10.1"
+  version = "4.10.1"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/deno:0.6.0"
@@ -94,7 +94,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "4.10.0"
+    version = "4.10.1"
 
 [[order]]
 
