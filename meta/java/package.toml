@@ -3,22 +3,22 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.8.3"
+  uri = "docker://docker.io/paketobuildpacks/bellsoft-liberica:11.9.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.4.4"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.4.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.6.1"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.6.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/syft:2.40.1"
+  uri = "docker://docker.io/paketobuildpacks/syft:2.41.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.16.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.17.13"
+  uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.18.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/gradle:8.8.2"
@@ -27,7 +27,7 @@
   uri = "docker://docker.io/paketobuildpacks/maven:6.24.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.24.0"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.25.1"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.15.7"
@@ -39,13 +39,13 @@
   uri = "docker://docker.io/paketobuildpacks/apache-tomee:1.18.2"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/liberty:7.0.7"
+  uri = "docker://docker.io/paketobuildpacks/liberty:7.1.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/dist-zip:5.12.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.36.7"
+  uri = "docker://docker.io/paketobuildpacks/spring-boot:5.37.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.7"
