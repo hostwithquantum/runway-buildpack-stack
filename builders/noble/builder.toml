@@ -28,8 +28,8 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
   version = "2.19.78"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.7"
-  version = "5.13.7"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.14.0"
+  version = "5.14.0"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/python:2.30.67"
@@ -118,7 +118,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.13.7"
+    version = "5.14.0"
 
 [[order]]
 
