@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Buildpack for Java"
-  version = "18.12.137"
+  version = "18.12.138"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -24,12 +24,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.4.5"
+    version = "2.4.6"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.6.2"
+    version = "8.7.0"
 
   [[order.group]]
     id = "paketo-buildpacks/syft"
@@ -94,7 +94,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.14.0"
+    version = "5.15.0"
 
   [[order.group]]
     id = "paketo-buildpacks/jattach"
@@ -124,4 +124,4 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.13.0"
+    version = "4.14.0"
