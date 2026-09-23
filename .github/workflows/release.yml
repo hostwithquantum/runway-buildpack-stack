@@ -53,8 +53,8 @@ jobs:
         registry: r.planetary-quantum.com
         username: ${{ steps.load-registry-credentials.outputs.REGISTRY_USERNAME }}
         password: ${{ steps.load-registry-credentials.outputs.REGISTRY_PASSWORD }}
-    - uses: docker/setup-buildx-action@v4.3.0
-    - uses: docker/build-push-action@v7.3.0
+    - uses: docker/setup-buildx-action@v4.4.1
+    - uses: docker/build-push-action@v7.4.0
       with:
         context: builders/${{ matrix.ubuntu }}/runimage
         platforms: linux/amd64,linux/arm64
@@ -106,7 +106,7 @@ jobs:
         registry: r.planetary-quantum.com
         username: ${{ steps.load-registry-credentials.outputs.REGISTRY_USERNAME }}
         password: ${{ steps.load-registry-credentials.outputs.REGISTRY_PASSWORD }}
-    - uses: docker/setup-buildx-action@v4.3.0
+    - uses: docker/setup-buildx-action@v4.4.1
 
     - id: tag
       env:
