@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Buildpack for Java"
-  version = "18.12.139"
+  version = "18.12.140"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -54,12 +54,12 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/maven"
     optional = true
-    version = "6.25.0"
+    version = "6.25.1"
 
   [[order.group]]
     id = "paketo-buildpacks/sbt"
     optional = true
-    version = "6.25.1"
+    version = "6.25.2"
 
   [[order.group]]
     id = "paketo-buildpacks/executable-jar"
@@ -69,17 +69,17 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/apache-tomcat"
     optional = true
-    version = "8.11.0"
+    version = "8.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/apache-tomee"
     optional = true
-    version = "1.19.0"
+    version = "1.20.0"
 
   [[order.group]]
     id = "paketo-buildpacks/liberty"
     optional = true
-    version = "7.1.1"
+    version = "7.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/dist-zip"
@@ -109,7 +109,7 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/java-memory-assistant"
     optional = true
-    version = "1.11.0"
+    version = "1.12.0"
 
   [[order.group]]
     id = "paketo-buildpacks/encrypt-at-rest"
