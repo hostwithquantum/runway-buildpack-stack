@@ -3,28 +3,28 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.2.43"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-execute:1.2.44"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.6.42"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core-aspnet-runtime:1.6.43"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core-sdk:1.6.43"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core-sdk:1.6.44"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/icu:0.10.6"
+  uri = "docker://docker.io/paketobuildpacks/icu:0.10.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.8.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.8.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-publish:1.3.12"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-publish:1.3.13"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.1"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.2"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.1"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.2"
