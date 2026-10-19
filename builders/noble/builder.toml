@@ -12,12 +12,12 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
   version = "4.13.95"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.95"
-  version = "11.15.95"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.96"
+  version = "11.15.96"
 
 [[buildpacks]]
-  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.145"
-  version = "18.12.145"
+  uri = "docker://r.planetary-quantum.com/buildpacks/java:18.12.146"
+  version = "18.12.146"
 
 [[buildpacks]]
   uri = "docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.78"
@@ -100,13 +100,13 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks"
 
   [[order.group]]
     id = "runway-buildpacks/java-native-image"
-    version = "11.15.95"
+    version = "11.15.96"
 
 [[order]]
 
   [[order.group]]
     id = "runway-buildpacks/java"
-    version = "18.12.145"
+    version = "18.12.146"
 
 [[order]]
 
