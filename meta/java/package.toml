@@ -9,7 +9,7 @@
   uri = "docker://docker.io/paketobuildpacks/yarn:2.5.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.10.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.11.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/syft:2.43.3"
@@ -21,13 +21,13 @@
   uri = "docker://docker.io/paketobuildpacks/clojure-tools:2.19.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:8.9.0"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.10.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.25.1"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.26.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.25.2"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.25.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.17.4"
@@ -54,7 +54,7 @@
   uri = "docker://docker.io/paketobuildpacks/jattach:1.13.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.14.0"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.15.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/java-memory-assistant:1.12.4"
