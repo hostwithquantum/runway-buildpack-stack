@@ -6,7 +6,7 @@ api = "0.8"
   id = "runway-buildpacks/dotnet-core"
   keywords = ["dotnet"]
   name = "Buildpack for .NET Core"
-  version = "3.1.87"
+  version = "3.1.88"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -30,7 +30,7 @@ api = "0.8"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.10.0"
+    version = "8.11.0"
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-publish"
