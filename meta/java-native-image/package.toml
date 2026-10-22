@@ -15,13 +15,13 @@
   uri = "docker://docker.io/paketobuildpacks/leiningen:4.17.5"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/gradle:8.9.0"
+  uri = "docker://docker.io/paketobuildpacks/gradle:8.10.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/maven:6.25.1"
+  uri = "docker://docker.io/paketobuildpacks/maven:6.26.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/sbt:6.25.2"
+  uri = "docker://docker.io/paketobuildpacks/sbt:6.25.3"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/executable-jar:6.17.4"
@@ -30,7 +30,7 @@
   uri = "docker://docker.io/paketobuildpacks/spring-boot:5.40.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/datadog:6.14.0"
+  uri = "docker://docker.io/paketobuildpacks/datadog:6.15.0"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/native-image:5.19.0"
