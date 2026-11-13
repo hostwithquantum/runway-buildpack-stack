@@ -63,6 +63,7 @@ jobs:
       uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
       with:
         branch: ${{ steps.names.outputs.branch }}
+        token: ${{ steps.token.outputs.token }}
 
     - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main

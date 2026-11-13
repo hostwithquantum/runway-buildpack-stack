@@ -61,6 +61,7 @@ jobs:
       uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
       with:
         branch: ${{ env.BRANCH }}
+        token: ${{ steps.token.outputs.token }}
 
     - name: Open Pull Request
       if: ${{ steps.commit.outputs.commit_sha != '' }}
