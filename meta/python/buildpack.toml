@@ -3,7 +3,7 @@ api = "0.8"
 [buildpack]
   id = "runway-buildpacks/python"
   name = "Buildpack for Python"
-  version = "2.30.74"
+  version = "2.30.75"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -16,196 +16,196 @@ api = "0.8"
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.18.49"
+    version = "1.19.0"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
-    version = "0.29.9"
+    version = "0.30.1"
 
   [[order.group]]
     id = "paketo-buildpacks/pipenv"
-    version = "1.32.0"
+    version = "1.32.3"
 
   [[order.group]]
     id = "paketo-buildpacks/pipenv-install"
-    version = "0.7.48"
+    version = "0.7.51"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.18.4"
+    version = "0.18.7"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.18.49"
+    version = "1.19.0"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
-    version = "0.29.9"
+    version = "0.30.1"
 
   [[order.group]]
     id = "paketo-buildpacks/pip-install"
-    version = "0.7.49"
+    version = "0.7.52"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.18.4"
+    version = "0.18.7"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/miniconda"
-    version = "0.11.46"
+    version = "0.11.49"
 
   [[order.group]]
     id = "paketo-buildpacks/conda-env-update"
-    version = "0.8.46"
+    version = "0.8.49"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.18.4"
+    version = "0.18.7"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.18.49"
+    version = "1.19.0"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
-    version = "0.29.9"
+    version = "0.30.1"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry"
-    version = "0.17.26"
+    version = "0.17.29"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-install"
-    version = "0.6.54"
+    version = "0.6.57"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-run"
-    version = "0.5.48"
+    version = "0.5.51"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.18.49"
+    version = "1.19.0"
 
   [[order.group]]
     id = "paketo-buildpacks/pip"
-    version = "0.29.9"
+    version = "0.30.1"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry"
-    version = "0.17.26"
+    version = "0.17.29"
 
   [[order.group]]
     id = "paketo-buildpacks/poetry-install"
-    version = "0.6.54"
+    version = "0.6.57"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.18.4"
+    version = "0.18.7"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/cpython"
-    version = "1.18.49"
+    version = "1.19.0"
 
   [[order.group]]
     id = "paketo-buildpacks/python-start"
-    version = "0.18.4"
+    version = "0.18.7"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
