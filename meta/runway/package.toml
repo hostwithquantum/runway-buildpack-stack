@@ -6,22 +6,22 @@
   uri = "docker://r.planetary-quantum.com/buildpacks/static-websites:0.6.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.11.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.33"
+  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.37"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.58"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.61"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.1.19"
+  uri = "docker://docker.io/paketobuildpacks/git:1.1.22"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.11.0"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.11.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/httpd:1.1.9"
+  uri = "docker://docker.io/paketobuildpacks/httpd:1.1.12"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/nginx:1.3.3"
+  uri = "docker://docker.io/paketobuildpacks/nginx:1.3.6"
