@@ -24,7 +24,7 @@ jobs:
         private-key: ${{ secrets.RUNWAY_CI_BOT_PRIVATE_KEY }}
     - uses: actions/checkout@v7.0.1
       with:
-        persist-credentials: true
+        persist-credentials: false
         token: ${{ steps.token.outputs.token }}
 
     - id: names
@@ -42,6 +42,7 @@ jobs:
     - uses: paketo-buildpacks/github-config/actions/pull-request/checkout-branch@main
       with:
         branch: ${{ steps.names.outputs.branch }}
+        token: ${{ steps.token.outputs.token }}
 
     - name: Update buildpack.toml for ${{ steps.names.outputs.path }}
       id: update
