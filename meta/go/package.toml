@@ -3,34 +3,34 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.0"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/git:1.1.19"
+  uri = "docker://docker.io/paketobuildpacks/git:1.1.22"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-build:2.4.46"
+  uri = "docker://docker.io/paketobuildpacks/go-build:2.4.49"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-dist:2.11.0"
+  uri = "docker://docker.io/paketobuildpacks/go-dist:2.11.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.1.46"
+  uri = "docker://docker.io/paketobuildpacks/go-mod-vendor:1.1.49"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.4"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.11.0"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.12.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.58"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.61"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.33"
+  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.37"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.5"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.8"
 
 [[dependencies]]
   uri = "docker://r.planetary-quantum.com/buildpacks/go-generate:0.3.37"
