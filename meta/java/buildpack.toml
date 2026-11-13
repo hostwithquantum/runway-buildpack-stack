@@ -6,7 +6,7 @@ api = "0.7"
   id = "runway-buildpacks/java"
   keywords = ["java", "composite"]
   name = "Buildpack for Java"
-  version = "18.12.150"
+  version = "18.12.151"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -19,32 +19,32 @@ api = "0.7"
 
   [[order.group]]
     id = "paketo-buildpacks/bellsoft-liberica"
-    version = "11.10.2"
+    version = "11.10.5"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn"
     optional = true
-    version = "2.5.3"
+    version = "2.5.6"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     optional = true
-    version = "8.11.0"
+    version = "8.12.1"
 
   [[order.group]]
     id = "paketo-buildpacks/syft"
     optional = true
-    version = "2.43.3"
+    version = "2.44.0"
 
   [[order.group]]
     id = "paketo-buildpacks/leiningen"
     optional = true
-    version = "4.17.5"
+    version = "4.17.8"
 
   [[order.group]]
     id = "paketo-buildpacks/clojure-tools"
     optional = true
-    version = "2.19.4"
+    version = "2.19.7"
 
   [[order.group]]
     id = "paketo-buildpacks/gradle"
@@ -59,69 +59,69 @@ api = "0.7"
   [[order.group]]
     id = "paketo-buildpacks/sbt"
     optional = true
-    version = "6.25.3"
+    version = "6.25.4"
 
   [[order.group]]
     id = "paketo-buildpacks/executable-jar"
     optional = true
-    version = "6.17.4"
+    version = "6.17.7"
 
   [[order.group]]
     id = "paketo-buildpacks/apache-tomcat"
     optional = true
-    version = "8.12.4"
+    version = "8.12.7"
 
   [[order.group]]
     id = "paketo-buildpacks/apache-tomee"
     optional = true
-    version = "1.20.4"
+    version = "1.21.1"
 
   [[order.group]]
     id = "paketo-buildpacks/liberty"
     optional = true
-    version = "7.2.3"
+    version = "7.2.6"
 
   [[order.group]]
     id = "paketo-buildpacks/dist-zip"
     optional = true
-    version = "5.14.3"
+    version = "5.14.6"
 
   [[order.group]]
     id = "paketo-buildpacks/spring-boot"
     optional = true
-    version = "5.40.3"
+    version = "5.40.6"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     optional = true
-    version = "5.15.5"
+    version = "5.15.8"
 
   [[order.group]]
     id = "paketo-buildpacks/jattach"
     optional = true
-    version = "1.13.5"
+    version = "1.13.8"
 
   [[order.group]]
     id = "paketo-buildpacks/datadog"
     optional = true
-    version = "6.15.0"
+    version = "6.15.3"
 
   [[order.group]]
     id = "paketo-buildpacks/java-memory-assistant"
     optional = true
-    version = "1.12.4"
+    version = "1.12.7"
 
   [[order.group]]
     id = "paketo-buildpacks/encrypt-at-rest"
     optional = true
-    version = "4.13.3"
+    version = "4.13.6"
 
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "4.12.0"
+    version = "4.12.3"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
     optional = true
-    version = "4.14.4"
+    version = "4.14.7"
