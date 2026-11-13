@@ -3,43 +3,43 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/cpython:1.18.49"
+  uri = "docker://docker.io/paketobuildpacks/cpython:1.19.0"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/pip:0.29.9"
+  uri = "docker://docker.io/paketobuildpacks/pip:0.30.1"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/pipenv:1.32.0"
+  uri = "docker://docker.io/paketobuildpacks/pipenv:1.32.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/pipenv-install:0.7.48"
+  uri = "docker://docker.io/paketobuildpacks/pipenv-install:0.7.51"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/pip-install:0.7.49"
+  uri = "docker://docker.io/paketobuildpacks/pip-install:0.7.52"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/python-start:0.18.4"
+  uri = "docker://docker.io/paketobuildpacks/python-start:0.18.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/miniconda:0.11.46"
+  uri = "docker://docker.io/paketobuildpacks/miniconda:0.11.49"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/conda-env-update:0.8.46"
+  uri = "docker://docker.io/paketobuildpacks/conda-env-update:0.8.49"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/poetry:0.17.26"
+  uri = "docker://docker.io/paketobuildpacks/poetry:0.17.29"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/poetry-install:0.6.54"
+  uri = "docker://docker.io/paketobuildpacks/poetry-install:0.6.57"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/poetry-run:0.5.48"
+  uri = "docker://docker.io/paketobuildpacks/poetry-run:0.5.51"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.5"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.8"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.0"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.4"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.7"
