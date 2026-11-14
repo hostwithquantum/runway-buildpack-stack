@@ -3,7 +3,7 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.12.1"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.12.2"
 
 [[dependencies]]
   uri = "docker://docker.io/paketobuildpacks/node-start:2.7.14"
