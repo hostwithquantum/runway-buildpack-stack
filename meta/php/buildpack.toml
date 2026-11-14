@@ -4,7 +4,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/php"
   id = "runway-buildpacks/php"
   name = "Buildpack for PHP"
-  version = "2.19.88"
+  version = "2.19.89"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
