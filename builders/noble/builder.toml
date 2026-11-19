@@ -1,40 +1,40 @@
 description = 'Ubuntu 24.04 Noble Numbat base image with buildpacks'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.90'
-version = '3.1.90'
+uri = 'docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.91'
+version = '3.1.91'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/go:4.13.99'
-version = '4.13.99'
+uri = 'docker://r.planetary-quantum.com/buildpacks/go:4.13.100'
+version = '4.13.100'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.101'
-version = '11.15.101'
+uri = 'docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.102'
+version = '11.15.102'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/java:18.12.152'
-version = '18.12.152'
+uri = 'docker://r.planetary-quantum.com/buildpacks/java:18.12.153'
+version = '18.12.153'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.82'
-version = '9.3.82'
+uri = 'docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.83'
+version = '9.3.83'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/php:2.19.88'
-version = '2.19.88'
+uri = 'docker://r.planetary-quantum.com/buildpacks/php:2.19.89'
+version = '2.19.89'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.9'
 version = '5.15.9'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/python:2.30.75'
-version = '2.30.75'
+uri = 'docker://r.planetary-quantum.com/buildpacks/python:2.30.76'
+version = '2.30.76'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/ruby:0.47.91'
-version = '0.47.91'
+uri = 'docker://r.planetary-quantum.com/buildpacks/ruby:0.47.92'
+version = '0.47.92'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/web-servers:4.16.1'
@@ -45,8 +45,8 @@ uri = 'docker://r.planetary-quantum.com/buildpacks/deno:0.6.0'
 version = '0.6.0'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/runway:0.1.83'
-version = '0.1.83'
+uri = 'docker://r.planetary-quantum.com/buildpacks/runway:0.1.84'
+version = '0.1.84'
 
 [lifecycle]
 version = '0.21.29'
@@ -54,32 +54,32 @@ version = '0.21.29'
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/ruby'
-version = '0.47.91'
+version = '0.47.92'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/dotnet-core'
-version = '3.1.90'
+version = '3.1.91'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/go'
-version = '4.13.99'
+version = '4.13.100'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/python'
-version = '2.30.75'
+version = '2.30.76'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/php'
-version = '2.19.88'
+version = '2.19.89'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/runway'
-version = '0.1.83'
+version = '0.1.84'
 
 [[order]]
 [[order.group]]
@@ -89,17 +89,17 @@ version = '4.16.1'
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/java-native-image'
-version = '11.15.101'
+version = '11.15.102'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/java'
-version = '18.12.152'
+version = '18.12.153'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/nodejs'
-version = '9.3.82'
+version = '9.3.83'
 
 [[order]]
 [[order.group]]
