@@ -3,34 +3,34 @@
   uri = "./"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-engine:8.12.2"
+  uri = "docker://docker.io/paketobuildpacks/node-engine:8.12.3"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-start:2.7.14"
+  uri = "docker://docker.io/paketobuildpacks/node-start:2.7.15"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.37"
+  uri = "docker://docker.io/paketobuildpacks/npm-install:2.3.38"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/npm-start:2.5.14"
+  uri = "docker://docker.io/paketobuildpacks/npm-start:2.5.15"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.30"
+  uri = "docker://docker.io/paketobuildpacks/yarn-install:2.7.31"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn:2.5.6"
+  uri = "docker://docker.io/paketobuildpacks/yarn:2.5.7"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/yarn-start:2.5.44"
+  uri = "docker://docker.io/paketobuildpacks/yarn-start:2.5.45"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.8"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.9"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.3"
+  uri = "docker://docker.io/paketobuildpacks/environment-variables:4.12.4"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.7"
+  uri = "docker://docker.io/paketobuildpacks/image-labels:4.14.8"
 
 [[dependencies]]
-  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.61"
+  uri = "docker://docker.io/paketobuildpacks/node-run-script:2.3.62"
