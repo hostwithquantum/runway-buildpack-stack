@@ -60,13 +60,13 @@ jobs:
         committer_name: ${{ steps.token.outputs.committer-name }}
         committer_email: ${{ steps.token.outputs.committer-email }}
 
-    - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>'}}
+    - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/push-branch@main
       with:
         branch: ${{ steps.names.outputs.branch }}
         token: ${{ steps.token.outputs.token }}
 
-    - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '<none>' }}
+    - if: ${{ steps.commit.outputs.commit_sha != '' && steps.update.outputs.semver_bump != '' }}
       uses: paketo-buildpacks/github-config/actions/pull-request/open@main
       with:
         token: ${{ steps.token.outputs.token }}
