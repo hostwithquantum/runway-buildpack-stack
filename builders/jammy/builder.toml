@@ -21,8 +21,8 @@ uri = 'docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.83'
 version = '9.3.83'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/php:2.19.89'
-version = '2.19.89'
+uri = 'docker://r.planetary-quantum.com/buildpacks/php:2.19.90'
+version = '2.19.90'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.9'
@@ -33,12 +33,12 @@ uri = 'docker://r.planetary-quantum.com/buildpacks/python:2.30.76'
 version = '2.30.76'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/ruby:0.47.92'
-version = '0.47.92'
+uri = 'docker://r.planetary-quantum.com/buildpacks/ruby:0.47.93'
+version = '0.47.93'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/web-servers:4.16.2'
-version = '4.16.2'
+uri = 'docker://docker.io/paketobuildpacks/web-servers:4.16.3'
+version = '4.16.3'
 
 [[buildpacks]]
 uri = 'docker://r.planetary-quantum.com/buildpacks/deno:0.6.0'
@@ -54,7 +54,7 @@ version = '0.21.29'
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/ruby'
-version = '0.47.92'
+version = '0.47.93'
 
 [[order]]
 [[order.group]]
@@ -74,7 +74,7 @@ version = '2.30.76'
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/php'
-version = '2.19.89'
+version = '2.19.90'
 
 [[order]]
 [[order.group]]
@@ -84,7 +84,7 @@ version = '0.1.84'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/web-servers'
-version = '4.16.2'
+version = '4.16.3'
 
 [[order]]
 [[order.group]]
@@ -112,7 +112,7 @@ id = 'runway-buildpacks/deno'
 version = '0.6.0'
 
 [build]
-image = 'docker.io/paketobuildpacks/build-jammy-full:0.1.251'
+image = 'docker.io/paketobuildpacks/build-jammy-full:0.1.252'
 
 [run]
 [[run.images]]
