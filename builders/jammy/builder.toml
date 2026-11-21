@@ -9,12 +9,12 @@ uri = 'docker://r.planetary-quantum.com/buildpacks/go:4.13.100'
 version = '4.13.100'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.102'
-version = '11.15.102'
+uri = 'docker://r.planetary-quantum.com/buildpacks/java-native-image:11.15.103'
+version = '11.15.103'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/java:18.12.153'
-version = '18.12.153'
+uri = 'docker://r.planetary-quantum.com/buildpacks/java:18.12.154'
+version = '18.12.154'
 
 [[buildpacks]]
 uri = 'docker://r.planetary-quantum.com/buildpacks/nodejs:9.3.83'
@@ -89,12 +89,12 @@ version = '4.16.3'
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/java-native-image'
-version = '11.15.102'
+version = '11.15.103'
 
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/java'
-version = '18.12.153'
+version = '18.12.154'
 
 [[order]]
 [[order.group]]
