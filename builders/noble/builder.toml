@@ -1,8 +1,8 @@
 description = 'Ubuntu 24.04 Noble Numbat base image with buildpacks'
 
 [[buildpacks]]
-uri = 'docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.91'
-version = '3.1.91'
+uri = 'docker://r.planetary-quantum.com/buildpacks/dotnet-core:3.1.92'
+version = '3.1.92'
 
 [[buildpacks]]
 uri = 'docker://r.planetary-quantum.com/buildpacks/go:4.13.100'
@@ -59,7 +59,7 @@ version = '0.47.93'
 [[order]]
 [[order.group]]
 id = 'runway-buildpacks/dotnet-core'
-version = '3.1.91'
+version = '3.1.92'
 
 [[order]]
 [[order.group]]
@@ -112,7 +112,7 @@ id = 'runway-buildpacks/deno'
 version = '0.6.0'
 
 [build]
-image = 'docker.io/paketobuildpacks/ubuntu-noble-build:0.0.162'
+image = 'docker.io/paketobuildpacks/ubuntu-noble-build:0.0.163'
 
 [run]
 [[run.images]]
