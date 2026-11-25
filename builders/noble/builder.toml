@@ -49,7 +49,7 @@ uri = 'docker://r.planetary-quantum.com/buildpacks/runway:0.1.84'
 version = '0.1.84'
 
 [lifecycle]
-version = '0.21.29'
+version = '0.21.30'
 
 [[order]]
 [[order.group]]
