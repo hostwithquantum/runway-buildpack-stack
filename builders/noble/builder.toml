@@ -37,8 +37,8 @@ uri = 'docker://r.planetary-quantum.com/buildpacks/ruby:0.47.94'
 version = '0.47.94'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/web-servers:4.16.3'
-version = '4.16.3'
+uri = 'docker://docker.io/paketobuildpacks/web-servers:4.17.0'
+version = '4.17.0'
 
 [[buildpacks]]
 uri = 'docker://r.planetary-quantum.com/buildpacks/deno:0.6.0'
@@ -84,7 +84,7 @@ version = '0.1.85'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/web-servers'
-version = '4.16.3'
+version = '4.17.0'
 
 [[order]]
 [[order.group]]
@@ -112,7 +112,7 @@ id = 'runway-buildpacks/deno'
 version = '0.6.0'
 
 [build]
-image = 'docker.io/paketobuildpacks/ubuntu-noble-build:0.0.165'
+image = 'docker.io/paketobuildpacks/ubuntu-noble-build:0.0.166'
 
 [run]
 [[run.images]]
