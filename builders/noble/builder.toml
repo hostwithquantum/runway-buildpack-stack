@@ -112,7 +112,7 @@ id = 'runway-buildpacks/deno'
 version = '0.6.0'
 
 [build]
-image = 'docker.io/paketobuildpacks/ubuntu-noble-build:0.0.164'
+image = 'docker.io/paketobuildpacks/ubuntu-noble-build:0.0.165'
 
 [run]
 [[run.images]]
